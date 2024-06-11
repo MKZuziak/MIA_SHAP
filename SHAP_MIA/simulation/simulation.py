@@ -14,6 +14,8 @@ from SHAP_MIA.aggregators.aggregator import Aggregator
 from SHAP_MIA.operations.evaluations import evaluate_model, automatic_node_evaluation
 from SHAP_MIA.files.handlers import save_nested_dict_ascsv
 from SHAP_MIA.files.loggers import orchestrator_logger
+from SHAP_MIA.shapley_calculation.shapley_calculation import Shapley_Calculation
+from SHAP_MIA.utils.computations import average_of_weigts
 
 
 # set_start_method set to 'spawn' to ensure compatibility across platforms.
@@ -68,6 +70,7 @@ class Simulation():
         self.network = {}
         self.orchestrator_model = None
         self.generator = np.random.default_rng(seed=seed)
+    
     
     def attach_orchestrator_model(self,
                                   orchestrator_data: Any):
@@ -160,6 +163,7 @@ class Simulation():
                           sample_size: int,
                           local_epochs: int,
                           aggrgator: Aggregator,
+                          shapley_processing_batch: int,
                           metrics_savepath: str,
                           nodes_models_savepath: str,
                           orchestrator_models_savepath: str) -> None:
@@ -181,6 +185,9 @@ class Simulation():
             be trained.
         aggregator: Aggregator
             Instance of the Aggregator object that will be used to aggregate the result each round
+        shapley_processing_batch: int
+            How many coalitions we want to calculate simultaneously. Higer number of coalitions speed
+            up the process significantly, but are more demanding in terms of GPU VRAM.
         metrics_savepath: str
             Path for saving the metrics
         nodes_models_savepath: str
@@ -193,6 +200,11 @@ class Simulation():
         int
             Returns 0 on the successful completion of the training.
         """
+        shapley_manager = Shapley_Calculation(
+            nodes = len(self.network.keys()),
+            global_iterations = iterations,
+            processing_batch=shapley_processing_batch
+        )
         for iteration in range(iterations):
             orchestrator_logger.info(f"Iteration {iteration}")
             
@@ -208,13 +220,21 @@ class Simulation():
             )
             
             # Training nodes
-            training_results, weights = self.train_epoch(
+            training_results, gradients = self.train_epoch(
                 sampled_nodes=sampled_nodes,
                 iteration=iteration,
                 local_epochs=local_epochs,
-                mode='weights',
+                mode='gradients',
                 save_model=True,
                 save_path=nodes_models_savepath
+            )
+            
+            shapley_manager.calculate_iteration_shapley(
+                iteration = iteration,
+                gradients = gradients,
+                previous_weights = self.orchestrator_model.get_weights(),
+                model_template = copy.deepcopy(self.orchestrator_model),
+                aggregator_template = aggrgator
             )
             
             # Preserving metrics of the training
@@ -228,8 +248,13 @@ class Simulation():
                 nodes=sampled_nodes,
                 save_path=os.path.join(metrics_savepath, "before_update_metrics.csv"))
             
+            avg_gradients = average_of_weigts(gradients)
             # Updating weights
-            new_weights = aggrgator.aggregate_weights(weights)
+            new_weights = aggrgator.optimize_weights(
+                weights=self.orchestrator_model.get_weights(),
+                gradients = avg_gradients,
+                learning_rate = 1.0,
+                )
             
             # Updating weights for each node in the network
             for node in self.network.values():
