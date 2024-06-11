@@ -6,9 +6,9 @@ import copy
 
 import torch
 
-from FedJust.node.federated_node import FederatedNode
-from FedJust.model.federated_model import FederatedModel
-from FedJust.simulation.simulation import Simulation
+from SHAP_MIA.node.federated_node import FederatedNode
+from SHAP_MIA.model.federated_model import FederatedModel
+from SHAP_MIA.simulation.simulation import Simulation
 from tests.test_props.datasets import return_mnist
 from tests.test_props.nets import NeuralNetwork
 

@@ -7,13 +7,13 @@ import os
 
 import numpy as np
 
-from FedJust.model.federated_model import FederatedModel
-from FedJust.node.federated_node import FederatedNode
-from FedJust.operations.orchestrations import train_nodes, sample_nodes
-from FedJust.aggregators.aggregator import Aggregator
-from FedJust.operations.evaluations import evaluate_model, automatic_node_evaluation
-from FedJust.files.handlers import save_nested_dict_ascsv
-from FedJust.files.loggers import orchestrator_logger
+from SHAP_MIA.model.federated_model import FederatedModel
+from SHAP_MIA.node.federated_node import FederatedNode
+from SHAP_MIA.operations.orchestrations import train_nodes, sample_nodes
+from SHAP_MIA.aggregators.aggregator import Aggregator
+from SHAP_MIA.operations.evaluations import evaluate_model, automatic_node_evaluation
+from SHAP_MIA.files.handlers import save_nested_dict_ascsv
+from SHAP_MIA.files.loggers import orchestrator_logger
 
 
 # set_start_method set to 'spawn' to ensure compatibility across platforms.

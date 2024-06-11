@@ -4,7 +4,7 @@ import copy
 from torch import zeros
 from torch import div
 
-from FedJust.aggregators.aggregator import Aggregator
+from SHAP_MIA.aggregators.aggregator import Aggregator
 
 class Fedopt_Optimizer(Aggregator):
     """Fedopt Optimizer that performs a generalized 

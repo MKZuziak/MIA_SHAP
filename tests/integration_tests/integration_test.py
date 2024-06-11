@@ -5,11 +5,11 @@ from torch import optim
 
 from tests.test_props.datasets import return_mnist
 from tests.test_props.nets import NeuralNetwork
-from FedJust.model.federated_model import FederatedModel
-from FedJust.node.federated_node import FederatedNode
-from FedJust.simulation.simulation import Simulation
-from FedJust.aggregators.aggregator import Aggregator
-from FedJust.files.archive import create_archive
+from SHAP_MIA.model.federated_model import FederatedModel
+from SHAP_MIA.node.federated_node import FederatedNode
+from SHAP_MIA.simulation.simulation import Simulation
+from SHAP_MIA.aggregators.aggregator import Aggregator
+from SHAP_MIA.files.archive import create_archive
 
 def integration_test():
     (metrics_savepath, 

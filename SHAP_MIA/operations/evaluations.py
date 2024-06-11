@@ -1,8 +1,8 @@
 import csv
 import os
 
-from FedJust.model.federated_model import FederatedModel
-from FedJust.node.federated_node import FederatedNode
+from SHAP_MIA.model.federated_model import FederatedModel
+from SHAP_MIA.node.federated_node import FederatedNode
 
 
 def evaluate_model(

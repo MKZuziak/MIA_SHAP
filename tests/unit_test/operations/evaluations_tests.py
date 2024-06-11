@@ -1,6 +1,6 @@
 import unittest
 
-from FedJust.operations.evaluations import evaluate_node, automatic_node_evaluation
+from SHAP_MIA.operations.evaluations import evaluate_node, automatic_node_evaluation
 
 class Evaluations_Tests(unittest.TestCase):
     

@@ -3,8 +3,8 @@ from functools import partial
 from collections import OrderedDict
 import copy
 
-from FedJust.model.federated_model import FederatedModel
-from FedJust.files.loggers import node_logger
+from SHAP_MIA.model.federated_model import FederatedModel
+from SHAP_MIA.files.loggers import node_logger
 
 # import torch
 # from numpy import array

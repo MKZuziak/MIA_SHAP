@@ -2,7 +2,7 @@ import os, unittest
 
 import numpy as np
 
-from FedJust.operations.orchestrations import train_nodes, sample_nodes, sample_weighted_nodes
+from SHAP_MIA.operations.orchestrations import train_nodes, sample_nodes, sample_weighted_nodes
 
 
 class Orchestration_Tests(unittest.TestCase):

@@ -1,6 +1,6 @@
 import unittest
 
-from FedJust.files.archive import create_archive
+from SHAP_MIA.files.archive import create_archive
 
 
 class Archive_Tests(unittest.TestCase):

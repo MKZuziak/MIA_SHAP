@@ -1,6 +1,6 @@
 import unittest
 
-from FedJust.aggregators.fedopt_aggregator import Fedopt_Optimizer
+from SHAP_MIA.aggregators.fedopt_aggregator import Fedopt_Optimizer
 
 
 class Test_Aggregator(unittest.TestCase):

@@ -10,7 +10,7 @@ import datasets
 from torchvision import transforms
 from sklearn.metrics import confusion_matrix, f1_score, precision_score, recall_score
 
-from FedJust.files.loggers import model_logger
+from SHAP_MIA.files.loggers import model_logger
 
 
 # Setting up the model logger

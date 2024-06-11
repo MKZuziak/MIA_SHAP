@@ -1,6 +1,6 @@
 import unittest
 
-from FedJust.aggregators.aggregator import Aggregator
+from SHAP_MIA.aggregators.aggregator import Aggregator
 
 
 class Test_Aggregator(unittest.TestCase):
