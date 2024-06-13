@@ -276,6 +276,8 @@ class Simulation():
                 iteration=iteration,
                 model=self.orchestrator_model,
                 save_path=os.path.join(metrics_savepath, "orchestrator_metrics.csv"))
-        # self.orchestrator_logger.critical("Training complete")
+        orchestrator_logger.critical("Training complete")
+        print(shapley_manager.epoch_shapley)
+        print(shapley_manager.total_shapley)
         # return 0
                         

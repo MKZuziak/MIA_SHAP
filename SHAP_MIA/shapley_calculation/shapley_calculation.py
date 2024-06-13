@@ -18,13 +18,9 @@ class Shapley_Calculation:
         processing_batch: int
         ) -> None:
         self.epoch_shapley = {
-            node_id: {
-                global_iteration: 0 for global_iteration in global_iterations
-                } for node_id in nodes
+            global_iteration: {} for global_iteration in range(global_iterations)
         }
-        self.total_shapley = {
-            node_id: 0 for node_id in nodes
-        }
+        self.total_shapley = {}
         self.processing_batch = processing_batch
     
     
@@ -38,14 +34,15 @@ class Shapley_Calculation:
     ):
         print(f"Calculating Shapley Score for iteration {iteration}")
         possible_coalitions = form_superset(
-            gradients.keys()
+            gradients.keys(),
+            return_dict=False
         )
         operation_counter = 0 # Operation counter for tracking and printing the progress
-        number_of_operations = 2 ** (len(possible_coalitions.keys())) - 1
+        number_of_operations = len(possible_coalitions)
         recorded_values = {} # Maps every coalition to it's value, implemented to decrease the time complexity.
         
-        if len(possible_coalitions.keys()) < self.processing_batch:
-            self.processing_batch = len(possible_coalitions.keys())
+        if len(possible_coalitions) < self.processing_batch:
+            self.processing_batch = len(possible_coalitions)
         batches = chunker(
             seq = possible_coalitions,
             size = self.processing_batch
@@ -54,13 +51,14 @@ class Shapley_Calculation:
         for batch in batches:
             with Pool(self.processing_batch) as pool:
                 results = [pool.apply_async(
-                    calculate_coalition_value(
-                        coalition,
-                        copy.deepcopy(gradients),
-                        copy.deepcopy(previous_weights),
-                        model_template,
-                        aggregator_template))
-                           for coalition in batch]
+                calculate_coalition_value,
+                (coalition,
+                 copy.deepcopy(gradients),
+                 copy.deepcopy(previous_weights),
+                 copy.deepcopy(model_template),
+                 copy.deepcopy(aggregator_template)
+                 )) for coalition in batch]
+                
                 for result in results:
                     coalition_value = result.get()
                     recorded_values.update(coalition_value)
@@ -81,7 +79,7 @@ class Shapley_Calculation:
                 possible_combinations = math.comb((len(gradients.keys()) - 1), len(coalition_without_client))
                 divisor = 1 / possible_combinations
                 shap += divisor * (coalition_with_client_score - coalition_without_client_score)
-            self.partial_shapley[iteration][node] = shap / len(gradients.keys())
+            self.epoch_shapley[iteration][node] = shap / len(gradients.keys())
         
                 
 def calculate_coalition_value(
@@ -92,7 +90,7 @@ def calculate_coalition_value(
     aggregator_template: Aggregator
     ) -> tuple[int, dict, float]:
         
-        result = {}
+        calc = {}
         coalitions_gradients = select_gradients(
             gradients = gradients,
             query = coalition
@@ -106,9 +104,11 @@ def calculate_coalition_value(
             )
         
         model_template.update_weights(new_weights)
-        score = model_template.evaluate_model()[1]
-        result[tuple(sorted(coalition))] = score
-        return result
+        score = model_template.evaluate_model()
+        score = score['accuracy']
+        print(score)
+        calc[tuple(sorted(coalition))] = score
+        return calc
 
 
 def chunker(

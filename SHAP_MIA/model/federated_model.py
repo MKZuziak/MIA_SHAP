@@ -114,7 +114,7 @@ class FederatedModel:
             self.trainloader = torch.utils.data.DataLoader(
                 local_dataset[0],
                 batch_size=self.batch_size,
-                shuffle=True,
+                shuffle=False,
                 num_workers=0,
             )
             self.testloader = torch.utils.data.DataLoader(
