@@ -1,5 +1,6 @@
 import csv
 import os
+import copy
 
 
 def save_dict_ascsv(
@@ -49,4 +50,36 @@ def save_nested_dict_ascsv(
         if os.path.getsize(save_path) == 0:
             writer.writeheader()
         for row in data.values():
+            writer.writerow(row)
+
+
+def save_partial_shapley(
+    data: dict[dict],
+    save_path: str):
+    fieldnames = ['iteration', 'node_id', 'accuracy', 'test_loss', 'f1score', 'precision', 'recall', 'accuracy_per_0', 'accuracy_per_1',
+                  'accuracy_per_2', 'accuracy_per_3', 'accuracy_per_4', 'accuracy_per_5', 'accuracy_per_6', 'accuracy_per_7',
+                  'accuracy_per_8', 'accuracy_per_9']
+    with open(save_path, "a", newline='') as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        for iteration, iteration_result in data.items():
+            for node, nodes_results in iteration_result.items():
+                row = copy.deepcopy(nodes_results)
+                row['iteration'] = iteration
+                row['node_id'] = node
+                writer.writerow(row)
+
+
+def save_full_shapley(
+    data: dict[dict],
+    save_path: str):
+    fieldnames = ['node_id', 'accuracy', 'test_loss', 'f1score', 'precision', 'recall', 'accuracy_per_0', 'accuracy_per_1',
+                  'accuracy_per_2', 'accuracy_per_3', 'accuracy_per_4', 'accuracy_per_5', 'accuracy_per_6', 'accuracy_per_7',
+                  'accuracy_per_8', 'accuracy_per_9']
+    with open(save_path, "a", newline='') as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        for node, nodes_results in data.items():
+            row = copy.deepcopy(nodes_results)
+            row['node_id'] = node
             writer.writerow(row)
