@@ -201,7 +201,6 @@ class Simulation():
             Returns 0 on the successful completion of the training.
         """
         shapley_manager = Shapley_Calculation(
-            nodes = len(self.network.keys()),
             global_iterations = iterations,
             processing_batch=shapley_processing_batch
         )
@@ -276,6 +275,10 @@ class Simulation():
                 iteration=iteration,
                 model=self.orchestrator_model,
                 save_path=os.path.join(metrics_savepath, "orchestrator_metrics.csv"))
+        shapley_manager.calculate_final_shapley(
+            all_nodes_ids=self.network.keys(),
+            total_iteration_no=iterations
+        )
         orchestrator_logger.critical("Training complete")
         print(shapley_manager.epoch_shapley)
         print(shapley_manager.total_shapley)

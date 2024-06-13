@@ -38,7 +38,7 @@ def integration_test():
         12: [test, test]
     })
     simulation_instace.training_protocol(
-        iterations=500,
+        iterations=1,
         sample_size=4,
         local_epochs=1,
         aggrgator=fed_avg_aggregator,

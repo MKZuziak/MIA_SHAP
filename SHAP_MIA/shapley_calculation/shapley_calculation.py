@@ -13,7 +13,6 @@ from SHAP_MIA.utils.computations import average_of_weigts
 class Shapley_Calculation:
     def __init__(
         self,
-        nodes: int,
         global_iterations: int,
         processing_batch: int
         ) -> None:
@@ -22,6 +21,8 @@ class Shapley_Calculation:
         }
         self.total_shapley = {}
         self.processing_batch = processing_batch
+        self.metrics = [f'accuracy_per_{class_id}' for class_id in range(10)]
+        self.metrics.extend(['test_loss', 'accuracy', 'f1score', 'precision', 'recall'])
     
     
     def calculate_iteration_shapley(
@@ -66,22 +67,38 @@ class Shapley_Calculation:
             print(f"Completed {operation_counter} out of {number_of_operations} operations")
         print("Finished evaluating all of the coalitions. Commencing calculation of individual Shapley values.")
         for node in gradients.keys():
-            shap = 0.0
-            coalitions_of_interest = select_subsets(
-                coalitions = possible_coalitions,
-                searched_node = node
-            )
-            for coalition in coalitions_of_interest:
-                coalition_without_client = tuple(sorted(coalition))
-                coalition_with_client = tuple(sorted(tuple((coalition)) + (node,))) #TODO: Make a more elegant solution...
-                coalition_without_client_score = recorded_values[coalition_without_client]
-                coalition_with_client_score = recorded_values[coalition_with_client]
-                possible_combinations = math.comb((len(gradients.keys()) - 1), len(coalition_without_client))
-                divisor = 1 / possible_combinations
-                shap += divisor * (coalition_with_client_score - coalition_without_client_score)
-            self.epoch_shapley[iteration][node] = shap / len(gradients.keys())
-        
-                
+            self.epoch_shapley[iteration][node] = {}
+            for metric in self.metrics:
+                shap = 0.0
+                coalitions_of_interest = select_subsets(
+                    coalitions = possible_coalitions,
+                    searched_node = node
+                )
+                for coalition in coalitions_of_interest:
+                    coalition_without_client = tuple(sorted(coalition))
+                    coalition_with_client = tuple(sorted(tuple((coalition)) + (node,))) #TODO: Make a more elegant solution...
+                    coalition_without_client_score = recorded_values[coalition_without_client]
+                    coalition_with_client_score = recorded_values[coalition_with_client]
+                    possible_combinations = math.comb((len(gradients.keys()) - 1), len(coalition_without_client))
+                    divisor = 1 / possible_combinations
+                    shap += divisor * (coalition_with_client_score[metric] - coalition_without_client_score[metric])
+                self.epoch_shapley[iteration][node][metric] = shap / len(gradients.keys())
+    
+    
+    def calculate_final_shapley(
+        self,
+        all_nodes_ids: list,
+        total_iteration_no: int
+    ):
+        for node in all_nodes_ids:
+            self.total_shapley[node] = {metric:0 for metric in self.metrics}
+            for partial_results in self.epoch_shapley.values():
+                for metric in self.metrics:
+                    self.total_shapley[node][metric] += partial_results[node][metric]
+            for metric in self.metrics:
+                self.total_shapley[node][metric] = self.total_shapley[node][metric] / total_iteration_no
+            
+            
 def calculate_coalition_value(
     coalition: list,
     gradients: OrderedDict,
@@ -104,10 +121,16 @@ def calculate_coalition_value(
             )
         
         model_template.update_weights(new_weights)
-        score = model_template.evaluate_model()
-        score = score['accuracy']
-        print(score)
-        calc[tuple(sorted(coalition))] = score
+        eval_results = model_template.evaluate_model()
+        results = {}
+        results['test_loss'] = eval_results['test_loss']
+        results['accuracy'] = eval_results['accuracy']
+        results['f1score'] = eval_results['f1score']
+        results['precision'] = eval_results['precision']
+        results['recall'] = eval_results['recall']
+        for class_id in range(10):
+            results[f'accuracy_per_{class_id}'] = eval_results[f'accuracy_per_{class_id}']
+        calc[tuple(sorted(coalition))] = results
         return calc
 
 
