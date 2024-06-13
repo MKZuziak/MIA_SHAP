@@ -1,5 +1,6 @@
 import os
 from functools import partial
+import pickle
 
 from torch import optim
 
@@ -14,10 +15,13 @@ from SHAP_MIA.files.archive import create_archive
 def integration_test():
     (metrics_savepath, 
      nodes_models_savepath, 
-     orchestrator_model_savepath) = create_archive(r'/home/mzuziak/archives')
+     orchestrator_model_savepath) = create_archive(os.getcwd())
     
     
-    train, test = return_mnist()
+    with open(r'/home/mzuziak/snap/snapd-desktop-integration/83/Documents/MIA_SHAP/tests/integration_tests/test_3/custom_dataset/MNIST_4_dataset_pointers', 'rb') as file:
+        data = pickle.load(file)
+    orchestrators_data = data[0]
+    nodes_data = data[1]
     net_architecture = NeuralNetwork()
     optimizer_architecture = partial(optim.SGD, lr=0.001)
     model_tempate = FederatedModel(
@@ -30,17 +34,17 @@ def integration_test():
     
     simulation_instace = Simulation(model_template=model_tempate,
                                     node_template=node_template)
-    simulation_instace.attach_orchestrator_model(orchestrator_data=test)
+    simulation_instace.attach_orchestrator_model(orchestrator_data=orchestrators_data)
     simulation_instace.attach_node_model({
-        3: [train, test],
-        7: [train, test],
-        11: [test, test],
-        12: [test, test]
+        2: nodes_data[0],
+        9: nodes_data[1],
+        14: nodes_data[2],
+        18: nodes_data[3]
     })
     simulation_instace.training_protocol(
-        iterations=1,
+        iterations=15,
         sample_size=4,
-        local_epochs=1,
+        local_epochs=2,
         aggrgator=fed_avg_aggregator,
         shapley_processing_batch=8,
         metrics_savepath=metrics_savepath,
