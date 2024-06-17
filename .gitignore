@@ -5,6 +5,7 @@
 *fed_opt_inversed_delta
 *fed_opt_inversed_single_client
 *test_analysis
+*12_dataset
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
