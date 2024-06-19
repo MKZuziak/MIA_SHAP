@@ -5,23 +5,23 @@ def main():
     data_config = {
     "dataset_name" : "cifar10",
     "split_type" : "dirchlet_clusters_nooverlap",
-    "shards": 12,
+    "shards": 10,
     "local_test_size": 0.3,
     "transformations": {},
     "imbalanced_clients": {},
     "save_dataset": True,
     "save_transformations": True,
     "save_blueprint": True,
-    "agents": 12,
+    "agents": 10,
     "shuffle": True,
     "alpha": 1,
     "allow_replace": True,
     "save_path": os.getcwd(),
     "agents_cluster_belonging":
         {
-            1: [0, 1, 2, 3],
-            2: [4, 5, 6, 7],
-            3: [8, 9, 10, 11]
+            1: [0, 1, 2],
+            2: [3, 4, 5],
+            3: [6, 7, 8, 9]
         },
     "missing_classes":
         {

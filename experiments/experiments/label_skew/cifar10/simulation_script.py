@@ -15,7 +15,7 @@ def simulation_run():
     (metrics_savepath, 
      nodes_models_savepath, 
      orchestrator_model_savepath) = create_archive(os.getcwd())
-    root_dataset = r''
+    root_dataset = r'/home/maciejzuziak/raid/archive/MIA_SHAP/experiments/datasets/label_skew/cifar10/CIFAR10_10_dataset_pointers'
     with open(root_dataset, 'rb') as file:
         data = pickle.load(file)
     
@@ -38,14 +38,14 @@ def simulation_run():
     simulation_instace.attach_orchestrator_model(orchestrator_data=orchestrators_data)
     simulation_instace.attach_node_model({
         nodes_id: nodes_data[nodes_id]
-        for nodes_id in range(12)
+        for nodes_id in range(10)
     })
     simulation_instace.training_protocol(
-        iterations=50,
-        sample_size=12,
-        local_epochs=2,
+        iterations=100,
+        sample_size=10,
+        local_epochs=3,
         aggrgator=fed_avg_aggregator,
-        shapley_processing_batch=12,
+        shapley_processing_batch=25,
         metrics_savepath=metrics_savepath,
         nodes_models_savepath=nodes_models_savepath,
         orchestrator_models_savepath=orchestrator_model_savepath

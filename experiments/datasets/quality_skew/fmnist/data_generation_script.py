@@ -5,7 +5,7 @@ def main():
     data_config = {
     "dataset_name" : "fmnist",
     "split_type" : "homogeneous",
-    "shards": 12,
+    "shards": 10,
     "local_test_size": 0.3,
     "transformations": {0: {"transformation_type": "noise", "noise_multiplyer": 0.01},
                         1: {"transformation_type": "noise", "noise_multiplyer": 0.05},
@@ -13,9 +13,7 @@ def main():
                         3: {"transformation_type": "noise", "noise_multiplyer": 0.5},
                         4: {"transformation_type": "noise", "noise_multiplyer": 1.0},
                         5: {"transformation_type": "rotation", "degrees": 270},
-                        6: {"transformation_type": "rotation", "degrees": 270},
-                        7: {"transformation_type": "perspective_change", "distortion_scale": 0.9, "transformation_probability": 0.9},
-                        8: {"transformation_type": "perspective_change", "distortion_scale": 0.9, "transformation_probability": 0.9}
+                        6: {"transformation_type": "perspective_change", "distortion_scale": 0.9, "transformation_probability": 0.9},
                         },
     "imbalanced_clients": {},
     "save_dataset": True,
