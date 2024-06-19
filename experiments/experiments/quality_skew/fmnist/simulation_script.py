@@ -15,7 +15,7 @@ def simulation_run():
     (metrics_savepath, 
      nodes_models_savepath, 
      orchestrator_model_savepath) = create_archive(os.getcwd())
-    root_dataset = r'/home/maciejzuziak/raid/archive/MIA_SHAP/experiments/datasets/quality_skew/fmnist/FMNIST_10_dataset_pointers'
+    root_dataset = r'/home/maciejzuziak/raid/archive/MIA_SHAP/experiments/datasets/quality_skew/fmnist/FMNIST_8_dataset_pointers'
     with open(root_dataset, 'rb') as file:
         data = pickle.load(file)
     
@@ -38,11 +38,11 @@ def simulation_run():
     simulation_instace.attach_orchestrator_model(orchestrator_data=orchestrators_data)
     simulation_instace.attach_node_model({
         nodes_id: nodes_data[nodes_id]
-        for nodes_id in range(10)
+        for nodes_id in range(8)
     })
     simulation_instace.training_protocol(
         iterations=60,
-        sample_size=10,
+        sample_size=8,
         local_epochs=3,
         aggrgator=fed_avg_aggregator,
         shapley_processing_batch=25,
