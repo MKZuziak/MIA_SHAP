@@ -40,14 +40,14 @@ def simulation_run():
     simulation_instace.attach_orchestrator_model(orchestrator_data=orchestrators_data)
     simulation_instace.attach_node_model({
         nodes_id: nodes_data[nodes_id]
-        for nodes_id in range(10)
+        for nodes_id in range(8)
     })
     simulation_instace.training_protocol(
         iterations=100,
         sample_size=10,
         local_epochs=3,
         aggrgator=fed_avg_aggregator,
-        shapley_processing_batch=25,
+        shapley_processing_batch=2,
         metrics_savepath=metrics_savepath,
         nodes_models_savepath=nodes_models_savepath,
         orchestrator_models_savepath=orchestrator_model_savepath
