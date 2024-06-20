@@ -1,1 +1,0 @@
-0: airplane1: automobile2: bird3: cat4: deer5: dog6: frog7: horse8: ship9: truck

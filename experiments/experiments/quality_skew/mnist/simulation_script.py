@@ -14,7 +14,9 @@ from model import MNIST_Expanded_CNN
 def simulation_run():
     (metrics_savepath, 
      nodes_models_savepath, 
-     orchestrator_model_savepath) = create_archive(os.getcwd())
+     orchestrator_model_savepath) = create_archive(
+         path = os.getcwd(),
+         archive_name='MNIST_QUALITY_SKEW')
     root_dataset = r'/home/maciejzuziak/raid/archive/MIA_SHAP/experiments/datasets/quality_skew/mnist/MNIST_8_dataset_pointers'
     with open(root_dataset, 'rb') as file:
         data = pickle.load(file)
@@ -45,7 +47,7 @@ def simulation_run():
         sample_size=8,
         local_epochs=2,
         aggrgator=fed_avg_aggregator,
-        shapley_processing_batch=25,
+        shapley_processing_batch=4,
         metrics_savepath=metrics_savepath,
         nodes_models_savepath=nodes_models_savepath,
         orchestrator_models_savepath=orchestrator_model_savepath

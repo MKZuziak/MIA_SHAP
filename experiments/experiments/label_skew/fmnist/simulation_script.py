@@ -14,7 +14,9 @@ from model import FMNIST_Expanded_CNN
 def simulation_run():
     (metrics_savepath, 
      nodes_models_savepath, 
-     orchestrator_model_savepath) = create_archive(os.getcwd())
+     orchestrator_model_savepath) = create_archive(
+         path = os.getcwd(),
+         archive_name='FMNIST_QUALITY_SKEW')
     root_dataset = r'/home/maciejzuziak/raid/archive/MIA_SHAP/experiments/datasets/label_skew/fmnist/FMNIST_10_dataset_pointers'
     with open(root_dataset, 'rb') as file:
         data = pickle.load(file)
