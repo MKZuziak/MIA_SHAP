@@ -7,6 +7,10 @@
 *test_analysis
 *8_dataset
 *10_dataset
+*blueprint.csv
+*blueprinttranslation.txt
+*dataset_pointers
+*png
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
