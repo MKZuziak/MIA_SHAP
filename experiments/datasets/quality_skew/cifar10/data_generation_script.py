@@ -5,7 +5,7 @@ def main():
     data_config = {
     "dataset_name" : "cifar10",
     "split_type" : "homogeneous",
-    "shards": 8,
+    "shards": 6,
     "local_test_size": 0.3,
     "transformations": {0: {"transformation_type": "noise", "noise_multiplyer": 0.01},
                         1: {"transformation_type": "noise", "noise_multiplyer": 0.02},
@@ -16,7 +16,7 @@ def main():
     "save_dataset": True,
     "save_transformations": True,
     "save_blueprint": True,
-    "agents": 8,
+    "agents": 6,
     "shuffle": True,
     "save_path": os.getcwd()}
     generate_dataset(config=data_config)

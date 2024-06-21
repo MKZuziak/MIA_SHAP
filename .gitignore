@@ -5,12 +5,14 @@
 *fed_opt_inversed_delta
 *fed_opt_inversed_single_client
 *test_analysis
+*6_dataset
 *8_dataset
 *10_dataset
 *blueprint.csv
 *blueprinttranslation.txt
 *dataset_pointers
 *png
+*.pt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
