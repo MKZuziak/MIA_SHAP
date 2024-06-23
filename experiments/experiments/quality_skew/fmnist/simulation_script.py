@@ -28,7 +28,7 @@ def simulation_run():
     model_tempate = FederatedModel(
         net=net_architecture,
         optimizer_template=optimizer_architecture,
-        loader_batch_size=32
+        loader_batch_size=64
     )
     node_template = FederatedNode()
     fed_avg_aggregator = Fedopt_Optimizer()
@@ -43,7 +43,7 @@ def simulation_run():
         for nodes_id in range(8)
     })
     simulation_instace.training_protocol(
-        iterations=60,
+        iterations=50,
         sample_size=8,
         local_epochs=3,
         aggrgator=fed_avg_aggregator,

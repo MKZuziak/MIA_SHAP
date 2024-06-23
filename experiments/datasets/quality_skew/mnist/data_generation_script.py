@@ -7,10 +7,10 @@ def main():
     "split_type" : "homogeneous",
     "shards": 8,
     "local_test_size": 0.3,
-    "transformations": {0: {"transformation_type": "noise", "noise_multiplyer": 0.01},
-                        1: {"transformation_type": "noise", "noise_multiplyer": 0.02},
-                        2: {"transformation_type": "noise", "noise_multiplyer": 0.05},
-                        3: {"transformation_type": "noise", "noise_multiplyer": 0.1}
+    "transformations": {0: {"transformation_type": "noise", "noise_multiplyer": 0.002},
+                        1: {"transformation_type": "noise", "noise_multiplyer": 0.005},
+                        2: {"transformation_type": "noise", "noise_multiplyer": 0.01},
+                        3: {"transformation_type": "noise", "noise_multiplyer": 0.25}
                         },
     "imbalanced_clients": {},
     "save_dataset": True,

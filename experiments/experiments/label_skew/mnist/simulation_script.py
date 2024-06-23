@@ -17,7 +17,7 @@ def simulation_run():
      orchestrator_model_savepath) = create_archive(
          path = os.getcwd(),
          archive_name='MNIST_LABEL_SKEW')
-    root_dataset = r'/home/maciejzuziak/raid/archive/MIA_SHAP/experiments/datasets/label_skew/mnist/MNIST_10_dataset_pointers'
+    root_dataset = r'/home/maciejzuziak/raid/archive/MIA_SHAP/experiments/datasets/label_skew/mnist/MNIST_8_dataset_pointers'
     with open(root_dataset, 'rb') as file:
         data = pickle.load(file)
     
@@ -28,7 +28,7 @@ def simulation_run():
     model_tempate = FederatedModel(
         net=net_architecture,
         optimizer_template=optimizer_architecture,
-        loader_batch_size=32
+        loader_batch_size=64
     )
     node_template = FederatedNode()
     fed_avg_aggregator = Fedopt_Optimizer()
@@ -44,7 +44,7 @@ def simulation_run():
     })
     simulation_instace.training_protocol(
         iterations=50,
-        sample_size=10,
+        sample_size=8,
         local_epochs=2,
         aggrgator=fed_avg_aggregator,
         shapley_processing_batch=2,
