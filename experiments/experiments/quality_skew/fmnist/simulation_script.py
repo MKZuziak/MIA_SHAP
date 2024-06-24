@@ -47,7 +47,7 @@ def simulation_run():
         sample_size=8,
         local_epochs=3,
         aggrgator=fed_avg_aggregator,
-        shapley_processing_batch=2,
+        shapley_processing_batch=5,
         metrics_savepath=metrics_savepath,
         nodes_models_savepath=nodes_models_savepath,
         orchestrator_models_savepath=orchestrator_model_savepath

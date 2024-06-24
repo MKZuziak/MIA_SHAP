@@ -13,6 +13,7 @@
 *dataset_pointers
 *png
 *.pt
+*tar.gz
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
