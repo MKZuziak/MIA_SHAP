@@ -10,7 +10,7 @@ def main():
     "transformations": {0: {"transformation_type": "noise", "noise_multiplyer": 0.002},
                         1: {"transformation_type": "noise", "noise_multiplyer": 0.005},
                         2: {"transformation_type": "noise", "noise_multiplyer": 0.01},
-                        3: {"transformation_type": "noise", "noise_multiplyer": 0.25}
+                        3: {"transformation_type": "noise", "noise_multiplyer": 0.04}
                         },
     "imbalanced_clients": {},
     "save_dataset": True,
