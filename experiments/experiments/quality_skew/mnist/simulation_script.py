@@ -24,7 +24,7 @@ def simulation_run():
     orchestrators_data = data[0]
     nodes_data = data[1]
     net_architecture = MNIST_Expanded_CNN()
-    optimizer_architecture = partial(optim.SGD, lr=0.001)
+    optimizer_architecture = partial(optim.SGD, lr=0.01)
     model_tempate = FederatedModel(
         net=net_architecture,
         optimizer_template=optimizer_architecture,
@@ -45,7 +45,7 @@ def simulation_run():
     simulation_instace.training_protocol(
         iterations=50,
         sample_size=8,
-        local_epochs=2,
+        local_epochs=4,
         aggrgator=fed_avg_aggregator,
         shapley_processing_batch=5,
         metrics_savepath=metrics_savepath,

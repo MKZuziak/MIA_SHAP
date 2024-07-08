@@ -9,8 +9,8 @@ def main():
     "local_test_size": 0.3,
     "transformations": {0: {"transformation_type": "noise", "noise_multiplyer": 0.002},
                         1: {"transformation_type": "noise", "noise_multiplyer": 0.005},
-                        2: {"transformation_type": "noise", "noise_multiplyer": 0.01},
-                        3: {"transformation_type": "noise", "noise_multiplyer": 0.04}
+                        2: {"transformation_type": "noise", "noise_multiplyer": 0.005},
+                        3: {"transformation_type": "noise", "noise_multiplyer": 0.01}
                         },
     "imbalanced_clients": {},
     "save_dataset": True,
