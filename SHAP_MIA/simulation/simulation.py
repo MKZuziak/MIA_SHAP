@@ -12,9 +12,10 @@ from SHAP_MIA.node.federated_node import FederatedNode
 from SHAP_MIA.operations.orchestrations import train_nodes, sample_nodes
 from SHAP_MIA.aggregators.aggregator import Aggregator
 from SHAP_MIA.operations.evaluations import evaluate_model, automatic_node_evaluation
-from SHAP_MIA.files.handlers import save_nested_dict_ascsv, save_partial_shapley, save_full_shapley
+from SHAP_MIA.files.handlers import save_nested_dict_ascsv, save_partial_contribution, save_full_contribution
 from SHAP_MIA.files.loggers import orchestrator_logger
 from SHAP_MIA.shapley_calculation.shapley_calculation import Shapley_Calculation
+from SHAP_MIA.loo_calculation.loo_calculation import LOO_Calculation
 from SHAP_MIA.utils.computations import average_of_weigts
 
 
@@ -204,6 +205,9 @@ class Simulation():
             global_iterations = iterations,
             processing_batch=shapley_processing_batch
         )
+        loo_manager = LOO_Calculation(
+            global_iterations = iterations
+        )
         for iteration in range(iterations):
             orchestrator_logger.info(f"Iteration {iteration}")
             
@@ -229,6 +233,13 @@ class Simulation():
             )
             
             shapley_manager.calculate_iteration_shapley(
+                iteration = iteration,
+                gradients = gradients,
+                previous_weights = self.orchestrator_model.get_weights(),
+                model_template = copy.deepcopy(self.orchestrator_model),
+                aggregator_template = aggrgator
+            )
+            loo_manager.calculate_iteration_loo(
                 iteration = iteration,
                 gradients = gradients,
                 previous_weights = self.orchestrator_model.get_weights(),
@@ -279,13 +290,25 @@ class Simulation():
             all_nodes_ids=self.network.keys(),
             total_iteration_no=iterations
         )
-        save_partial_shapley(
+        loo_manager.calculate_final_loo(
+            all_nodes_ids=self.network.keys(),
+            total_iteration_no=iterations
+        )
+        save_partial_contribution(
             data=shapley_manager.epoch_shapley,
             save_path=os.path.join(metrics_savepath, 'partial_shapley.csv')
         )
-        save_full_shapley(
+        save_partial_contribution(
+            data=loo_manager.epoch_loo,
+            save_path=os.path.join(metrics_savepath, 'partial_loo.csv')
+        )
+        save_full_contribution(
             data=shapley_manager.total_shapley,
             save_path=os.path.join(metrics_savepath, 'full_shapley.csv')
+        )
+        save_full_contribution(
+            data=loo_manager.total_loo,
+            save_path=os.path.join(metrics_savepath, 'full_loo.csv')
         )
         orchestrator_logger.critical("Training complete")
         # return 0

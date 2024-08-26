@@ -53,7 +53,7 @@ def save_nested_dict_ascsv(
             writer.writerow(row)
 
 
-def save_partial_shapley(
+def save_partial_contribution(
     data: dict[dict],
     save_path: str):
     fieldnames = ['iteration', 'node_id', 'accuracy', 'test_loss', 'f1score', 'precision', 'recall', 'accuracy_per_0', 'accuracy_per_1',
@@ -70,7 +70,7 @@ def save_partial_shapley(
                 writer.writerow(row)
 
 
-def save_full_shapley(
+def save_full_contribution(
     data: dict[dict],
     save_path: str):
     fieldnames = ['node_id', 'accuracy', 'test_loss', 'f1score', 'precision', 'recall', 'accuracy_per_0', 'accuracy_per_1',
