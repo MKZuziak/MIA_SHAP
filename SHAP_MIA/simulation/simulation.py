@@ -16,6 +16,7 @@ from SHAP_MIA.files.handlers import save_nested_dict_ascsv, save_partial_contrib
 from SHAP_MIA.files.loggers import orchestrator_logger
 from SHAP_MIA.shapley_calculation.shapley_calculation import Shapley_Calculation
 from SHAP_MIA.loo_calculation.loo_calculation import LOO_Calculation
+from SHAP_MIA.alpha_calculation.alpha_calculation import ALPHA_Calculation
 from SHAP_MIA.utils.computations import average_of_weigts
 
 
@@ -208,6 +209,11 @@ class Simulation():
         loo_manager = LOO_Calculation(
             global_iterations = iterations
         )
+        alpha_manager = ALPHA_Calculation(
+            global_iterations = iterations,
+            amplification = 5
+        )
+        
         for iteration in range(iterations):
             orchestrator_logger.info(f"Iteration {iteration}")
             
@@ -240,6 +246,13 @@ class Simulation():
                 aggregator_template = aggrgator
             )
             loo_manager.calculate_iteration_loo(
+                iteration = iteration,
+                gradients = gradients,
+                previous_weights = self.orchestrator_model.get_weights(),
+                model_template = copy.deepcopy(self.orchestrator_model),
+                aggregator_template = aggrgator
+            )
+            alpha_manager.calculate_iteration_alpha(
                 iteration = iteration,
                 gradients = gradients,
                 previous_weights = self.orchestrator_model.get_weights(),
@@ -294,6 +307,10 @@ class Simulation():
             all_nodes_ids=self.network.keys(),
             total_iteration_no=iterations
         )
+        alpha_manager.calculate_final_alpha(
+            all_nodes_ids=self.network.keys(),
+            total_iteration_no=iterations
+        )
         save_partial_contribution(
             data=shapley_manager.epoch_shapley,
             save_path=os.path.join(metrics_savepath, 'partial_shapley.csv')
@@ -302,6 +319,10 @@ class Simulation():
             data=loo_manager.epoch_loo,
             save_path=os.path.join(metrics_savepath, 'partial_loo.csv')
         )
+        save_partial_contribution(
+            data=alpha_manager.epoch_alpha,
+            save_path=os.path.join(metrics_savepath, 'partial_alpha.csv')
+        )
         save_full_contribution(
             data=shapley_manager.total_shapley,
             save_path=os.path.join(metrics_savepath, 'full_shapley.csv')
@@ -309,6 +330,10 @@ class Simulation():
         save_full_contribution(
             data=loo_manager.total_loo,
             save_path=os.path.join(metrics_savepath, 'full_loo.csv')
+        )
+        save_full_contribution(
+            data=alpha_manager.total_alpha,
+            save_path=os.path.join(metrics_savepath, 'full_alpha.csv')
         )
         orchestrator_logger.critical("Training complete")
         # return 0

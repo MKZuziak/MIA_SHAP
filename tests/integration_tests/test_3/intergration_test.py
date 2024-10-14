@@ -18,7 +18,7 @@ def integration_test():
      orchestrator_model_savepath) = create_archive(os.getcwd())
     
     
-    with open(r'/home/maciejzuziak/raid/archive/MIA_SHAP/tests/integration_tests/test_3/custom_dataset/MNIST_4_dataset_pointers', 'rb') as file:
+    with open(r'/home/maciejzuziak/raid/MIA_SHAP/tests/integration_tests/test_3/custom_dataset/MNIST_4_dataset_pointers', 'rb') as file:
         data = pickle.load(file)
     orchestrators_data = data[0]
     nodes_data = data[1]
