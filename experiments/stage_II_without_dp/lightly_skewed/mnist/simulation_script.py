@@ -4,23 +4,23 @@ import pickle
 
 from torch import optim
 
-from tests.test_props.datasets import return_mnist
-from tests.test_props.nets import NeuralNetwork
+import timm
+
 from SHAP_MIA.model.federated_model import FederatedModel
 from SHAP_MIA.node.federated_node import FederatedNode
 from SHAP_MIA.simulation.simulation import Simulation
 from SHAP_MIA.aggregators.fedopt_aggregator import Fedopt_Optimizer
 from SHAP_MIA.files.archive import create_archive
 
-DATASET_PATH = None
-NET_ARCHITECTURE = None
+DATASET_PATH = r'/home/maciejzuziak/raid/MIA_SHAP/experiments/datasets/uniform/mnist/MNIST_8_dataset_pointers'
+NET_ARCHITECTURE = timm.create_model('mobilenetv3_small_100', num_classes=10, pretrained=False, in_chans=1)
 NUMBER_OF_CLIENTS = 8
-ITERATIONS = 50
+ITERATIONS = 40
 LOCAL_EPOCHS = 2
 LOADER_BATCH_SIZE = 32
 LEARNING_RATE = 0.001
-ARCHIVE_PATH = None
-ARCHIVE_NAME = None
+ARCHIVE_PATH = os.getcwd()
+ARCHIVE_NAME = 'withoutDP_uniform_mnist'
 
 
 def integration_test():
@@ -35,6 +35,7 @@ def integration_test():
         data = pickle.load(file)
     orchestrators_data = data[0]
     nodes_data = data[1]
+    print(nodes_data)
     net_architecture = NET_ARCHITECTURE
     optimizer_architecture = partial(optim.SGD, lr=LEARNING_RATE)
     model_tempate = FederatedModel(

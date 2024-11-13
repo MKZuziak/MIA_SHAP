@@ -2,6 +2,8 @@ import os
 from functools import partial
 import pickle
 
+import timm
+
 from torch import optim
 
 from tests.test_props.datasets import return_mnist
@@ -12,15 +14,15 @@ from SHAP_MIA.simulation.simulation import Simulation
 from SHAP_MIA.aggregators.fedopt_aggregator import Fedopt_Optimizer
 from SHAP_MIA.files.archive import create_archive
 
-DATASET_PATH = None
-NET_ARCHITECTURE = None
+DATASET_PATH = r'/home/maciejzuziak/raid/MIA_SHAP/experiments/datasets/uniform/cifar10/CIFAR10_8_dataset_pointers'
+NET_ARCHITECTURE = timm.create_model('resnet34', num_classes=10, pretrained=False, in_chans=3)
 NUMBER_OF_CLIENTS = 8
 ITERATIONS = 80
 LOCAL_EPOCHS = 3
 LOADER_BATCH_SIZE = 64
 LEARNING_RATE = 0.001
-ARCHIVE_PATH = None
-ARCHIVE_NAME = None
+ARCHIVE_PATH = os.getcwd()
+ARCHIVE_NAME = 'withoutDP_uniform_cifar10'
 
 
 def integration_test():
