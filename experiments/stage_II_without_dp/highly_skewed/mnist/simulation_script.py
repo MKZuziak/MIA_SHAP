@@ -14,7 +14,7 @@ from SHAP_MIA.simulation.simulation import Simulation
 from SHAP_MIA.aggregators.fedopt_aggregator import Fedopt_Optimizer
 from SHAP_MIA.files.archive import create_archive
 
-DATASET_PATH = r'/home/maciejzuziak/raid/MIA_SHAP/experiments/datasets/lightly_skewed/mnist/MNIST_8_dataset_pointers'
+DATASET_PATH = r'/home/maciejzuziak/raid/MIA_SHAP/experiments/datasets/heavily_skewed/mnist/MNIST_8_dataset_pointers'
 NET_ARCHITECTURE = timm.create_model('resnet18', num_classes=10, pretrained=False, in_chans=1)
 NUMBER_OF_CLIENTS = 8
 ITERATIONS = 40
@@ -22,7 +22,7 @@ LOCAL_EPOCHS = 2
 LOADER_BATCH_SIZE = 32
 LEARNING_RATE = 0.001
 ARCHIVE_PATH = os.getcwd()
-ARCHIVE_NAME = 'withoutDP_uniform_mnist'
+ARCHIVE_NAME = 'withoutDP_hs_mnist'
 
 def integration_test():
     (metrics_savepath, 
