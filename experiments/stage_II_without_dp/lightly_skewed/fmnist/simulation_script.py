@@ -22,7 +22,7 @@ LOCAL_EPOCHS = 2
 LOADER_BATCH_SIZE = 32
 LEARNING_RATE = 0.001
 ARCHIVE_PATH = os.getcwd()
-ARCHIVE_NAME = 'withoutDP_uniform_fmnist'
+ARCHIVE_NAME = 'withoutDP_ls_fmnist'
 
 
 def integration_test():
