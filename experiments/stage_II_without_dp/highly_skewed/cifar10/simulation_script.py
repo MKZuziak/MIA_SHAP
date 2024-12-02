@@ -12,7 +12,7 @@ from SHAP_MIA.simulation.simulation import Simulation
 from SHAP_MIA.aggregators.fedopt_aggregator import Fedopt_Optimizer
 from SHAP_MIA.files.archive import create_archive
 
-DATASET_PATH = r'/home/maciejzuziak/raid/MIA_SHAP/experiments/datasets/heavily_skewed/cifar10/CIFAR10_8_dataset_pointers'
+DATASET_PATH = r'/home/maciejzuziak/raid/MIA_SHAP/experiments/datasets/highly_skewed/cifar10/CIFAR10_8_dataset_pointers'
 NET_ARCHITECTURE = timm.create_model('resnet34', num_classes=10, pretrained=False, in_chans=3)
 NUMBER_OF_CLIENTS = 8
 ITERATIONS = 80
