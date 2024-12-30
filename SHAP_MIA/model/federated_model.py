@@ -11,6 +11,8 @@ from torchvision import transforms
 from sklearn.metrics import confusion_matrix, f1_score, precision_score, recall_score
 
 from SHAP_MIA.files.loggers import model_logger
+import opacus
+from opacus.validators import ModuleValidator
 
 
 # Setting up the model logger
@@ -66,9 +68,11 @@ class FederatedModel:
         self.batch_size = loader_batch_size
         # List containing all the parameters to update
         params_to_update = []
-        for _, param in self.net.named_parameters():
+        for name, param in self.net.named_parameters():
             if param.requires_grad is True:
                 params_to_update.append(param)
+        
+                
         self.optimizer = optimizer_template(params_to_update)
         
 
@@ -292,7 +296,9 @@ class FederatedModel:
     def train(
         self,
         iteration: int,
-        epoch: int
+        epoch: int,
+        dp:bool,
+        privacy_engine=None
         ) -> tuple[float, torch.tensor]:
         """Train the network and computes loss and accuracy.
         
@@ -314,7 +320,23 @@ class FederatedModel:
         # Try: to place a net on the device during the training stage
         self.net.to(self.device)
         self.net.train()
-        for _, dic in enumerate(self.trainloader):
+        dataloader = self.trainloader
+        
+        privacy_engine = opacus.PrivacyEngine()
+
+        #self.net = ModuleValidator.fix(self.net)# To be removed
+
+        if dp:
+            self.net,self.optimizer ,dataloader = privacy_engine.make_private(
+               module=self.net,
+               optimizer=self.optimizer ,
+               data_loader=self.trainloader,
+               noise_multiplier=1.0,
+               max_grad_norm=1.0
+            )
+            
+
+        for _, dic in enumerate(dataloader):
             inputs = dic['image']
             targets = dic['label']
             inputs, targets = inputs.to(self.device), targets.to(self.device)
@@ -325,6 +347,7 @@ class FederatedModel:
             loss.backward()
             self.optimizer.step()
             
+            
             train_loss += loss.item()
             _, predicted = outputs.max(1)
             total += targets.size(0)
@@ -333,6 +356,9 @@ class FederatedModel:
             # Emptying the cuda_cache
             # if torch.cuda.is_available():
             #     torch.cuda.empty_cache()
+            if dp:
+                epslion,best_alpha= privacy_engine.get_epsilon(delta=1e-5)
+                print(f"Epoch{epoch+1}: epsilon={epsilon:.2f}, delta = 1e-5")
 
         loss = train_loss / len(self.trainloader)
         accuracy = correct / total
