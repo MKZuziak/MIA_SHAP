@@ -19,7 +19,7 @@ from opacus import PrivacyEngine
 DATASET_PATH = r'/home/mzuziak/archives/MIA_SHAP/experiments/datasets/uniform/mnist/MNIST_8_dataset'
 
 NET_ARCHITECTURE = timm.create_model('resnet18', num_classes=10, pretrained=False, in_chans=1)
-NUMBER_OF_CLIENTS = 8
+NUMBER_OF_CLIENTS = 2
 ITERATIONS = 5
 LOCAL_EPOCHS = 2
 LOADER_BATCH_SIZE = 32

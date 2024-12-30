@@ -325,12 +325,10 @@ class FederatedModel:
         self.net.train()
         dataloader = self.trainloader
         
-        privacy_engine = opacus.PrivacyEngine()
-
         #self.net = ModuleValidator.fix(self.net)# To be removed
 
         if self.dp:
-            self.net,self.optimizer ,dataloader = privacy_engine.make_private(
+            self.net,self.optimizer ,dataloader = self.privacy_engine.make_private(
                module=self.net,
                optimizer=self.optimizer ,
                data_loader=self.trainloader,
@@ -360,7 +358,7 @@ class FederatedModel:
             # if torch.cuda.is_available():
             #     torch.cuda.empty_cache()
             if self.dp:
-                epslion,best_alpha= privacy_engine.get_epsilon(delta=1e-5)
+                epslion,best_alpha = self.privacy_engine.get_epsilon(delta=1e-5)
                 print(f"Epoch{epoch+1}: epsilon={epsilon:.2f}, delta = 1e-5")
 
         loss = train_loss / len(self.trainloader)
