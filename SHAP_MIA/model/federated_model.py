@@ -31,7 +31,10 @@ class FederatedModel:
         net: torch.nn.Module,
         optimizer_template: partial,
         loader_batch_size: int,
-        force_cpu: bool = False) -> None:
+        force_cpu: bool = False,
+        dp: bool = False,
+        privacy_engine = None
+        ) -> None:
         """Initialize the Federated Model. This model will be attached to a 
         specific client and will wait for further instructionss
         
@@ -60,6 +63,8 @@ class FederatedModel:
         
         # Second computaiton device to offload parameters: CPU
         self.cpu = torch.device("cpu")
+        self.dp = dp
+        self.privacy_engine = privacy_engine
         
         self.initial_model = None
         self.optimizer = None  
@@ -297,8 +302,6 @@ class FederatedModel:
         self,
         iteration: int,
         epoch: int,
-        dp:bool,
-        privacy_engine=None
         ) -> tuple[float, torch.tensor]:
         """Train the network and computes loss and accuracy.
         
@@ -326,7 +329,7 @@ class FederatedModel:
 
         #self.net = ModuleValidator.fix(self.net)# To be removed
 
-        if dp:
+        if self.dp:
             self.net,self.optimizer ,dataloader = privacy_engine.make_private(
                module=self.net,
                optimizer=self.optimizer ,
@@ -356,7 +359,7 @@ class FederatedModel:
             # Emptying the cuda_cache
             # if torch.cuda.is_available():
             #     torch.cuda.empty_cache()
-            if dp:
+            if self.dp:
                 epslion,best_alpha= privacy_engine.get_epsilon(delta=1e-5)
                 print(f"Epoch{epoch+1}: epsilon={epsilon:.2f}, delta = 1e-5")
 
