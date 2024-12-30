@@ -60,8 +60,6 @@ class FederatedModel:
             self.device = torch.device('cpu')
         else:
             self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        
-        # Second computaiton device to offload parameters: CPU
         self.cpu = torch.device("cpu")
         self.dp = dp
         self.privacy_engine = privacy_engine
@@ -224,6 +222,7 @@ class FederatedModel:
         self.initial_model.to(self.cpu)
         weights_trained = self.net.state_dict()
         weights_initial = self.initial_model.state_dict()
+        weights_trained = OrderedDict((key.replace("_module.", ""), values) for key, values in weights_trained.items())
         
         self.gradients = OrderedDict.fromkeys(weights_trained.keys(), 0)
         for key in weights_trained:
@@ -347,6 +346,7 @@ class FederatedModel:
             loss = criterion(outputs, targets)
             loss.backward()
             self.optimizer.step()
+            #self.privacy_engine.step()
             
             
             train_loss += loss.item()
@@ -357,9 +357,10 @@ class FederatedModel:
             # Emptying the cuda_cache
             # if torch.cuda.is_available():
             #     torch.cuda.empty_cache()
+            self.optimizer.zero_grad()
             if self.dp:
-                epslion,best_alpha = self.privacy_engine.get_epsilon(delta=1e-5)
-                print(f"Epoch{epoch+1}: epsilon={epsilon:.2f}, delta = 1e-5")
+                epslion = self.privacy_engine.get_epsilon(delta=1e-5)
+                print(f"Epoch{epoch+1}: epsilon={epslion:.2f}")
 
         loss = train_loss / len(self.trainloader)
         accuracy = correct / total
