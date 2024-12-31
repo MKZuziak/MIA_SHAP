@@ -19,8 +19,8 @@ from opacus import PrivacyEngine
 DATASET_PATH = r'/home/mzuziak/archives/MIA_SHAP/experiments/datasets/uniform/mnist/MNIST_8_dataset'
 
 NET_ARCHITECTURE = timm.create_model('resnet18', num_classes=10, pretrained=False, in_chans=1)
-NUMBER_OF_CLIENTS = 2
-ITERATIONS = 1
+NUMBER_OF_CLIENTS = 4
+ITERATIONS = 40
 LOCAL_EPOCHS = 2
 LOADER_BATCH_SIZE = 32
 LEARNING_RATE = 0.001
@@ -48,29 +48,45 @@ def integration_test():
 
     optimizer_architecture = partial(optim.SGD, lr=LEARNING_RATE)
     ##########################
-   
 
-    privacy_engine = PrivacyEngine()
     net_architecture = ModuleValidator.fix(net_architecture)
+    dp_settings = {
+        0: {
+            'DP': True,
+            'Privacy_Engine': PrivacyEngine()
+        },
+        1: {
+            'DP': True,
+            'Privacy_Engine': PrivacyEngine()
+        },
+        2: {
+            'DP': False,
+            'Privacy_Engine': None,
+        },
+        3: {
+            'DP': False,
+            'Privacy_Engine': None
+        }
+    }
 
     ##########################
 
     model_tempate = FederatedModel(
         net=net_architecture,
         optimizer_template=optimizer_architecture,
-        loader_batch_size=LOADER_BATCH_SIZE,
-        dp=True,
-        privacy_engine=privacy_engine
+        loader_batch_size=LOADER_BATCH_SIZE
     )
+    
     node_template = FederatedNode()
     fed_avg_aggregator = Fedopt_Optimizer()
     
     simulation_instace = Simulation(model_template=model_tempate,
                                     node_template=node_template)
     simulation_instace.attach_orchestrator_model(orchestrator_data=orchestrators_data)
-    simulation_instace.attach_node_model({
-            node: nodes_data[node] for node in range(NUMBER_OF_CLIENTS)
-        })
+    simulation_instace.attach_node_model(
+        nodes_data = {node: nodes_data[node] for node in range(NUMBER_OF_CLIENTS)},
+        dp_settings = dp_settings
+        )
     simulation_instace.training_protocol(
         iterations=ITERATIONS,
         sample_size=NUMBER_OF_CLIENTS,

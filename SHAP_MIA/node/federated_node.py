@@ -38,7 +38,9 @@ class FederatedNode:
         node_id: int | str,
         model: FederatedModel,
         data: Any,
-        orchestrator: bool = False
+        orchestrator: bool = False,
+        dp: bool = False,
+        privacy_engine = None
     ) -> None:
         """Attaches dataset and id to a node, creating an individualised version.
         
@@ -61,7 +63,9 @@ class FederatedNode:
         self.model.attach_dataset_id(
             local_dataset=data,
             node_name=self.node_id,
-            only_test=orchestrator)
+            only_test=orchestrator,
+            dp=dp,
+            privacy_engine=privacy_engine)
     
     
     def get_weights(self) -> OrderedDict:

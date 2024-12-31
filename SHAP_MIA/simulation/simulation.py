@@ -93,8 +93,11 @@ class Simulation():
                                                   only_test=True)
     
     
-    def attach_node_model(self,
-                          nodes_data: dict):
+    def attach_node_model(
+        self,
+        nodes_data: dict,
+        dp_settings: dict
+        ):
         """Attaches models of the nodes to the simulation instance.
         
         Parameters
@@ -105,11 +108,16 @@ class Simulation():
         -------
         None
         """
-        for node_id, data in nodes_data.items():
+        for (node_id, data), (node_id_dp, dp_setting) in zip(nodes_data.items(), dp_settings.items()):
+            assert node_id == node_id_dp
             self.network[node_id] = copy.deepcopy(self.node_template)
-            self.network[node_id].connect_data_id(node_id = node_id,
-                                                  model = copy.deepcopy(self.model_template),
-                                                  data=data)
+            self.network[node_id].connect_data_id(
+                node_id = node_id,
+                model = copy.deepcopy(self.model_template),
+                data=data,
+                dp=dp_setting['DP'],
+                privacy_engine=dp_setting['Privacy_Engine']
+                )
     
 
     def train_epoch(self,

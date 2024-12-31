@@ -31,9 +31,7 @@ class FederatedModel:
         net: torch.nn.Module,
         optimizer_template: partial,
         loader_batch_size: int,
-        force_cpu: bool = False,
-        dp: bool = False,
-        privacy_engine = None
+        force_cpu: bool = False
         ) -> None:
         """Initialize the Federated Model. This model will be attached to a 
         specific client and will wait for further instructionss
@@ -61,8 +59,6 @@ class FederatedModel:
         else:
             self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.cpu = torch.device("cpu")
-        self.dp = dp
-        self.privacy_engine = privacy_engine
         
         self.initial_model = None
         self.optimizer = None  
@@ -84,7 +80,9 @@ class FederatedModel:
         local_dataset: list[datasets.arrow_dataset.Dataset, datasets.arrow_dataset.Dataset] | list[datasets.arrow_dataset.Dataset],
         node_name: int | str,
         only_test: bool = False,
-        hugging_face_map: bool = True
+        hugging_face_map: bool = True,
+        dp: bool = False,
+        privacy_engine = None
         ) -> None:
         """Attaches huggingface dataset to the model by firstly converting it into a pytorch-appropiate standard.
         
@@ -107,6 +105,8 @@ class FederatedModel:
         None
         """
         self.node_name = node_name
+        self.dp = dp
+        self.privacy_engine = privacy_engine
         if only_test == False:
             if hugging_face_map:
                 convert_tensor = transforms.ToTensor()
@@ -222,7 +222,8 @@ class FederatedModel:
         self.initial_model.to(self.cpu)
         weights_trained = self.net.state_dict()
         weights_initial = self.initial_model.state_dict()
-        weights_trained = OrderedDict((key.replace("_module.", ""), values) for key, values in weights_trained.items())
+        if self.dp:
+            weights_trained = OrderedDict((key.replace("_module.", ""), values) for key, values in weights_trained.items())
         
         self.gradients = OrderedDict.fromkeys(weights_trained.keys(), 0)
         for key in weights_trained:
