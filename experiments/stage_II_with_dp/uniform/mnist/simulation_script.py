@@ -16,10 +16,10 @@ from opacus.validators import ModuleValidator
 from opacus import PrivacyEngine
 
 
-DATASET_PATH = r'/home/mzuziak/archives/MIA_SHAP/experiments/datasets/uniform/mnist/MNIST_8_dataset'
+DATASET_PATH = r'/home/maciejzuziak/raid/MIA_SHAP/experiments/datasets/uniform/mnist/MNIST_8_dataset_pointers'
 
 NET_ARCHITECTURE = timm.create_model('resnet18', num_classes=10, pretrained=False, in_chans=1)
-NUMBER_OF_CLIENTS = 4
+NUMBER_OF_CLIENTS = 8
 ITERATIONS = 40
 LOCAL_EPOCHS = 2
 LOADER_BATCH_SIZE = 32
@@ -39,9 +39,8 @@ def integration_test():
          archive_name=ARCHIVE_NAME
      )
     
-    ds = datasets.load_from_disk(DATASET_PATH)
-    data = [ds['orchestrator_test_set']]
-    data.extend([[[ ds[f'client_{client}_train_set'], ds[f'client_{client}_test_set']] for client in range(NUMBER_OF_CLIENTS)]])
+    with open(DATASET_PATH, 'rb') as file:
+        data = pickle.load(file)
     orchestrators_data = data[0]
     nodes_data = data[1]
     net_architecture = NET_ARCHITECTURE
@@ -61,9 +60,25 @@ def integration_test():
         },
         2: {
             'DP': False,
-            'Privacy_Engine': None,
+            'Privacy_Engine': None
         },
         3: {
+            'DP': False,
+            'Privacy_Engine': None
+        },
+        4: {
+            'DP': False,
+            'Privacy_Engine': None
+        },
+        5: {
+            'DP': False,
+            'Privacy_Engine': None
+        },
+        6: {
+            'DP': True,
+            'Privacy_Engine': PrivacyEngine()
+        },
+        7: {
             'DP': False,
             'Privacy_Engine': None
         }
