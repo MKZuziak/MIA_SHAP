@@ -1,0 +1,800 @@
+2025-01-02 09:40:42,778 - node_logger - INFO - [ITERATION 0 | NODE 7] Starting training on node 7
+2025-01-02 09:40:43,095 - node_logger - INFO - [ITERATION 0 | NODE 6] Starting training on node 6
+2025-01-02 09:40:43,214 - node_logger - INFO - [ITERATION 0 | NODE 4] Starting training on node 4
+2025-01-02 09:40:43,678 - node_logger - INFO - [ITERATION 0 | NODE 3] Starting training on node 3
+2025-01-02 09:40:44,971 - node_logger - INFO - [ITERATION 0 | NODE 2] Starting training on node 2
+2025-01-02 09:40:45,626 - node_logger - INFO - [ITERATION 0 | NODE 0] Starting training on node 0
+2025-01-02 09:40:45,733 - node_logger - INFO - [ITERATION 0 | NODE 5] Starting training on node 5
+2025-01-02 09:40:45,741 - node_logger - INFO - [ITERATION 0 | NODE 1] Starting training on node 1
+2025-01-02 09:40:55,439 - node_logger - DEBUG - [ITERATION 0 | NODE 7] Results of training on node 7: [0.6982857142857143, 0.9133333333333333]
+2025-01-02 09:41:00,759 - node_logger - DEBUG - [ITERATION 0 | NODE 4] Results of training on node 4: [0.7034285714285714, 0.9112380952380953]
+2025-01-02 09:41:01,530 - node_logger - DEBUG - [ITERATION 0 | NODE 3] Results of training on node 3: [0.6963809523809524, 0.9051428571428571]
+2025-01-02 09:41:02,442 - node_logger - DEBUG - [ITERATION 0 | NODE 2] Results of training on node 2: [0.700952380952381, 0.9047619047619048]
+2025-01-02 09:41:02,889 - node_logger - DEBUG - [ITERATION 0 | NODE 5] Results of training on node 5: [0.6956190476190476, 0.919047619047619]
+2025-01-02 09:41:56,113 - node_logger - DEBUG - [ITERATION 0 | NODE 1] Results of training on node 1: [0.06747638326585695, 0.12254425209103287]
+2025-01-02 09:41:56,329 - node_logger - DEBUG - [ITERATION 0 | NODE 6] Results of training on node 6: [0.07864741641337386, 0.1602368220015279]
+2025-01-02 09:41:58,320 - node_logger - DEBUG - [ITERATION 0 | NODE 0] Results of training on node 0: [0.07388973966309341, 0.13751694751113694]
+2025-01-02 10:19:18,588 - node_logger - INFO - [ITERATION 1 | NODE 4] Starting training on node 4
+2025-01-02 10:19:18,617 - node_logger - INFO - [ITERATION 1 | NODE 0] Starting training on node 0
+2025-01-02 10:19:20,995 - node_logger - INFO - [ITERATION 1 | NODE 6] Starting training on node 6
+2025-01-02 10:19:21,248 - node_logger - INFO - [ITERATION 1 | NODE 3] Starting training on node 3
+2025-01-02 10:19:21,309 - node_logger - INFO - [ITERATION 1 | NODE 7] Starting training on node 7
+2025-01-02 10:19:21,391 - node_logger - INFO - [ITERATION 1 | NODE 5] Starting training on node 5
+2025-01-02 10:19:21,472 - node_logger - INFO - [ITERATION 1 | NODE 1] Starting training on node 1
+2025-01-02 10:19:21,711 - node_logger - INFO - [ITERATION 1 | NODE 2] Starting training on node 2
+2025-01-02 10:19:31,218 - node_logger - DEBUG - [ITERATION 1 | NODE 4] Results of training on node 4: [0.9154285714285715, 0.9476190476190476]
+2025-01-02 10:19:35,420 - node_logger - DEBUG - [ITERATION 1 | NODE 7] Results of training on node 7: [0.9137142857142857, 0.9508571428571428]
+2025-01-02 10:19:35,430 - node_logger - DEBUG - [ITERATION 1 | NODE 5] Results of training on node 5: [0.9198095238095239, 0.9487619047619048]
+2025-01-02 10:19:35,459 - node_logger - DEBUG - [ITERATION 1 | NODE 2] Results of training on node 2: [0.9087619047619048, 0.9460952380952381]
+2025-01-02 10:19:35,963 - node_logger - DEBUG - [ITERATION 1 | NODE 3] Results of training on node 3: [0.9125714285714286, 0.9483809523809524]
+2025-01-02 10:20:31,071 - node_logger - DEBUG - [ITERATION 1 | NODE 0] Results of training on node 0: [0.8941619585687383, 0.8991860895301517]
+2025-01-02 10:20:34,928 - node_logger - DEBUG - [ITERATION 1 | NODE 1] Results of training on node 1: [0.9012696607921167, 0.8989767441860466]
+2025-01-02 10:20:36,110 - node_logger - DEBUG - [ITERATION 1 | NODE 6] Results of training on node 6: [0.8981248791803595, 0.8950995405819295]
+2025-01-02 10:56:41,318 - node_logger - INFO - [ITERATION 2 | NODE 3] Starting training on node 3
+2025-01-02 10:56:41,956 - node_logger - INFO - [ITERATION 2 | NODE 5] Starting training on node 5
+2025-01-02 10:56:42,222 - node_logger - INFO - [ITERATION 2 | NODE 7] Starting training on node 7
+2025-01-02 10:56:42,808 - node_logger - INFO - [ITERATION 2 | NODE 2] Starting training on node 2
+2025-01-02 10:56:43,557 - node_logger - INFO - [ITERATION 2 | NODE 4] Starting training on node 4
+2025-01-02 10:56:43,559 - node_logger - INFO - [ITERATION 2 | NODE 1] Starting training on node 1
+2025-01-02 10:56:43,572 - node_logger - INFO - [ITERATION 2 | NODE 0] Starting training on node 0
+2025-01-02 10:56:43,573 - node_logger - INFO - [ITERATION 2 | NODE 6] Starting training on node 6
+2025-01-02 10:56:53,346 - node_logger - DEBUG - [ITERATION 2 | NODE 3] Results of training on node 3: [0.94, 0.9645714285714285]
+2025-01-02 10:56:54,894 - node_logger - DEBUG - [ITERATION 2 | NODE 5] Results of training on node 5: [0.9434285714285714, 0.9634285714285714]
+2025-01-02 10:56:55,649 - node_logger - DEBUG - [ITERATION 2 | NODE 2] Results of training on node 2: [0.9380952380952381, 0.963047619047619]
+2025-01-02 10:56:56,553 - node_logger - DEBUG - [ITERATION 2 | NODE 7] Results of training on node 7: [0.9403809523809524, 0.9651428571428572]
+2025-01-02 10:56:58,285 - node_logger - DEBUG - [ITERATION 2 | NODE 4] Results of training on node 4: [0.9380952380952381, 0.9605714285714285]
+2025-01-02 10:57:48,874 - node_logger - DEBUG - [ITERATION 2 | NODE 0] Results of training on node 0: [0.9376667937476172, 0.9241787624140565]
+2025-01-02 10:57:57,669 - node_logger - DEBUG - [ITERATION 2 | NODE 1] Results of training on node 1: [0.9442748091603054, 0.9386410690758517]
+2025-01-02 10:57:58,188 - node_logger - DEBUG - [ITERATION 2 | NODE 6] Results of training on node 6: [0.9394167450611477, 0.9333459572050748]
+2025-01-02 11:35:44,870 - node_logger - INFO - [ITERATION 3 | NODE 2] Starting training on node 2
+2025-01-02 11:35:45,744 - node_logger - INFO - [ITERATION 3 | NODE 0] Starting training on node 0
+2025-01-02 11:35:46,424 - node_logger - INFO - [ITERATION 3 | NODE 3] Starting training on node 3
+2025-01-02 11:35:46,676 - node_logger - INFO - [ITERATION 3 | NODE 4] Starting training on node 4
+2025-01-02 11:35:47,178 - node_logger - INFO - [ITERATION 3 | NODE 1] Starting training on node 1
+2025-01-02 11:35:47,266 - node_logger - INFO - [ITERATION 3 | NODE 5] Starting training on node 5
+2025-01-02 11:35:47,346 - node_logger - INFO - [ITERATION 3 | NODE 7] Starting training on node 7
+2025-01-02 11:35:47,633 - node_logger - INFO - [ITERATION 3 | NODE 6] Starting training on node 6
+2025-01-02 11:35:57,605 - node_logger - DEBUG - [ITERATION 3 | NODE 2] Results of training on node 2: [0.9518095238095238, 0.9714285714285714]
+2025-01-02 11:36:00,160 - node_logger - DEBUG - [ITERATION 3 | NODE 4] Results of training on node 4: [0.9481904761904761, 0.971047619047619]
+2025-01-02 11:36:00,256 - node_logger - DEBUG - [ITERATION 3 | NODE 3] Results of training on node 3: [0.9535238095238096, 0.9740952380952381]
+2025-01-02 11:36:00,726 - node_logger - DEBUG - [ITERATION 3 | NODE 5] Results of training on node 5: [0.9521904761904761, 0.9739047619047619]
+2025-01-02 11:36:01,201 - node_logger - DEBUG - [ITERATION 3 | NODE 7] Results of training on node 7: [0.9535238095238096, 0.9756190476190476]
+2025-01-02 11:36:54,182 - node_logger - DEBUG - [ITERATION 3 | NODE 0] Results of training on node 0: [0.9446025422121039, 0.9420731707317073]
+2025-01-02 11:36:57,242 - node_logger - DEBUG - [ITERATION 3 | NODE 6] Results of training on node 6: [0.9450936746429234, 0.944177093358999]
+2025-01-02 11:36:57,364 - node_logger - DEBUG - [ITERATION 3 | NODE 1] Results of training on node 1: [0.9537235076803422, 0.9520281533617336]
+2025-01-02 12:12:59,956 - node_logger - INFO - [ITERATION 4 | NODE 3] Starting training on node 3
+2025-01-02 12:13:00,285 - node_logger - INFO - [ITERATION 4 | NODE 6] Starting training on node 6
+2025-01-02 12:13:00,433 - node_logger - INFO - [ITERATION 4 | NODE 4] Starting training on node 4
+2025-01-02 12:13:00,497 - node_logger - INFO - [ITERATION 4 | NODE 5] Starting training on node 5
+2025-01-02 12:13:00,509 - node_logger - INFO - [ITERATION 4 | NODE 0] Starting training on node 0
+2025-01-02 12:13:00,584 - node_logger - INFO - [ITERATION 4 | NODE 7] Starting training on node 7
+2025-01-02 12:13:00,610 - node_logger - INFO - [ITERATION 4 | NODE 1] Starting training on node 1
+2025-01-02 12:13:00,725 - node_logger - INFO - [ITERATION 4 | NODE 2] Starting training on node 2
+2025-01-02 12:13:13,337 - node_logger - DEBUG - [ITERATION 4 | NODE 3] Results of training on node 3: [0.9617142857142857, 0.9796190476190476]
+2025-01-02 12:13:14,010 - node_logger - DEBUG - [ITERATION 4 | NODE 5] Results of training on node 5: [0.9605714285714285, 0.9786666666666667]
+2025-01-02 12:13:14,218 - node_logger - DEBUG - [ITERATION 4 | NODE 4] Results of training on node 4: [0.9580952380952381, 0.9771428571428571]
+2025-01-02 12:13:14,719 - node_logger - DEBUG - [ITERATION 4 | NODE 7] Results of training on node 7: [0.9615238095238096, 0.9824761904761905]
+2025-01-02 12:13:14,743 - node_logger - DEBUG - [ITERATION 4 | NODE 2] Results of training on node 2: [0.960952380952381, 0.9777142857142858]
+2025-01-02 12:14:10,583 - node_logger - DEBUG - [ITERATION 4 | NODE 0] Results of training on node 0: [0.952819332566168, 0.9505409582689336]
+2025-01-02 12:14:10,898 - node_logger - DEBUG - [ITERATION 4 | NODE 1] Results of training on node 1: [0.95666161998486, 0.9587129288621826]
+2025-01-02 12:14:11,543 - node_logger - DEBUG - [ITERATION 4 | NODE 6] Results of training on node 6: [0.9562451811873555, 0.9507510933637574]
+2025-01-02 12:50:57,560 - node_logger - INFO - [ITERATION 5 | NODE 2] Starting training on node 2
+2025-01-02 12:50:58,356 - node_logger - INFO - [ITERATION 5 | NODE 6] Starting training on node 6
+2025-01-02 12:50:58,661 - node_logger - INFO - [ITERATION 5 | NODE 0] Starting training on node 0
+2025-01-02 12:50:58,896 - node_logger - INFO - [ITERATION 5 | NODE 7] Starting training on node 7
+2025-01-02 12:50:59,111 - node_logger - INFO - [ITERATION 5 | NODE 4] Starting training on node 4
+2025-01-02 12:50:59,260 - node_logger - INFO - [ITERATION 5 | NODE 5] Starting training on node 5
+2025-01-02 12:50:59,301 - node_logger - INFO - [ITERATION 5 | NODE 3] Starting training on node 3
+2025-01-02 12:50:59,649 - node_logger - INFO - [ITERATION 5 | NODE 1] Starting training on node 1
+2025-01-02 12:51:10,297 - node_logger - DEBUG - [ITERATION 5 | NODE 2] Results of training on node 2: [0.9660952380952381, 0.9830476190476191]
+2025-01-02 12:51:12,279 - node_logger - DEBUG - [ITERATION 5 | NODE 7] Results of training on node 7: [0.9700952380952381, 0.9841904761904762]
+2025-01-02 12:51:12,538 - node_logger - DEBUG - [ITERATION 5 | NODE 4] Results of training on node 4: [0.9647619047619047, 0.9824761904761905]
+2025-01-02 12:51:12,994 - node_logger - DEBUG - [ITERATION 5 | NODE 3] Results of training on node 3: [0.9687619047619047, 0.9845714285714285]
+2025-01-02 12:51:13,007 - node_logger - DEBUG - [ITERATION 5 | NODE 5] Results of training on node 5: [0.967047619047619, 0.9826666666666667]
+2025-01-02 12:52:06,268 - node_logger - DEBUG - [ITERATION 5 | NODE 6] Results of training on node 6: [0.9585148702405759, 0.96]
+2025-01-02 12:52:11,066 - node_logger - DEBUG - [ITERATION 5 | NODE 0] Results of training on node 0: [0.9599316369160653, 0.9613163972286374]
+2025-01-02 12:52:12,468 - node_logger - DEBUG - [ITERATION 5 | NODE 1] Results of training on node 1: [0.9617465224111282, 0.9598870056497175]
+2025-01-02 13:29:49,290 - node_logger - INFO - [ITERATION 6 | NODE 7] Starting training on node 7
+2025-01-02 13:29:49,875 - node_logger - INFO - [ITERATION 6 | NODE 3] Starting training on node 3
+2025-01-02 13:29:51,185 - node_logger - INFO - [ITERATION 6 | NODE 0] Starting training on node 0
+2025-01-02 13:29:51,254 - node_logger - INFO - [ITERATION 6 | NODE 1] Starting training on node 1
+2025-01-02 13:29:51,413 - node_logger - INFO - [ITERATION 6 | NODE 4] Starting training on node 4
+2025-01-02 13:29:51,468 - node_logger - INFO - [ITERATION 6 | NODE 2] Starting training on node 2
+2025-01-02 13:29:51,746 - node_logger - INFO - [ITERATION 6 | NODE 6] Starting training on node 6
+2025-01-02 13:29:51,850 - node_logger - INFO - [ITERATION 6 | NODE 5] Starting training on node 5
+2025-01-02 13:30:01,850 - node_logger - DEBUG - [ITERATION 6 | NODE 7] Results of training on node 7: [0.9746666666666667, 0.9891428571428571]
+2025-01-02 13:30:03,605 - node_logger - DEBUG - [ITERATION 6 | NODE 3] Results of training on node 3: [0.9742857142857143, 0.9876190476190476]
+2025-01-02 13:30:04,707 - node_logger - DEBUG - [ITERATION 6 | NODE 4] Results of training on node 4: [0.9678095238095238, 0.9864761904761905]
+2025-01-02 13:30:05,162 - node_logger - DEBUG - [ITERATION 6 | NODE 2] Results of training on node 2: [0.9699047619047619, 0.9870476190476191]
+2025-01-02 13:30:05,341 - node_logger - DEBUG - [ITERATION 6 | NODE 5] Results of training on node 5: [0.9706666666666667, 0.9866666666666667]
+2025-01-02 13:30:59,749 - node_logger - DEBUG - [ITERATION 6 | NODE 6] Results of training on node 6: [0.9561075831154278, 0.960806697108067]
+2025-01-02 13:31:01,889 - node_logger - DEBUG - [ITERATION 6 | NODE 0] Results of training on node 0: [0.965296114673708, 0.9665706051873199]
+2025-01-02 13:31:03,915 - node_logger - DEBUG - [ITERATION 6 | NODE 1] Results of training on node 1: [0.9654654654654654, 0.9648105181747874]
+2025-01-02 14:20:55,079 - node_logger - INFO - [ITERATION 7 | NODE 7] Starting training on node 7
+2025-01-02 14:20:55,989 - node_logger - INFO - [ITERATION 7 | NODE 1] Starting training on node 1
+2025-01-02 14:20:57,490 - node_logger - INFO - [ITERATION 7 | NODE 0] Starting training on node 0
+2025-01-02 14:20:58,594 - node_logger - INFO - [ITERATION 7 | NODE 4] Starting training on node 4
+2025-01-02 14:20:58,771 - node_logger - INFO - [ITERATION 7 | NODE 5] Starting training on node 5
+2025-01-02 14:20:58,779 - node_logger - INFO - [ITERATION 7 | NODE 3] Starting training on node 3
+2025-01-02 14:20:58,793 - node_logger - INFO - [ITERATION 7 | NODE 2] Starting training on node 2
+2025-01-02 14:20:58,892 - node_logger - INFO - [ITERATION 7 | NODE 6] Starting training on node 6
+2025-01-02 14:21:07,186 - node_logger - DEBUG - [ITERATION 7 | NODE 7] Results of training on node 7: [0.9777142857142858, 0.9908571428571429]
+2025-01-02 14:21:12,073 - node_logger - DEBUG - [ITERATION 7 | NODE 4] Results of training on node 4: [0.9723809523809523, 0.9876190476190476]
+2025-01-02 14:21:12,788 - node_logger - DEBUG - [ITERATION 7 | NODE 5] Results of training on node 5: [0.9739047619047619, 0.9893333333333333]
+2025-01-02 14:21:14,709 - node_logger - DEBUG - [ITERATION 7 | NODE 3] Results of training on node 3: [0.9773333333333334, 0.9897142857142858]
+2025-01-02 14:21:14,960 - node_logger - DEBUG - [ITERATION 7 | NODE 2] Results of training on node 2: [0.9725714285714285, 0.9900952380952381]
+2025-01-02 14:22:13,351 - node_logger - DEBUG - [ITERATION 7 | NODE 1] Results of training on node 1: [0.9660349033589791, 0.9698415728192403]
+2025-01-02 14:22:14,829 - node_logger - DEBUG - [ITERATION 7 | NODE 0] Results of training on node 0: [0.9637404580152672, 0.9634009009009009]
+2025-01-02 14:22:16,340 - node_logger - DEBUG - [ITERATION 7 | NODE 6] Results of training on node 6: [0.9649952696310312, 0.9653026588723365]
+2025-01-02 15:21:32,042 - node_logger - INFO - [ITERATION 8 | NODE 7] Starting training on node 7
+2025-01-02 15:21:33,946 - node_logger - INFO - [ITERATION 8 | NODE 5] Starting training on node 5
+2025-01-02 15:21:34,459 - node_logger - INFO - [ITERATION 8 | NODE 2] Starting training on node 2
+2025-01-02 15:21:34,858 - node_logger - INFO - [ITERATION 8 | NODE 1] Starting training on node 1
+2025-01-02 15:21:34,954 - node_logger - INFO - [ITERATION 8 | NODE 6] Starting training on node 6
+2025-01-02 15:21:35,185 - node_logger - INFO - [ITERATION 8 | NODE 4] Starting training on node 4
+2025-01-02 15:21:35,437 - node_logger - INFO - [ITERATION 8 | NODE 3] Starting training on node 3
+2025-01-02 15:21:36,091 - node_logger - INFO - [ITERATION 8 | NODE 0] Starting training on node 0
+2025-01-02 15:21:44,338 - node_logger - DEBUG - [ITERATION 8 | NODE 7] Results of training on node 7: [0.9807619047619047, 0.9918095238095238]
+2025-01-02 15:21:47,556 - node_logger - DEBUG - [ITERATION 8 | NODE 2] Results of training on node 2: [0.9765714285714285, 0.9918095238095238]
+2025-01-02 15:21:47,711 - node_logger - DEBUG - [ITERATION 8 | NODE 5] Results of training on node 5: [0.9777142857142858, 0.9904761904761905]
+2025-01-02 15:21:48,089 - node_logger - DEBUG - [ITERATION 8 | NODE 4] Results of training on node 4: [0.9763809523809523, 0.9889523809523809]
+2025-01-02 15:21:48,685 - node_logger - DEBUG - [ITERATION 8 | NODE 3] Results of training on node 3: [0.9801904761904762, 0.992]
+2025-01-02 15:22:45,203 - node_logger - DEBUG - [ITERATION 8 | NODE 6] Results of training on node 6: [0.9669998114274939, 0.9639235569422777]
+2025-01-02 15:22:59,316 - node_logger - DEBUG - [ITERATION 8 | NODE 1] Results of training on node 1: [0.9705769965609476, 0.9698945349952062]
+2025-01-02 15:23:06,927 - node_logger - DEBUG - [ITERATION 8 | NODE 0] Results of training on node 0: [0.9662020240595761, 0.9645623547637491]
+2025-01-02 16:29:43,422 - node_logger - INFO - [ITERATION 9 | NODE 2] Starting training on node 2
+2025-01-02 16:29:44,913 - node_logger - INFO - [ITERATION 9 | NODE 7] Starting training on node 7
+2025-01-02 16:29:44,955 - node_logger - INFO - [ITERATION 9 | NODE 0] Starting training on node 0
+2025-01-02 16:29:45,298 - node_logger - INFO - [ITERATION 9 | NODE 6] Starting training on node 6
+2025-01-02 16:29:46,071 - node_logger - INFO - [ITERATION 9 | NODE 3] Starting training on node 3
+2025-01-02 16:29:46,487 - node_logger - INFO - [ITERATION 9 | NODE 1] Starting training on node 1
+2025-01-02 16:29:46,789 - node_logger - INFO - [ITERATION 9 | NODE 5] Starting training on node 5
+2025-01-02 16:29:47,045 - node_logger - INFO - [ITERATION 9 | NODE 4] Starting training on node 4
+2025-01-02 16:29:55,952 - node_logger - DEBUG - [ITERATION 9 | NODE 2] Results of training on node 2: [0.9784761904761905, 0.9931428571428571]
+2025-01-02 16:29:58,462 - node_logger - DEBUG - [ITERATION 9 | NODE 7] Results of training on node 7: [0.9828571428571429, 0.9931428571428571]
+2025-01-02 16:29:59,705 - node_logger - DEBUG - [ITERATION 9 | NODE 3] Results of training on node 3: [0.9832380952380952, 0.9933333333333333]
+2025-01-02 16:30:01,130 - node_logger - DEBUG - [ITERATION 9 | NODE 5] Results of training on node 5: [0.98, 0.9923809523809524]
+2025-01-02 16:30:01,343 - node_logger - DEBUG - [ITERATION 9 | NODE 4] Results of training on node 4: [0.9777142857142858, 0.9918095238095238]
+2025-01-02 16:31:08,861 - node_logger - DEBUG - [ITERATION 9 | NODE 0] Results of training on node 0: [0.9677543927399112, 0.9709608263496394]
+2025-01-02 16:31:09,046 - node_logger - DEBUG - [ITERATION 9 | NODE 6] Results of training on node 6: [0.9696348733233979, 0.9678776290630975]
+2025-01-02 16:31:13,225 - node_logger - DEBUG - [ITERATION 9 | NODE 1] Results of training on node 1: [0.9757598359127354, 0.9703605814612044]
+2025-01-02 17:41:02,968 - node_logger - INFO - [ITERATION 10 | NODE 3] Starting training on node 3
+2025-01-02 17:41:04,248 - node_logger - INFO - [ITERATION 10 | NODE 6] Starting training on node 6
+2025-01-02 17:41:05,457 - node_logger - INFO - [ITERATION 10 | NODE 2] Starting training on node 2
+2025-01-02 17:41:05,679 - node_logger - INFO - [ITERATION 10 | NODE 7] Starting training on node 7
+2025-01-02 17:41:05,883 - node_logger - INFO - [ITERATION 10 | NODE 4] Starting training on node 4
+2025-01-02 17:41:05,913 - node_logger - INFO - [ITERATION 10 | NODE 0] Starting training on node 0
+2025-01-02 17:41:06,301 - node_logger - INFO - [ITERATION 10 | NODE 5] Starting training on node 5
+2025-01-02 17:41:06,624 - node_logger - INFO - [ITERATION 10 | NODE 1] Starting training on node 1
+2025-01-02 17:41:16,155 - node_logger - DEBUG - [ITERATION 10 | NODE 3] Results of training on node 3: [0.9862857142857143, 0.9948571428571429]
+2025-01-02 17:41:18,452 - node_logger - DEBUG - [ITERATION 10 | NODE 2] Results of training on node 2: [0.9805714285714285, 0.9948571428571429]
+2025-01-02 17:41:18,914 - node_logger - DEBUG - [ITERATION 10 | NODE 4] Results of training on node 4: [0.9813333333333333, 0.9931428571428571]
+2025-01-02 17:41:20,243 - node_logger - DEBUG - [ITERATION 10 | NODE 7] Results of training on node 7: [0.9853333333333333, 0.9946666666666667]
+2025-01-02 17:41:20,884 - node_logger - DEBUG - [ITERATION 10 | NODE 5] Results of training on node 5: [0.9828571428571429, 0.9935238095238095]
+2025-01-02 17:42:30,205 - node_logger - DEBUG - [ITERATION 10 | NODE 1] Results of training on node 1: [0.973809978971516, 0.9728177641653905]
+2025-01-02 17:42:32,018 - node_logger - DEBUG - [ITERATION 10 | NODE 6] Results of training on node 6: [0.9722062488019935, 0.9685085007727975]
+2025-01-02 17:42:33,276 - node_logger - DEBUG - [ITERATION 10 | NODE 0] Results of training on node 0: [0.9677047289504037, 0.9709414955443626]
+2025-01-02 18:40:17,851 - node_logger - INFO - [ITERATION 11 | NODE 1] Starting training on node 1
+2025-01-02 18:40:19,709 - node_logger - INFO - [ITERATION 11 | NODE 4] Starting training on node 4
+2025-01-02 18:40:19,976 - node_logger - INFO - [ITERATION 11 | NODE 0] Starting training on node 0
+2025-01-02 18:40:20,242 - node_logger - INFO - [ITERATION 11 | NODE 3] Starting training on node 3
+2025-01-02 18:40:20,254 - node_logger - INFO - [ITERATION 11 | NODE 7] Starting training on node 7
+2025-01-02 18:40:20,734 - node_logger - INFO - [ITERATION 11 | NODE 2] Starting training on node 2
+2025-01-02 18:40:20,978 - node_logger - INFO - [ITERATION 11 | NODE 5] Starting training on node 5
+2025-01-02 18:40:21,014 - node_logger - INFO - [ITERATION 11 | NODE 6] Starting training on node 6
+2025-01-02 18:40:32,636 - node_logger - DEBUG - [ITERATION 11 | NODE 7] Results of training on node 7: [0.9876190476190476, 0.9956190476190476]
+2025-01-02 18:40:33,476 - node_logger - DEBUG - [ITERATION 11 | NODE 3] Results of training on node 3: [0.988, 0.9954285714285714]
+2025-01-02 18:40:33,928 - node_logger - DEBUG - [ITERATION 11 | NODE 2] Results of training on node 2: [0.9834285714285714, 0.9954285714285714]
+2025-01-02 18:40:33,939 - node_logger - DEBUG - [ITERATION 11 | NODE 4] Results of training on node 4: [0.9836190476190476, 0.9952380952380953]
+2025-01-02 18:40:35,988 - node_logger - DEBUG - [ITERATION 11 | NODE 5] Results of training on node 5: [0.9841904761904762, 0.9944761904761905]
+2025-01-02 18:41:45,391 - node_logger - DEBUG - [ITERATION 11 | NODE 1] Results of training on node 1: [0.9735784032165422, 0.9713261648745519]
+2025-01-02 18:41:47,406 - node_logger - DEBUG - [ITERATION 11 | NODE 0] Results of training on node 0: [0.9696379914363565, 0.9681011702529256]
+2025-01-02 18:41:50,850 - node_logger - DEBUG - [ITERATION 11 | NODE 6] Results of training on node 6: [0.9740584166026134, 0.972758887171561]
+2025-01-02 19:16:54,223 - node_logger - INFO - [ITERATION 12 | NODE 1] Starting training on node 1
+2025-01-02 19:16:55,639 - node_logger - INFO - [ITERATION 12 | NODE 6] Starting training on node 6
+2025-01-02 19:16:56,332 - node_logger - INFO - [ITERATION 12 | NODE 7] Starting training on node 7
+2025-01-02 19:16:56,442 - node_logger - INFO - [ITERATION 12 | NODE 2] Starting training on node 2
+2025-01-02 19:16:56,599 - node_logger - INFO - [ITERATION 12 | NODE 4] Starting training on node 4
+2025-01-02 19:16:56,616 - node_logger - INFO - [ITERATION 12 | NODE 0] Starting training on node 0
+2025-01-02 19:16:56,964 - node_logger - INFO - [ITERATION 12 | NODE 5] Starting training on node 5
+2025-01-02 19:16:57,186 - node_logger - INFO - [ITERATION 12 | NODE 3] Starting training on node 3
+2025-01-02 19:17:09,420 - node_logger - DEBUG - [ITERATION 12 | NODE 7] Results of training on node 7: [0.9891428571428571, 0.9965714285714286]
+2025-01-02 19:17:09,905 - node_logger - DEBUG - [ITERATION 12 | NODE 2] Results of training on node 2: [0.9862857142857143, 0.996]
+2025-01-02 19:17:10,379 - node_logger - DEBUG - [ITERATION 12 | NODE 5] Results of training on node 5: [0.985904761904762, 0.9958095238095238]
+2025-01-02 19:17:11,242 - node_logger - DEBUG - [ITERATION 12 | NODE 3] Results of training on node 3: [0.9895238095238095, 0.9961904761904762]
+2025-01-02 19:17:12,789 - node_logger - DEBUG - [ITERATION 12 | NODE 4] Results of training on node 4: [0.9860952380952381, 0.9961904761904762]
+2025-01-02 19:18:02,849 - node_logger - DEBUG - [ITERATION 12 | NODE 1] Results of training on node 1: [0.9726870552029236, 0.9746202653335897]
+2025-01-02 19:18:05,643 - node_logger - DEBUG - [ITERATION 12 | NODE 6] Results of training on node 6: [0.9691090600866453, 0.9717267552182163]
+2025-01-02 19:18:14,943 - node_logger - DEBUG - [ITERATION 12 | NODE 0] Results of training on node 0: [0.9724202626641651, 0.9711501719526175]
+2025-01-02 19:49:32,382 - node_logger - INFO - [ITERATION 13 | NODE 6] Starting training on node 6
+2025-01-02 19:49:33,123 - node_logger - INFO - [ITERATION 13 | NODE 0] Starting training on node 0
+2025-01-02 19:49:33,362 - node_logger - INFO - [ITERATION 13 | NODE 1] Starting training on node 1
+2025-01-02 19:49:33,460 - node_logger - INFO - [ITERATION 13 | NODE 7] Starting training on node 7
+2025-01-02 19:49:33,569 - node_logger - INFO - [ITERATION 13 | NODE 5] Starting training on node 5
+2025-01-02 19:49:33,737 - node_logger - INFO - [ITERATION 13 | NODE 3] Starting training on node 3
+2025-01-02 19:49:33,746 - node_logger - INFO - [ITERATION 13 | NODE 4] Starting training on node 4
+2025-01-02 19:49:33,909 - node_logger - INFO - [ITERATION 13 | NODE 2] Starting training on node 2
+2025-01-02 19:49:47,015 - node_logger - DEBUG - [ITERATION 13 | NODE 2] Results of training on node 2: [0.9895238095238095, 0.9965714285714286]
+2025-01-02 19:49:47,072 - node_logger - DEBUG - [ITERATION 13 | NODE 4] Results of training on node 4: [0.9874285714285714, 0.9965714285714286]
+2025-01-02 19:49:47,216 - node_logger - DEBUG - [ITERATION 13 | NODE 7] Results of training on node 7: [0.9900952380952381, 0.9971428571428571]
+2025-01-02 19:49:47,640 - node_logger - DEBUG - [ITERATION 13 | NODE 3] Results of training on node 3: [0.9908571428571429, 0.9965714285714286]
+2025-01-02 19:49:47,645 - node_logger - DEBUG - [ITERATION 13 | NODE 5] Results of training on node 5: [0.9870476190476191, 0.9963809523809524]
+2025-01-02 19:50:37,293 - node_logger - DEBUG - [ITERATION 13 | NODE 6] Results of training on node 6: [0.9736192825963181, 0.9732781332329695]
+2025-01-02 19:50:37,311 - node_logger - DEBUG - [ITERATION 13 | NODE 0] Results of training on node 0: [0.9758666922045585, 0.9771278590176228]
+2025-01-02 19:50:42,400 - node_logger - DEBUG - [ITERATION 13 | NODE 1] Results of training on node 1: [0.9744017807456873, 0.9729466718567537]
+2025-01-02 20:19:24,648 - node_logger - INFO - [ITERATION 14 | NODE 7] Starting training on node 7
+2025-01-02 20:19:25,610 - node_logger - INFO - [ITERATION 14 | NODE 2] Starting training on node 2
+2025-01-02 20:19:26,174 - node_logger - INFO - [ITERATION 14 | NODE 4] Starting training on node 4
+2025-01-02 20:19:27,524 - node_logger - INFO - [ITERATION 14 | NODE 0] Starting training on node 0
+2025-01-02 20:19:28,523 - node_logger - INFO - [ITERATION 14 | NODE 6] Starting training on node 6
+2025-01-02 20:19:28,772 - node_logger - INFO - [ITERATION 14 | NODE 1] Starting training on node 1
+2025-01-02 20:19:29,149 - node_logger - INFO - [ITERATION 14 | NODE 5] Starting training on node 5
+2025-01-02 20:19:29,749 - node_logger - INFO - [ITERATION 14 | NODE 3] Starting training on node 3
+2025-01-02 20:19:35,165 - node_logger - DEBUG - [ITERATION 14 | NODE 7] Results of training on node 7: [0.9925714285714285, 0.9975238095238095]
+2025-01-02 20:19:37,853 - node_logger - DEBUG - [ITERATION 14 | NODE 2] Results of training on node 2: [0.9902857142857143, 0.9973333333333333]
+2025-01-02 20:19:38,342 - node_logger - DEBUG - [ITERATION 14 | NODE 4] Results of training on node 4: [0.9881904761904762, 0.9973333333333333]
+2025-01-02 20:19:41,572 - node_logger - DEBUG - [ITERATION 14 | NODE 5] Results of training on node 5: [0.9878095238095238, 0.9975238095238095]
+2025-01-02 20:19:42,638 - node_logger - DEBUG - [ITERATION 14 | NODE 3] Results of training on node 3: [0.992, 0.9967619047619047]
+2025-01-02 20:20:41,718 - node_logger - DEBUG - [ITERATION 14 | NODE 1] Results of training on node 1: [0.9759128273752629, 0.9782273603082852]
+2025-01-02 20:20:42,415 - node_logger - DEBUG - [ITERATION 14 | NODE 6] Results of training on node 6: [0.9761363636363637, 0.971331572991324]
+2025-01-02 20:20:43,723 - node_logger - DEBUG - [ITERATION 14 | NODE 0] Results of training on node 0: [0.9793482379689277, 0.9752226093689508]
+2025-01-02 20:40:02,255 - node_logger - INFO - [ITERATION 15 | NODE 6] Starting training on node 6
+2025-01-02 20:40:03,237 - node_logger - INFO - [ITERATION 15 | NODE 2] Starting training on node 2
+2025-01-02 20:40:03,276 - node_logger - INFO - [ITERATION 15 | NODE 4] Starting training on node 4
+2025-01-02 20:40:03,345 - node_logger - INFO - [ITERATION 15 | NODE 1] Starting training on node 1
+2025-01-02 20:40:04,070 - node_logger - INFO - [ITERATION 15 | NODE 7] Starting training on node 7
+2025-01-02 20:40:05,298 - node_logger - INFO - [ITERATION 15 | NODE 3] Starting training on node 3
+2025-01-02 20:40:05,304 - node_logger - INFO - [ITERATION 15 | NODE 5] Starting training on node 5
+2025-01-02 20:40:05,590 - node_logger - INFO - [ITERATION 15 | NODE 0] Starting training on node 0
+2025-01-02 20:40:18,495 - node_logger - DEBUG - [ITERATION 15 | NODE 2] Results of training on node 2: [0.9921904761904762, 0.9977142857142857]
+2025-01-02 20:40:19,525 - node_logger - DEBUG - [ITERATION 15 | NODE 4] Results of training on node 4: [0.9891428571428571, 0.9977142857142857]
+2025-01-02 20:40:20,619 - node_logger - DEBUG - [ITERATION 15 | NODE 3] Results of training on node 3: [0.9923809523809524, 0.9980952380952381]
+2025-01-02 20:40:21,338 - node_logger - DEBUG - [ITERATION 15 | NODE 7] Results of training on node 7: [0.9929523809523809, 0.9980952380952381]
+2025-01-02 20:40:22,111 - node_logger - DEBUG - [ITERATION 15 | NODE 5] Results of training on node 5: [0.9895238095238095, 0.9975238095238095]
+2025-01-02 20:41:15,023 - node_logger - DEBUG - [ITERATION 15 | NODE 1] Results of training on node 1: [0.9770472670686637, 0.9782021604938271]
+2025-01-02 20:41:19,935 - node_logger - DEBUG - [ITERATION 15 | NODE 6] Results of training on node 6: [0.9786065884134797, 0.9773251345119139]
+2025-01-02 20:41:21,037 - node_logger - DEBUG - [ITERATION 15 | NODE 0] Results of training on node 0: [0.9729106628242075, 0.9740579435712933]
+2025-01-02 21:01:04,367 - node_logger - INFO - [ITERATION 16 | NODE 3] Starting training on node 3
+2025-01-02 21:01:04,407 - node_logger - INFO - [ITERATION 16 | NODE 0] Starting training on node 0
+2025-01-02 21:01:04,410 - node_logger - INFO - [ITERATION 16 | NODE 2] Starting training on node 2
+2025-01-02 21:01:04,414 - node_logger - INFO - [ITERATION 16 | NODE 6] Starting training on node 6
+2025-01-02 21:01:04,514 - node_logger - INFO - [ITERATION 16 | NODE 4] Starting training on node 4
+2025-01-02 21:01:04,529 - node_logger - INFO - [ITERATION 16 | NODE 5] Starting training on node 5
+2025-01-02 21:01:04,536 - node_logger - INFO - [ITERATION 16 | NODE 7] Starting training on node 7
+2025-01-02 21:01:04,653 - node_logger - INFO - [ITERATION 16 | NODE 1] Starting training on node 1
+2025-01-02 21:01:17,605 - node_logger - DEBUG - [ITERATION 16 | NODE 7] Results of training on node 7: [0.9937142857142857, 0.9990476190476191]
+2025-01-02 21:01:18,327 - node_logger - DEBUG - [ITERATION 16 | NODE 2] Results of training on node 2: [0.9935238095238095, 0.9977142857142857]
+2025-01-02 21:01:18,583 - node_logger - DEBUG - [ITERATION 16 | NODE 3] Results of training on node 3: [0.9937142857142857, 0.9984761904761905]
+2025-01-02 21:01:19,251 - node_logger - DEBUG - [ITERATION 16 | NODE 5] Results of training on node 5: [0.9904761904761905, 0.9975238095238095]
+2025-01-02 21:01:19,513 - node_logger - DEBUG - [ITERATION 16 | NODE 4] Results of training on node 4: [0.9908571428571429, 0.9980952380952381]
+2025-01-02 21:02:10,649 - node_logger - DEBUG - [ITERATION 16 | NODE 0] Results of training on node 0: [0.9785538052761434, 0.9791271347248577]
+2025-01-02 21:02:10,691 - node_logger - DEBUG - [ITERATION 16 | NODE 1] Results of training on node 1: [0.9742604686899731, 0.9729269216205982]
+2025-01-02 21:02:14,661 - node_logger - DEBUG - [ITERATION 16 | NODE 6] Results of training on node 6: [0.9753158406219631, 0.977475800446761]
+2025-01-02 21:21:26,962 - node_logger - INFO - [ITERATION 17 | NODE 4] Starting training on node 4
+2025-01-02 21:21:27,062 - node_logger - INFO - [ITERATION 17 | NODE 6] Starting training on node 6
+2025-01-02 21:21:27,615 - node_logger - INFO - [ITERATION 17 | NODE 1] Starting training on node 1
+2025-01-02 21:21:28,292 - node_logger - INFO - [ITERATION 17 | NODE 3] Starting training on node 3
+2025-01-02 21:21:29,110 - node_logger - INFO - [ITERATION 17 | NODE 7] Starting training on node 7
+2025-01-02 21:21:29,548 - node_logger - INFO - [ITERATION 17 | NODE 0] Starting training on node 0
+2025-01-02 21:21:29,937 - node_logger - INFO - [ITERATION 17 | NODE 2] Starting training on node 2
+2025-01-02 21:21:30,804 - node_logger - INFO - [ITERATION 17 | NODE 5] Starting training on node 5
+2025-01-02 21:21:42,969 - node_logger - DEBUG - [ITERATION 17 | NODE 7] Results of training on node 7: [0.9942857142857143, 0.9994285714285714]
+2025-01-02 21:21:43,049 - node_logger - DEBUG - [ITERATION 17 | NODE 4] Results of training on node 4: [0.9925714285714285, 0.9982857142857143]
+2025-01-02 21:21:43,635 - node_logger - DEBUG - [ITERATION 17 | NODE 3] Results of training on node 3: [0.9944761904761905, 0.9988571428571429]
+2025-01-02 21:21:43,725 - node_logger - DEBUG - [ITERATION 17 | NODE 5] Results of training on node 5: [0.9918095238095238, 0.9980952380952381]
+2025-01-02 21:21:44,277 - node_logger - DEBUG - [ITERATION 17 | NODE 2] Results of training on node 2: [0.9944761904761905, 0.9979047619047619]
+2025-01-02 21:22:38,214 - node_logger - DEBUG - [ITERATION 17 | NODE 6] Results of training on node 6: [0.9722700325109964, 0.9735327963176065]
+2025-01-02 21:22:38,656 - node_logger - DEBUG - [ITERATION 17 | NODE 1] Results of training on node 1: [0.9754346182917611, 0.9801147227533461]
+2025-01-02 21:22:40,784 - node_logger - DEBUG - [ITERATION 17 | NODE 0] Results of training on node 0: [0.9723335241366151, 0.9770554493307839]
+2025-01-02 21:37:53,807 - node_logger - INFO - [ITERATION 18 | NODE 0] Starting training on node 0
+2025-01-02 21:37:55,416 - node_logger - INFO - [ITERATION 18 | NODE 7] Starting training on node 7
+2025-01-02 21:37:55,461 - node_logger - INFO - [ITERATION 18 | NODE 2] Starting training on node 2
+2025-01-02 21:37:55,515 - node_logger - INFO - [ITERATION 18 | NODE 5] Starting training on node 5
+2025-01-02 21:37:55,515 - node_logger - INFO - [ITERATION 18 | NODE 3] Starting training on node 3
+2025-01-02 21:37:55,571 - node_logger - INFO - [ITERATION 18 | NODE 4] Starting training on node 4
+2025-01-02 21:37:55,590 - node_logger - INFO - [ITERATION 18 | NODE 1] Starting training on node 1
+2025-01-02 21:37:55,596 - node_logger - INFO - [ITERATION 18 | NODE 6] Starting training on node 6
+2025-01-02 21:38:08,918 - node_logger - DEBUG - [ITERATION 18 | NODE 7] Results of training on node 7: [0.9954285714285714, 0.9994285714285714]
+2025-01-02 21:38:09,010 - node_logger - DEBUG - [ITERATION 18 | NODE 2] Results of training on node 2: [0.9950476190476191, 0.9980952380952381]
+2025-01-02 21:38:09,108 - node_logger - DEBUG - [ITERATION 18 | NODE 3] Results of training on node 3: [0.9948571428571429, 0.9990476190476191]
+2025-01-02 21:38:10,380 - node_logger - DEBUG - [ITERATION 18 | NODE 4] Results of training on node 4: [0.9940952380952381, 0.9988571428571429]
+2025-01-02 21:38:10,550 - node_logger - DEBUG - [ITERATION 18 | NODE 5] Results of training on node 5: [0.9931428571428571, 0.9984761904761905]
+2025-01-02 21:38:53,262 - node_logger - DEBUG - [ITERATION 18 | NODE 0] Results of training on node 0: [0.975735294117647, 0.9785152503356992]
+2025-01-02 21:38:53,547 - node_logger - DEBUG - [ITERATION 18 | NODE 6] Results of training on node 6: [0.9790051068658975, 0.9770529110563246]
+2025-01-02 21:38:54,260 - node_logger - DEBUG - [ITERATION 18 | NODE 1] Results of training on node 1: [0.9797389440872784, 0.9729880774962743]
+2025-01-02 21:53:41,769 - node_logger - INFO - [ITERATION 19 | NODE 1] Starting training on node 1
+2025-01-02 21:53:42,783 - node_logger - INFO - [ITERATION 19 | NODE 4] Starting training on node 4
+2025-01-02 21:53:42,856 - node_logger - INFO - [ITERATION 19 | NODE 0] Starting training on node 0
+2025-01-02 21:53:42,941 - node_logger - INFO - [ITERATION 19 | NODE 3] Starting training on node 3
+2025-01-02 21:53:43,121 - node_logger - INFO - [ITERATION 19 | NODE 2] Starting training on node 2
+2025-01-02 21:53:43,145 - node_logger - INFO - [ITERATION 19 | NODE 5] Starting training on node 5
+2025-01-02 21:53:43,250 - node_logger - INFO - [ITERATION 19 | NODE 7] Starting training on node 7
+2025-01-02 21:53:43,281 - node_logger - INFO - [ITERATION 19 | NODE 6] Starting training on node 6
+2025-01-02 21:53:54,868 - node_logger - DEBUG - [ITERATION 19 | NODE 4] Results of training on node 4: [0.9946666666666667, 0.9990476190476191]
+2025-01-02 21:53:55,286 - node_logger - DEBUG - [ITERATION 19 | NODE 7] Results of training on node 7: [0.9961904761904762, 0.9994285714285714]
+2025-01-02 21:53:55,469 - node_logger - DEBUG - [ITERATION 19 | NODE 3] Results of training on node 3: [0.9948571428571429, 0.9992380952380953]
+2025-01-02 21:53:55,614 - node_logger - DEBUG - [ITERATION 19 | NODE 5] Results of training on node 5: [0.9944761904761905, 0.9984761904761905]
+2025-01-02 21:53:55,949 - node_logger - DEBUG - [ITERATION 19 | NODE 2] Results of training on node 2: [0.9956190476190476, 0.9992380952380953]
+2025-01-02 21:54:36,576 - node_logger - DEBUG - [ITERATION 19 | NODE 0] Results of training on node 0: [0.978575455741402, 0.9792746113989638]
+2025-01-02 21:54:36,647 - node_logger - DEBUG - [ITERATION 19 | NODE 1] Results of training on node 1: [0.9784843869002284, 0.9770580296896086]
+2025-01-02 21:54:38,240 - node_logger - DEBUG - [ITERATION 19 | NODE 6] Results of training on node 6: [0.9756991321118611, 0.9748404055576417]
+2025-01-02 22:10:35,004 - node_logger - INFO - [ITERATION 20 | NODE 6] Starting training on node 6
+2025-01-02 22:10:36,099 - node_logger - INFO - [ITERATION 20 | NODE 0] Starting training on node 0
+2025-01-02 22:10:36,255 - node_logger - INFO - [ITERATION 20 | NODE 1] Starting training on node 1
+2025-01-02 22:10:36,336 - node_logger - INFO - [ITERATION 20 | NODE 5] Starting training on node 5
+2025-01-02 22:10:36,502 - node_logger - INFO - [ITERATION 20 | NODE 2] Starting training on node 2
+2025-01-02 22:10:36,582 - node_logger - INFO - [ITERATION 20 | NODE 7] Starting training on node 7
+2025-01-02 22:10:36,602 - node_logger - INFO - [ITERATION 20 | NODE 4] Starting training on node 4
+2025-01-02 22:10:36,614 - node_logger - INFO - [ITERATION 20 | NODE 3] Starting training on node 3
+2025-01-02 22:10:48,261 - node_logger - DEBUG - [ITERATION 20 | NODE 5] Results of training on node 5: [0.9954285714285714, 0.9986666666666667]
+2025-01-02 22:10:48,535 - node_logger - DEBUG - [ITERATION 20 | NODE 2] Results of training on node 2: [0.9961904761904762, 0.9992380952380953]
+2025-01-02 22:10:48,688 - node_logger - DEBUG - [ITERATION 20 | NODE 7] Results of training on node 7: [0.9961904761904762, 0.9994285714285714]
+2025-01-02 22:10:48,801 - node_logger - DEBUG - [ITERATION 20 | NODE 3] Results of training on node 3: [0.9952380952380953, 0.9992380952380953]
+2025-01-02 22:10:49,279 - node_logger - DEBUG - [ITERATION 20 | NODE 4] Results of training on node 4: [0.9944761904761905, 0.9992380952380953]
+2025-01-02 22:11:28,051 - node_logger - DEBUG - [ITERATION 20 | NODE 6] Results of training on node 6: [0.979565054368204, 0.9771634615384616]
+2025-01-02 22:11:28,310 - node_logger - DEBUG - [ITERATION 20 | NODE 1] Results of training on node 1: [0.9733308114242482, 0.9782810469649156]
+2025-01-02 22:11:29,153 - node_logger - DEBUG - [ITERATION 20 | NODE 0] Results of training on node 0: [0.975381679389313, 0.9747285660801198]
+2025-01-02 22:26:01,018 - node_logger - INFO - [ITERATION 21 | NODE 4] Starting training on node 4
+2025-01-02 22:26:01,075 - node_logger - INFO - [ITERATION 21 | NODE 1] Starting training on node 1
+2025-01-02 22:26:01,189 - node_logger - INFO - [ITERATION 21 | NODE 7] Starting training on node 7
+2025-01-02 22:26:01,189 - node_logger - INFO - [ITERATION 21 | NODE 3] Starting training on node 3
+2025-01-02 22:26:01,307 - node_logger - INFO - [ITERATION 21 | NODE 2] Starting training on node 2
+2025-01-02 22:26:01,319 - node_logger - INFO - [ITERATION 21 | NODE 5] Starting training on node 5
+2025-01-02 22:26:01,460 - node_logger - INFO - [ITERATION 21 | NODE 0] Starting training on node 0
+2025-01-02 22:26:01,474 - node_logger - INFO - [ITERATION 21 | NODE 6] Starting training on node 6
+2025-01-02 22:26:13,457 - node_logger - DEBUG - [ITERATION 21 | NODE 3] Results of training on node 3: [0.9958095238095238, 0.9994285714285714]
+2025-01-02 22:26:13,628 - node_logger - DEBUG - [ITERATION 21 | NODE 4] Results of training on node 4: [0.9956190476190476, 0.9992380952380953]
+2025-01-02 22:26:13,696 - node_logger - DEBUG - [ITERATION 21 | NODE 5] Results of training on node 5: [0.9956190476190476, 0.9990476190476191]
+2025-01-02 22:26:13,780 - node_logger - DEBUG - [ITERATION 21 | NODE 7] Results of training on node 7: [0.9967619047619047, 0.9994285714285714]
+2025-01-02 22:26:14,223 - node_logger - DEBUG - [ITERATION 21 | NODE 2] Results of training on node 2: [0.9965714285714286, 0.9994285714285714]
+2025-01-02 22:26:54,017 - node_logger - DEBUG - [ITERATION 21 | NODE 1] Results of training on node 1: [0.970313986679353, 0.9754939209726444]
+2025-01-02 22:26:54,387 - node_logger - DEBUG - [ITERATION 21 | NODE 6] Results of training on node 6: [0.97693480747236, 0.9791747761775009]
+2025-01-02 22:26:55,092 - node_logger - DEBUG - [ITERATION 21 | NODE 0] Results of training on node 0: [0.9767920643833052, 0.9804032410024496]
+2025-01-02 22:41:28,863 - node_logger - INFO - [ITERATION 22 | NODE 1] Starting training on node 1
+2025-01-02 22:41:29,894 - node_logger - INFO - [ITERATION 22 | NODE 2] Starting training on node 2
+2025-01-02 22:41:30,726 - node_logger - INFO - [ITERATION 22 | NODE 0] Starting training on node 0
+2025-01-02 22:41:30,888 - node_logger - INFO - [ITERATION 22 | NODE 4] Starting training on node 4
+2025-01-02 22:41:30,906 - node_logger - INFO - [ITERATION 22 | NODE 3] Starting training on node 3
+2025-01-02 22:41:30,923 - node_logger - INFO - [ITERATION 22 | NODE 6] Starting training on node 6
+2025-01-02 22:41:31,119 - node_logger - INFO - [ITERATION 22 | NODE 7] Starting training on node 7
+2025-01-02 22:41:31,241 - node_logger - INFO - [ITERATION 22 | NODE 5] Starting training on node 5
+2025-01-02 22:41:43,281 - node_logger - DEBUG - [ITERATION 22 | NODE 2] Results of training on node 2: [0.9967619047619047, 0.9994285714285714]
+2025-01-02 22:41:43,851 - node_logger - DEBUG - [ITERATION 22 | NODE 3] Results of training on node 3: [0.9969523809523809, 0.9994285714285714]
+2025-01-02 22:41:44,283 - node_logger - DEBUG - [ITERATION 22 | NODE 7] Results of training on node 7: [0.9971428571428571, 0.9996190476190476]
+2025-01-02 22:41:44,589 - node_logger - DEBUG - [ITERATION 22 | NODE 4] Results of training on node 4: [0.996, 0.9992380952380953]
+2025-01-02 22:41:44,667 - node_logger - DEBUG - [ITERATION 22 | NODE 5] Results of training on node 5: [0.996, 0.9990476190476191]
+2025-01-02 22:42:32,614 - node_logger - DEBUG - [ITERATION 22 | NODE 1] Results of training on node 1: [0.9781684698608965, 0.9788399773285471]
+2025-01-02 22:42:33,075 - node_logger - DEBUG - [ITERATION 22 | NODE 6] Results of training on node 6: [0.9819460281261878, 0.9724682325760493]
+2025-01-02 22:42:35,977 - node_logger - DEBUG - [ITERATION 22 | NODE 0] Results of training on node 0: [0.9780427787242097, 0.9769097556282471]
+2025-01-02 22:56:47,368 - node_logger - INFO - [ITERATION 23 | NODE 0] Starting training on node 0
+2025-01-02 22:56:48,240 - node_logger - INFO - [ITERATION 23 | NODE 7] Starting training on node 7
+2025-01-02 22:56:48,320 - node_logger - INFO - [ITERATION 23 | NODE 5] Starting training on node 5
+2025-01-02 22:56:48,571 - node_logger - INFO - [ITERATION 23 | NODE 6] Starting training on node 6
+2025-01-02 22:56:48,602 - node_logger - INFO - [ITERATION 23 | NODE 1] Starting training on node 1
+2025-01-02 22:56:48,673 - node_logger - INFO - [ITERATION 23 | NODE 2] Starting training on node 2
+2025-01-02 22:56:48,725 - node_logger - INFO - [ITERATION 23 | NODE 4] Starting training on node 4
+2025-01-02 22:56:48,774 - node_logger - INFO - [ITERATION 23 | NODE 3] Starting training on node 3
+2025-01-02 22:56:59,946 - node_logger - DEBUG - [ITERATION 23 | NODE 5] Results of training on node 5: [0.9967619047619047, 0.9994285714285714]
+2025-01-02 22:57:00,222 - node_logger - DEBUG - [ITERATION 23 | NODE 7] Results of training on node 7: [0.9975238095238095, 1.0]
+2025-01-02 22:57:00,654 - node_logger - DEBUG - [ITERATION 23 | NODE 4] Results of training on node 4: [0.9963809523809524, 0.9994285714285714]
+2025-01-02 22:57:00,723 - node_logger - DEBUG - [ITERATION 23 | NODE 2] Results of training on node 2: [0.9973333333333333, 0.9994285714285714]
+2025-01-02 22:57:01,046 - node_logger - DEBUG - [ITERATION 23 | NODE 3] Results of training on node 3: [0.9969523809523809, 0.9998095238095238]
+2025-01-02 22:57:40,012 - node_logger - DEBUG - [ITERATION 23 | NODE 6] Results of training on node 6: [0.9766104294478528, 0.9792539017891131]
+2025-01-02 22:57:41,124 - node_logger - DEBUG - [ITERATION 23 | NODE 1] Results of training on node 1: [0.9773599386032233, 0.975375939849624]
+2025-01-02 22:57:41,427 - node_logger - DEBUG - [ITERATION 23 | NODE 0] Results of training on node 0: [0.9791429654910884, 0.9757599076567911]
+2025-01-02 23:11:13,898 - node_logger - INFO - [ITERATION 24 | NODE 5] Starting training on node 5
+2025-01-02 23:11:14,100 - node_logger - INFO - [ITERATION 24 | NODE 1] Starting training on node 1
+2025-01-02 23:11:14,120 - node_logger - INFO - [ITERATION 24 | NODE 0] Starting training on node 0
+2025-01-02 23:11:14,134 - node_logger - INFO - [ITERATION 24 | NODE 3] Starting training on node 3
+2025-01-02 23:11:14,150 - node_logger - INFO - [ITERATION 24 | NODE 7] Starting training on node 7
+2025-01-02 23:11:14,150 - node_logger - INFO - [ITERATION 24 | NODE 2] Starting training on node 2
+2025-01-02 23:11:14,347 - node_logger - INFO - [ITERATION 24 | NODE 6] Starting training on node 6
+2025-01-02 23:11:14,359 - node_logger - INFO - [ITERATION 24 | NODE 4] Starting training on node 4
+2025-01-02 23:11:26,195 - node_logger - DEBUG - [ITERATION 24 | NODE 5] Results of training on node 5: [0.9975238095238095, 0.9994285714285714]
+2025-01-02 23:11:26,421 - node_logger - DEBUG - [ITERATION 24 | NODE 2] Results of training on node 2: [0.9975238095238095, 0.9996190476190476]
+2025-01-02 23:11:26,722 - node_logger - DEBUG - [ITERATION 24 | NODE 7] Results of training on node 7: [0.9979047619047619, 1.0]
+2025-01-02 23:11:26,850 - node_logger - DEBUG - [ITERATION 24 | NODE 3] Results of training on node 3: [0.9971428571428571, 0.9998095238095238]
+2025-01-02 23:11:26,856 - node_logger - DEBUG - [ITERATION 24 | NODE 4] Results of training on node 4: [0.9969523809523809, 0.9994285714285714]
+2025-01-02 23:12:08,589 - node_logger - DEBUG - [ITERATION 24 | NODE 0] Results of training on node 0: [0.9808649062380406, 0.9795524691358025]
+2025-01-02 23:12:08,682 - node_logger - DEBUG - [ITERATION 24 | NODE 1] Results of training on node 1: [0.9794414274631498, 0.9802779864763336]
+2025-01-02 23:12:09,893 - node_logger - DEBUG - [ITERATION 24 | NODE 6] Results of training on node 6: [0.9747320061255743, 0.9765107027846183]
+2025-01-02 23:26:26,226 - node_logger - INFO - [ITERATION 25 | NODE 6] Starting training on node 6
+2025-01-02 23:26:26,278 - node_logger - INFO - [ITERATION 25 | NODE 1] Starting training on node 1
+2025-01-02 23:26:26,288 - node_logger - INFO - [ITERATION 25 | NODE 4] Starting training on node 4
+2025-01-02 23:26:26,295 - node_logger - INFO - [ITERATION 25 | NODE 2] Starting training on node 2
+2025-01-02 23:26:26,343 - node_logger - INFO - [ITERATION 25 | NODE 5] Starting training on node 5
+2025-01-02 23:26:26,343 - node_logger - INFO - [ITERATION 25 | NODE 3] Starting training on node 3
+2025-01-02 23:26:26,346 - node_logger - INFO - [ITERATION 25 | NODE 0] Starting training on node 0
+2025-01-02 23:26:26,404 - node_logger - INFO - [ITERATION 25 | NODE 7] Starting training on node 7
+2025-01-02 23:26:38,124 - node_logger - DEBUG - [ITERATION 25 | NODE 7] Results of training on node 7: [0.9982857142857143, 1.0]
+2025-01-02 23:26:38,167 - node_logger - DEBUG - [ITERATION 25 | NODE 4] Results of training on node 4: [0.9975238095238095, 0.9996190476190476]
+2025-01-02 23:26:38,476 - node_logger - DEBUG - [ITERATION 25 | NODE 3] Results of training on node 3: [0.9979047619047619, 0.9998095238095238]
+2025-01-02 23:26:38,928 - node_logger - DEBUG - [ITERATION 25 | NODE 5] Results of training on node 5: [0.9980952380952381, 0.9994285714285714]
+2025-01-02 23:26:38,951 - node_logger - DEBUG - [ITERATION 25 | NODE 2] Results of training on node 2: [0.9977142857142857, 0.9996190476190476]
+2025-01-02 23:27:20,233 - node_logger - DEBUG - [ITERATION 25 | NODE 0] Results of training on node 0: [0.9801311728395061, 0.9777312523791397]
+2025-01-02 23:27:22,424 - node_logger - DEBUG - [ITERATION 25 | NODE 6] Results of training on node 6: [0.9771136750520144, 0.9768983147131225]
+2025-01-02 23:27:24,218 - node_logger - DEBUG - [ITERATION 25 | NODE 1] Results of training on node 1: [0.9792374480936202, 0.9805133970395353]
+2025-01-03 00:41:34,973 - node_logger - INFO - [ITERATION 26 | NODE 3] Starting training on node 3
+2025-01-03 00:41:36,269 - node_logger - INFO - [ITERATION 26 | NODE 1] Starting training on node 1
+2025-01-03 00:41:36,401 - node_logger - INFO - [ITERATION 26 | NODE 7] Starting training on node 7
+2025-01-03 00:41:37,429 - node_logger - INFO - [ITERATION 26 | NODE 6] Starting training on node 6
+2025-01-03 00:41:37,687 - node_logger - INFO - [ITERATION 26 | NODE 0] Starting training on node 0
+2025-01-03 00:41:37,763 - node_logger - INFO - [ITERATION 26 | NODE 4] Starting training on node 4
+2025-01-03 00:41:37,842 - node_logger - INFO - [ITERATION 26 | NODE 5] Starting training on node 5
+2025-01-03 00:41:38,060 - node_logger - INFO - [ITERATION 26 | NODE 2] Starting training on node 2
+2025-01-03 00:41:46,946 - node_logger - DEBUG - [ITERATION 26 | NODE 3] Results of training on node 3: [0.9984761904761905, 0.9998095238095238]
+2025-01-03 00:41:51,913 - node_logger - DEBUG - [ITERATION 26 | NODE 4] Results of training on node 4: [0.9977142857142857, 0.9998095238095238]
+2025-01-03 00:41:52,295 - node_logger - DEBUG - [ITERATION 26 | NODE 7] Results of training on node 7: [0.9988571428571429, 1.0]
+2025-01-03 00:41:53,418 - node_logger - DEBUG - [ITERATION 26 | NODE 5] Results of training on node 5: [0.9982857142857143, 0.9994285714285714]
+2025-01-03 00:41:54,691 - node_logger - DEBUG - [ITERATION 26 | NODE 2] Results of training on node 2: [0.9979047619047619, 0.9996190476190476]
+2025-01-03 00:43:18,083 - node_logger - DEBUG - [ITERATION 26 | NODE 1] Results of training on node 1: [0.9806120509408858, 0.9775742851803402]
+2025-01-03 00:43:25,599 - node_logger - DEBUG - [ITERATION 26 | NODE 0] Results of training on node 0: [0.9781389050106404, 0.9810883828637592]
+2025-01-03 00:43:33,429 - node_logger - DEBUG - [ITERATION 26 | NODE 6] Results of training on node 6: [0.9747804969176163, 0.9753656658968437]
+2025-01-03 02:23:46,924 - node_logger - INFO - [ITERATION 27 | NODE 3] Starting training on node 3
+2025-01-03 02:23:47,171 - node_logger - INFO - [ITERATION 27 | NODE 1] Starting training on node 1
+2025-01-03 02:23:48,288 - node_logger - INFO - [ITERATION 27 | NODE 2] Starting training on node 2
+2025-01-03 02:23:49,233 - node_logger - INFO - [ITERATION 27 | NODE 6] Starting training on node 6
+2025-01-03 02:23:50,108 - node_logger - INFO - [ITERATION 27 | NODE 5] Starting training on node 5
+2025-01-03 02:23:50,192 - node_logger - INFO - [ITERATION 27 | NODE 4] Starting training on node 4
+2025-01-03 02:23:50,363 - node_logger - INFO - [ITERATION 27 | NODE 0] Starting training on node 0
+2025-01-03 02:23:50,431 - node_logger - INFO - [ITERATION 27 | NODE 7] Starting training on node 7
+2025-01-03 02:24:03,129 - node_logger - DEBUG - [ITERATION 27 | NODE 3] Results of training on node 3: [0.9984761904761905, 0.9998095238095238]
+2025-01-03 02:24:04,259 - node_logger - DEBUG - [ITERATION 27 | NODE 7] Results of training on node 7: [0.9990476190476191, 1.0]
+2025-01-03 02:24:04,303 - node_logger - DEBUG - [ITERATION 27 | NODE 2] Results of training on node 2: [0.9982857142857143, 0.9996190476190476]
+2025-01-03 02:24:06,437 - node_logger - DEBUG - [ITERATION 27 | NODE 4] Results of training on node 4: [0.9980952380952381, 0.9998095238095238]
+2025-01-03 02:24:06,782 - node_logger - DEBUG - [ITERATION 27 | NODE 5] Results of training on node 5: [0.9982857142857143, 0.9994285714285714]
+2025-01-03 02:25:29,384 - node_logger - DEBUG - [ITERATION 27 | NODE 1] Results of training on node 1: [0.9730646072706725, 0.9789253844693374]
+2025-01-03 02:25:31,968 - node_logger - DEBUG - [ITERATION 27 | NODE 0] Results of training on node 0: [0.9805843543826579, 0.9812464481909453]
+2025-01-03 02:25:36,792 - node_logger - DEBUG - [ITERATION 27 | NODE 6] Results of training on node 6: [0.9753062787136294, 0.9758250191864927]
+2025-01-03 03:55:00,224 - node_logger - INFO - [ITERATION 28 | NODE 0] Starting training on node 0
+2025-01-03 03:55:01,651 - node_logger - INFO - [ITERATION 28 | NODE 3] Starting training on node 3
+2025-01-03 03:55:01,672 - node_logger - INFO - [ITERATION 28 | NODE 7] Starting training on node 7
+2025-01-03 03:55:01,954 - node_logger - INFO - [ITERATION 28 | NODE 5] Starting training on node 5
+2025-01-03 03:55:02,444 - node_logger - INFO - [ITERATION 28 | NODE 1] Starting training on node 1
+2025-01-03 03:55:02,548 - node_logger - INFO - [ITERATION 28 | NODE 4] Starting training on node 4
+2025-01-03 03:55:02,925 - node_logger - INFO - [ITERATION 28 | NODE 6] Starting training on node 6
+2025-01-03 03:55:03,564 - node_logger - INFO - [ITERATION 28 | NODE 2] Starting training on node 2
+2025-01-03 03:55:16,924 - node_logger - DEBUG - [ITERATION 28 | NODE 3] Results of training on node 3: [0.9990476190476191, 0.9998095238095238]
+2025-01-03 03:55:17,115 - node_logger - DEBUG - [ITERATION 28 | NODE 5] Results of training on node 5: [0.9982857142857143, 0.9994285714285714]
+2025-01-03 03:55:17,586 - node_logger - DEBUG - [ITERATION 28 | NODE 7] Results of training on node 7: [0.9994285714285714, 1.0]
+2025-01-03 03:55:17,908 - node_logger - DEBUG - [ITERATION 28 | NODE 4] Results of training on node 4: [0.9982857142857143, 0.9998095238095238]
+2025-01-03 03:55:20,642 - node_logger - DEBUG - [ITERATION 28 | NODE 2] Results of training on node 2: [0.9984761904761905, 0.9996190476190476]
+2025-01-03 03:56:40,398 - node_logger - DEBUG - [ITERATION 28 | NODE 0] Results of training on node 0: [0.9770598355954885, 0.9783773440489858]
+2025-01-03 03:56:41,735 - node_logger - DEBUG - [ITERATION 28 | NODE 6] Results of training on node 6: [0.9755398433021212, 0.9756329716352561]
+2025-01-03 03:56:43,518 - node_logger - DEBUG - [ITERATION 28 | NODE 1] Results of training on node 1: [0.9773807260977001, 0.9759771210676835]
+2025-01-03 05:29:04,649 - node_logger - INFO - [ITERATION 29 | NODE 2] Starting training on node 2
+2025-01-03 05:29:05,826 - node_logger - INFO - [ITERATION 29 | NODE 7] Starting training on node 7
+2025-01-03 05:29:06,735 - node_logger - INFO - [ITERATION 29 | NODE 3] Starting training on node 3
+2025-01-03 05:29:06,736 - node_logger - INFO - [ITERATION 29 | NODE 6] Starting training on node 6
+2025-01-03 05:29:06,917 - node_logger - INFO - [ITERATION 29 | NODE 5] Starting training on node 5
+2025-01-03 05:29:06,927 - node_logger - INFO - [ITERATION 29 | NODE 4] Starting training on node 4
+2025-01-03 05:29:07,648 - node_logger - INFO - [ITERATION 29 | NODE 0] Starting training on node 0
+2025-01-03 05:29:07,738 - node_logger - INFO - [ITERATION 29 | NODE 1] Starting training on node 1
+2025-01-03 05:29:19,339 - node_logger - DEBUG - [ITERATION 29 | NODE 2] Results of training on node 2: [0.9986666666666667, 0.9996190476190476]
+2025-01-03 05:29:20,751 - node_logger - DEBUG - [ITERATION 29 | NODE 7] Results of training on node 7: [0.9994285714285714, 1.0]
+2025-01-03 05:29:21,160 - node_logger - DEBUG - [ITERATION 29 | NODE 3] Results of training on node 3: [0.9990476190476191, 0.9998095238095238]
+2025-01-03 05:29:21,297 - node_logger - DEBUG - [ITERATION 29 | NODE 5] Results of training on node 5: [0.9986666666666667, 0.9994285714285714]
+2025-01-03 05:29:21,750 - node_logger - DEBUG - [ITERATION 29 | NODE 4] Results of training on node 4: [0.9982857142857143, 0.9998095238095238]
+2025-01-03 05:30:40,921 - node_logger - DEBUG - [ITERATION 29 | NODE 6] Results of training on node 6: [0.9786550812240272, 0.9752663622526636]
+2025-01-03 05:30:43,123 - node_logger - DEBUG - [ITERATION 29 | NODE 1] Results of training on node 1: [0.9779203623325156, 0.9721308302690149]
+2025-01-03 05:30:43,634 - node_logger - DEBUG - [ITERATION 29 | NODE 0] Results of training on node 0: [0.9825378346915018, 0.9783631232361242]
+2025-01-03 07:00:32,750 - node_logger - INFO - [ITERATION 30 | NODE 5] Starting training on node 5
+2025-01-03 07:00:32,872 - node_logger - INFO - [ITERATION 30 | NODE 1] Starting training on node 1
+2025-01-03 07:00:33,627 - node_logger - INFO - [ITERATION 30 | NODE 7] Starting training on node 7
+2025-01-03 07:00:33,700 - node_logger - INFO - [ITERATION 30 | NODE 2] Starting training on node 2
+2025-01-03 07:00:34,168 - node_logger - INFO - [ITERATION 30 | NODE 3] Starting training on node 3
+2025-01-03 07:00:34,169 - node_logger - INFO - [ITERATION 30 | NODE 4] Starting training on node 4
+2025-01-03 07:00:34,654 - node_logger - INFO - [ITERATION 30 | NODE 0] Starting training on node 0
+2025-01-03 07:00:35,108 - node_logger - INFO - [ITERATION 30 | NODE 6] Starting training on node 6
+2025-01-03 07:00:47,105 - node_logger - DEBUG - [ITERATION 30 | NODE 5] Results of training on node 5: [0.9986666666666667, 0.9994285714285714]
+2025-01-03 07:00:48,202 - node_logger - DEBUG - [ITERATION 30 | NODE 2] Results of training on node 2: [0.9988571428571429, 0.9996190476190476]
+2025-01-03 07:00:48,685 - node_logger - DEBUG - [ITERATION 30 | NODE 4] Results of training on node 4: [0.9986666666666667, 0.9998095238095238]
+2025-01-03 07:00:49,251 - node_logger - DEBUG - [ITERATION 30 | NODE 3] Results of training on node 3: [0.9992380952380953, 0.9998095238095238]
+2025-01-03 07:00:53,311 - node_logger - DEBUG - [ITERATION 30 | NODE 7] Results of training on node 7: [0.9996190476190476, 1.0]
+2025-01-03 07:02:08,693 - node_logger - DEBUG - [ITERATION 30 | NODE 1] Results of training on node 1: [0.977992277992278, 0.9786497403346798]
+2025-01-03 07:02:30,008 - node_logger - DEBUG - [ITERATION 30 | NODE 0] Results of training on node 0: [0.979295665634675, 0.9828977709454266]
+2025-01-03 07:02:32,171 - node_logger - DEBUG - [ITERATION 30 | NODE 6] Results of training on node 6: [0.9796456841311723, 0.9820056232427367]
+2025-01-03 08:34:11,902 - node_logger - INFO - [ITERATION 31 | NODE 3] Starting training on node 3
+2025-01-03 08:34:12,935 - node_logger - INFO - [ITERATION 31 | NODE 4] Starting training on node 4
+2025-01-03 08:34:13,155 - node_logger - INFO - [ITERATION 31 | NODE 1] Starting training on node 1
+2025-01-03 08:34:13,311 - node_logger - INFO - [ITERATION 31 | NODE 6] Starting training on node 6
+2025-01-03 08:34:13,578 - node_logger - INFO - [ITERATION 31 | NODE 7] Starting training on node 7
+2025-01-03 08:34:14,084 - node_logger - INFO - [ITERATION 31 | NODE 0] Starting training on node 0
+2025-01-03 08:34:14,289 - node_logger - INFO - [ITERATION 31 | NODE 5] Starting training on node 5
+2025-01-03 08:34:14,672 - node_logger - INFO - [ITERATION 31 | NODE 2] Starting training on node 2
+2025-01-03 08:34:26,830 - node_logger - DEBUG - [ITERATION 31 | NODE 3] Results of training on node 3: [0.9994285714285714, 0.9998095238095238]
+2025-01-03 08:34:28,666 - node_logger - DEBUG - [ITERATION 31 | NODE 4] Results of training on node 4: [0.9986666666666667, 1.0]
+2025-01-03 08:34:28,945 - node_logger - DEBUG - [ITERATION 31 | NODE 7] Results of training on node 7: [0.9998095238095238, 1.0]
+2025-01-03 08:34:30,593 - node_logger - DEBUG - [ITERATION 31 | NODE 5] Results of training on node 5: [0.9986666666666667, 0.9996190476190476]
+2025-01-03 08:34:32,458 - node_logger - DEBUG - [ITERATION 31 | NODE 2] Results of training on node 2: [0.9992380952380953, 0.9996190476190476]
+2025-01-03 08:35:58,644 - node_logger - DEBUG - [ITERATION 31 | NODE 1] Results of training on node 1: [0.9774985936621039, 0.9763042231989298]
+2025-01-03 08:35:59,270 - node_logger - DEBUG - [ITERATION 31 | NODE 6] Results of training on node 6: [0.9797117937049677, 0.977076287110109]
+2025-01-03 08:36:00,974 - node_logger - DEBUG - [ITERATION 31 | NODE 0] Results of training on node 0: [0.9827948766966164, 0.9786832673080551]
+2025-01-03 10:08:52,125 - node_logger - INFO - [ITERATION 32 | NODE 6] Starting training on node 6
+2025-01-03 10:08:53,474 - node_logger - INFO - [ITERATION 32 | NODE 5] Starting training on node 5
+2025-01-03 10:08:53,613 - node_logger - INFO - [ITERATION 32 | NODE 2] Starting training on node 2
+2025-01-03 10:08:54,557 - node_logger - INFO - [ITERATION 32 | NODE 0] Starting training on node 0
+2025-01-03 10:08:55,053 - node_logger - INFO - [ITERATION 32 | NODE 1] Starting training on node 1
+2025-01-03 10:08:55,149 - node_logger - INFO - [ITERATION 32 | NODE 7] Starting training on node 7
+2025-01-03 10:08:55,409 - node_logger - INFO - [ITERATION 32 | NODE 3] Starting training on node 3
+2025-01-03 10:08:55,523 - node_logger - INFO - [ITERATION 32 | NODE 4] Starting training on node 4
+2025-01-03 10:09:07,881 - node_logger - DEBUG - [ITERATION 32 | NODE 2] Results of training on node 2: [0.9992380952380953, 0.9998095238095238]
+2025-01-03 10:09:09,102 - node_logger - DEBUG - [ITERATION 32 | NODE 5] Results of training on node 5: [0.9986666666666667, 0.9996190476190476]
+2025-01-03 10:09:12,020 - node_logger - DEBUG - [ITERATION 32 | NODE 7] Results of training on node 7: [0.9998095238095238, 1.0]
+2025-01-03 10:09:12,047 - node_logger - DEBUG - [ITERATION 32 | NODE 3] Results of training on node 3: [0.9996190476190476, 0.9998095238095238]
+2025-01-03 10:09:12,837 - node_logger - DEBUG - [ITERATION 32 | NODE 4] Results of training on node 4: [0.9986666666666667, 1.0]
+2025-01-03 10:10:32,566 - node_logger - DEBUG - [ITERATION 32 | NODE 6] Results of training on node 6: [0.9792024422820073, 0.9776986506746627]
+2025-01-03 10:10:36,818 - node_logger - DEBUG - [ITERATION 32 | NODE 1] Results of training on node 1: [0.978240302743614, 0.9780282766526557]
+2025-01-03 10:10:52,948 - node_logger - DEBUG - [ITERATION 32 | NODE 0] Results of training on node 0: [0.9798133688821177, 0.9814176245210728]
+2025-01-03 11:42:42,514 - node_logger - INFO - [ITERATION 33 | NODE 0] Starting training on node 0
+2025-01-03 11:42:43,283 - node_logger - INFO - [ITERATION 33 | NODE 1] Starting training on node 1
+2025-01-03 11:42:43,290 - node_logger - INFO - [ITERATION 33 | NODE 3] Starting training on node 3
+2025-01-03 11:42:43,367 - node_logger - INFO - [ITERATION 33 | NODE 6] Starting training on node 6
+2025-01-03 11:42:44,506 - node_logger - INFO - [ITERATION 33 | NODE 2] Starting training on node 2
+2025-01-03 11:42:44,831 - node_logger - INFO - [ITERATION 33 | NODE 7] Starting training on node 7
+2025-01-03 11:42:44,870 - node_logger - INFO - [ITERATION 33 | NODE 4] Starting training on node 4
+2025-01-03 11:42:44,891 - node_logger - INFO - [ITERATION 33 | NODE 5] Starting training on node 5
+2025-01-03 11:42:57,282 - node_logger - DEBUG - [ITERATION 33 | NODE 3] Results of training on node 3: [0.9998095238095238, 0.9998095238095238]
+2025-01-03 11:43:00,719 - node_logger - DEBUG - [ITERATION 33 | NODE 7] Results of training on node 7: [0.9998095238095238, 1.0]
+2025-01-03 11:43:00,941 - node_logger - DEBUG - [ITERATION 33 | NODE 5] Results of training on node 5: [0.9988571428571429, 0.9996190476190476]
+2025-01-03 11:43:01,364 - node_logger - DEBUG - [ITERATION 33 | NODE 4] Results of training on node 4: [0.9988571428571429, 1.0]
+2025-01-03 11:43:02,142 - node_logger - DEBUG - [ITERATION 33 | NODE 2] Results of training on node 2: [0.9992380952380953, 0.9998095238095238]
+2025-01-03 11:44:26,901 - node_logger - DEBUG - [ITERATION 33 | NODE 1] Results of training on node 1: [0.978847969782814, 0.977427515080755]
+2025-01-03 11:44:27,054 - node_logger - DEBUG - [ITERATION 33 | NODE 0] Results of training on node 0: [0.9777994157740993, 0.9814467766116941]
+2025-01-03 11:44:31,356 - node_logger - DEBUG - [ITERATION 33 | NODE 6] Results of training on node 6: [0.97765896505633, 0.9767836919592299]
+2025-01-03 13:15:35,925 - node_logger - INFO - [ITERATION 34 | NODE 0] Starting training on node 0
+2025-01-03 13:15:37,004 - node_logger - INFO - [ITERATION 34 | NODE 4] Starting training on node 4
+2025-01-03 13:15:37,522 - node_logger - INFO - [ITERATION 34 | NODE 7] Starting training on node 7
+2025-01-03 13:15:37,523 - node_logger - INFO - [ITERATION 34 | NODE 1] Starting training on node 1
+2025-01-03 13:15:37,717 - node_logger - INFO - [ITERATION 34 | NODE 2] Starting training on node 2
+2025-01-03 13:15:37,923 - node_logger - INFO - [ITERATION 34 | NODE 5] Starting training on node 5
+2025-01-03 13:15:38,130 - node_logger - INFO - [ITERATION 34 | NODE 3] Starting training on node 3
+2025-01-03 13:15:38,299 - node_logger - INFO - [ITERATION 34 | NODE 6] Starting training on node 6
+2025-01-03 13:15:52,108 - node_logger - DEBUG - [ITERATION 34 | NODE 7] Results of training on node 7: [0.9998095238095238, 1.0]
+2025-01-03 13:15:52,316 - node_logger - DEBUG - [ITERATION 34 | NODE 4] Results of training on node 4: [0.9990476190476191, 1.0]
+2025-01-03 13:15:53,384 - node_logger - DEBUG - [ITERATION 34 | NODE 2] Results of training on node 2: [0.9992380952380953, 0.9998095238095238]
+2025-01-03 13:15:53,800 - node_logger - DEBUG - [ITERATION 34 | NODE 5] Results of training on node 5: [0.9994285714285714, 0.9998095238095238]
+2025-01-03 13:15:55,336 - node_logger - DEBUG - [ITERATION 34 | NODE 3] Results of training on node 3: [0.9998095238095238, 1.0]
+2025-01-03 13:17:13,556 - node_logger - DEBUG - [ITERATION 34 | NODE 6] Results of training on node 6: [0.9789915966386554, 0.9787884578635582]
+2025-01-03 13:17:15,013 - node_logger - DEBUG - [ITERATION 34 | NODE 0] Results of training on node 0: [0.9811864081397581, 0.9779593387801634]
+2025-01-03 13:17:17,648 - node_logger - DEBUG - [ITERATION 34 | NODE 1] Results of training on node 1: [0.9804906316399459, 0.9806009889691898]
+2025-01-03 14:48:06,136 - node_logger - INFO - [ITERATION 35 | NODE 4] Starting training on node 4
+2025-01-03 14:48:06,921 - node_logger - INFO - [ITERATION 35 | NODE 1] Starting training on node 1
+2025-01-03 14:48:08,873 - node_logger - INFO - [ITERATION 35 | NODE 3] Starting training on node 3
+2025-01-03 14:48:09,200 - node_logger - INFO - [ITERATION 35 | NODE 0] Starting training on node 0
+2025-01-03 14:48:09,273 - node_logger - INFO - [ITERATION 35 | NODE 5] Starting training on node 5
+2025-01-03 14:48:09,869 - node_logger - INFO - [ITERATION 35 | NODE 7] Starting training on node 7
+2025-01-03 14:48:10,028 - node_logger - INFO - [ITERATION 35 | NODE 6] Starting training on node 6
+2025-01-03 14:48:10,359 - node_logger - INFO - [ITERATION 35 | NODE 2] Starting training on node 2
+2025-01-03 14:48:19,879 - node_logger - DEBUG - [ITERATION 35 | NODE 4] Results of training on node 4: [0.9990476190476191, 1.0]
+2025-01-03 14:48:25,946 - node_logger - DEBUG - [ITERATION 35 | NODE 5] Results of training on node 5: [0.9994285714285714, 0.9998095238095238]
+2025-01-03 14:48:26,690 - node_logger - DEBUG - [ITERATION 35 | NODE 3] Results of training on node 3: [0.9998095238095238, 1.0]
+2025-01-03 14:48:26,945 - node_logger - DEBUG - [ITERATION 35 | NODE 7] Results of training on node 7: [0.9998095238095238, 1.0]
+2025-01-03 14:48:28,885 - node_logger - DEBUG - [ITERATION 35 | NODE 2] Results of training on node 2: [0.9994285714285714, 0.9998095238095238]
+2025-01-03 14:49:59,102 - node_logger - DEBUG - [ITERATION 35 | NODE 1] Results of training on node 1: [0.9746086292478046, 0.9797999230473259]
+2025-01-03 14:50:03,219 - node_logger - DEBUG - [ITERATION 35 | NODE 6] Results of training on node 6: [0.9755728081802689, 0.975894538606403]
+2025-01-03 14:50:05,486 - node_logger - DEBUG - [ITERATION 35 | NODE 0] Results of training on node 0: [0.9812839228897623, 0.9811719500480307]
+2025-01-03 16:21:59,306 - node_logger - INFO - [ITERATION 36 | NODE 1] Starting training on node 1
+2025-01-03 16:22:00,695 - node_logger - INFO - [ITERATION 36 | NODE 3] Starting training on node 3
+2025-01-03 16:22:01,092 - node_logger - INFO - [ITERATION 36 | NODE 2] Starting training on node 2
+2025-01-03 16:22:01,873 - node_logger - INFO - [ITERATION 36 | NODE 0] Starting training on node 0
+2025-01-03 16:22:02,022 - node_logger - INFO - [ITERATION 36 | NODE 6] Starting training on node 6
+2025-01-03 16:22:02,340 - node_logger - INFO - [ITERATION 36 | NODE 4] Starting training on node 4
+2025-01-03 16:22:03,282 - node_logger - INFO - [ITERATION 36 | NODE 7] Starting training on node 7
+2025-01-03 16:22:03,295 - node_logger - INFO - [ITERATION 36 | NODE 5] Starting training on node 5
+2025-01-03 16:22:17,036 - node_logger - DEBUG - [ITERATION 36 | NODE 4] Results of training on node 4: [0.9992380952380953, 1.0]
+2025-01-03 16:22:18,069 - node_logger - DEBUG - [ITERATION 36 | NODE 3] Results of training on node 3: [0.9998095238095238, 1.0]
+2025-01-03 16:22:18,388 - node_logger - DEBUG - [ITERATION 36 | NODE 2] Results of training on node 2: [0.9994285714285714, 0.9998095238095238]
+2025-01-03 16:22:19,257 - node_logger - DEBUG - [ITERATION 36 | NODE 5] Results of training on node 5: [0.9994285714285714, 0.9998095238095238]
+2025-01-03 16:22:20,686 - node_logger - DEBUG - [ITERATION 36 | NODE 7] Results of training on node 7: [0.9998095238095238, 1.0]
+2025-01-03 16:23:47,766 - node_logger - DEBUG - [ITERATION 36 | NODE 1] Results of training on node 1: [0.9816669816669816, 0.9771222155328115]
+2025-01-03 16:23:47,811 - node_logger - DEBUG - [ITERATION 36 | NODE 6] Results of training on node 6: [0.9753086419753086, 0.9782898495524662]
+2025-01-03 16:23:50,112 - node_logger - DEBUG - [ITERATION 36 | NODE 0] Results of training on node 0: [0.9809834805993085, 0.9836190476190476]
+2025-01-03 18:06:20,809 - node_logger - INFO - [ITERATION 37 | NODE 7] Starting training on node 7
+2025-01-03 18:06:22,413 - node_logger - INFO - [ITERATION 37 | NODE 5] Starting training on node 5
+2025-01-03 18:06:22,545 - node_logger - INFO - [ITERATION 37 | NODE 1] Starting training on node 1
+2025-01-03 18:06:23,595 - node_logger - INFO - [ITERATION 37 | NODE 4] Starting training on node 4
+2025-01-03 18:06:23,758 - node_logger - INFO - [ITERATION 37 | NODE 3] Starting training on node 3
+2025-01-03 18:06:23,794 - node_logger - INFO - [ITERATION 37 | NODE 0] Starting training on node 0
+2025-01-03 18:06:23,842 - node_logger - INFO - [ITERATION 37 | NODE 2] Starting training on node 2
+2025-01-03 18:06:24,076 - node_logger - INFO - [ITERATION 37 | NODE 6] Starting training on node 6
+2025-01-03 18:06:37,698 - node_logger - DEBUG - [ITERATION 37 | NODE 2] Results of training on node 2: [0.9994285714285714, 0.9998095238095238]
+2025-01-03 18:06:38,960 - node_logger - DEBUG - [ITERATION 37 | NODE 7] Results of training on node 7: [0.9998095238095238, 1.0]
+2025-01-03 18:06:40,350 - node_logger - DEBUG - [ITERATION 37 | NODE 5] Results of training on node 5: [0.9994285714285714, 0.9998095238095238]
+2025-01-03 18:06:42,392 - node_logger - DEBUG - [ITERATION 37 | NODE 3] Results of training on node 3: [0.9998095238095238, 1.0]
+2025-01-03 18:06:42,419 - node_logger - DEBUG - [ITERATION 37 | NODE 4] Results of training on node 4: [0.9994285714285714, 1.0]
+2025-01-03 18:08:17,786 - node_logger - DEBUG - [ITERATION 37 | NODE 6] Results of training on node 6: [0.9767487299726456, 0.9769128029002099]
+2025-01-03 18:08:21,296 - node_logger - DEBUG - [ITERATION 37 | NODE 0] Results of training on node 0: [0.9848690591658584, 0.9756950837783097]
+2025-01-03 18:08:24,128 - node_logger - DEBUG - [ITERATION 37 | NODE 1] Results of training on node 1: [0.9808429118773946, 0.9769806253596778]
+2025-01-03 19:57:05,755 - node_logger - INFO - [ITERATION 38 | NODE 1] Starting training on node 1
+2025-01-03 19:57:08,114 - node_logger - INFO - [ITERATION 38 | NODE 3] Starting training on node 3
+2025-01-03 19:57:08,289 - node_logger - INFO - [ITERATION 38 | NODE 6] Starting training on node 6
+2025-01-03 19:57:08,624 - node_logger - INFO - [ITERATION 38 | NODE 2] Starting training on node 2
+2025-01-03 19:57:09,015 - node_logger - INFO - [ITERATION 38 | NODE 7] Starting training on node 7
+2025-01-03 19:57:09,099 - node_logger - INFO - [ITERATION 38 | NODE 5] Starting training on node 5
+2025-01-03 19:57:09,241 - node_logger - INFO - [ITERATION 38 | NODE 4] Starting training on node 4
+2025-01-03 19:57:09,688 - node_logger - INFO - [ITERATION 38 | NODE 0] Starting training on node 0
+2025-01-03 19:57:25,098 - node_logger - DEBUG - [ITERATION 38 | NODE 3] Results of training on node 3: [0.9998095238095238, 1.0]
+2025-01-03 19:57:26,220 - node_logger - DEBUG - [ITERATION 38 | NODE 5] Results of training on node 5: [0.9994285714285714, 0.9998095238095238]
+2025-01-03 19:57:26,402 - node_logger - DEBUG - [ITERATION 38 | NODE 4] Results of training on node 4: [0.9994285714285714, 1.0]
+2025-01-03 19:57:26,688 - node_logger - DEBUG - [ITERATION 38 | NODE 2] Results of training on node 2: [0.9994285714285714, 0.9998095238095238]
+2025-01-03 19:57:28,530 - node_logger - DEBUG - [ITERATION 38 | NODE 7] Results of training on node 7: [1.0, 1.0]
+2025-01-03 19:58:58,884 - node_logger - DEBUG - [ITERATION 38 | NODE 1] Results of training on node 1: [0.9790276453765491, 0.9802837663534181]
+2025-01-03 19:59:01,832 - node_logger - DEBUG - [ITERATION 38 | NODE 0] Results of training on node 0: [0.9801564586910895, 0.9770784770784771]
+2025-01-03 19:59:03,025 - node_logger - DEBUG - [ITERATION 38 | NODE 6] Results of training on node 6: [0.978273299028016, 0.9756792703781113]
+2025-01-03 21:35:50,659 - node_logger - INFO - [ITERATION 39 | NODE 0] Starting training on node 0
+2025-01-03 21:35:51,273 - node_logger - INFO - [ITERATION 39 | NODE 1] Starting training on node 1
+2025-01-03 21:35:51,569 - node_logger - INFO - [ITERATION 39 | NODE 7] Starting training on node 7
+2025-01-03 21:35:52,088 - node_logger - INFO - [ITERATION 39 | NODE 4] Starting training on node 4
+2025-01-03 21:35:52,947 - node_logger - INFO - [ITERATION 39 | NODE 6] Starting training on node 6
+2025-01-03 21:35:53,340 - node_logger - INFO - [ITERATION 39 | NODE 5] Starting training on node 5
+2025-01-03 21:35:53,588 - node_logger - INFO - [ITERATION 39 | NODE 2] Starting training on node 2
+2025-01-03 21:35:53,731 - node_logger - INFO - [ITERATION 39 | NODE 3] Starting training on node 3
+2025-01-03 21:36:08,852 - node_logger - DEBUG - [ITERATION 39 | NODE 7] Results of training on node 7: [1.0, 1.0]
+2025-01-03 21:36:09,429 - node_logger - DEBUG - [ITERATION 39 | NODE 4] Results of training on node 4: [0.9996190476190476, 1.0]
+2025-01-03 21:36:10,429 - node_logger - DEBUG - [ITERATION 39 | NODE 3] Results of training on node 3: [0.9998095238095238, 1.0]
+2025-01-03 21:36:10,754 - node_logger - DEBUG - [ITERATION 39 | NODE 2] Results of training on node 2: [0.9996190476190476, 0.9998095238095238]
+2025-01-03 21:36:10,888 - node_logger - DEBUG - [ITERATION 39 | NODE 5] Results of training on node 5: [0.9994285714285714, 0.9998095238095238]
+2025-01-03 21:37:37,814 - node_logger - DEBUG - [ITERATION 39 | NODE 0] Results of training on node 0: [0.9803885291396854, 0.9799128292590487]
+2025-01-03 21:37:39,884 - node_logger - DEBUG - [ITERATION 39 | NODE 1] Results of training on node 1: [0.9794688265210021, 0.979955039340577]
+2025-01-03 21:37:40,359 - node_logger - DEBUG - [ITERATION 39 | NODE 6] Results of training on node 6: [0.9792746113989638, 0.9740361919748229]
+2025-01-03 23:16:20,429 - node_logger - INFO - [ITERATION 40 | NODE 2] Starting training on node 2
+2025-01-03 23:16:20,463 - node_logger - INFO - [ITERATION 40 | NODE 5] Starting training on node 5
+2025-01-03 23:16:20,602 - node_logger - INFO - [ITERATION 40 | NODE 0] Starting training on node 0
+2025-01-03 23:16:21,318 - node_logger - INFO - [ITERATION 40 | NODE 7] Starting training on node 7
+2025-01-03 23:16:21,431 - node_logger - INFO - [ITERATION 40 | NODE 3] Starting training on node 3
+2025-01-03 23:16:21,856 - node_logger - INFO - [ITERATION 40 | NODE 1] Starting training on node 1
+2025-01-03 23:16:22,061 - node_logger - INFO - [ITERATION 40 | NODE 4] Starting training on node 4
+2025-01-03 23:16:22,163 - node_logger - INFO - [ITERATION 40 | NODE 6] Starting training on node 6
+2025-01-03 23:16:36,653 - node_logger - DEBUG - [ITERATION 40 | NODE 5] Results of training on node 5: [0.9994285714285714, 0.9998095238095238]
+2025-01-03 23:16:37,038 - node_logger - DEBUG - [ITERATION 40 | NODE 3] Results of training on node 3: [0.9998095238095238, 1.0]
+2025-01-03 23:16:37,169 - node_logger - DEBUG - [ITERATION 40 | NODE 4] Results of training on node 4: [0.9996190476190476, 1.0]
+2025-01-03 23:16:37,211 - node_logger - DEBUG - [ITERATION 40 | NODE 2] Results of training on node 2: [0.9996190476190476, 0.9998095238095238]
+2025-01-03 23:16:38,101 - node_logger - DEBUG - [ITERATION 40 | NODE 7] Results of training on node 7: [1.0, 1.0]
+2025-01-03 23:18:07,280 - node_logger - DEBUG - [ITERATION 40 | NODE 0] Results of training on node 0: [0.9816232771822359, 0.9809597823975131]
+2025-01-03 23:18:07,611 - node_logger - DEBUG - [ITERATION 40 | NODE 1] Results of training on node 1: [0.9821809025760216, 0.9787070784577019]
+2025-01-03 23:18:08,288 - node_logger - DEBUG - [ITERATION 40 | NODE 6] Results of training on node 6: [0.9779383796120198, 0.9778109267201194]
+2025-01-04 00:54:17,785 - node_logger - INFO - [ITERATION 41 | NODE 1] Starting training on node 1
+2025-01-04 00:54:18,612 - node_logger - INFO - [ITERATION 41 | NODE 5] Starting training on node 5
+2025-01-04 00:54:19,690 - node_logger - INFO - [ITERATION 41 | NODE 4] Starting training on node 4
+2025-01-04 00:54:19,841 - node_logger - INFO - [ITERATION 41 | NODE 3] Starting training on node 3
+2025-01-04 00:54:20,118 - node_logger - INFO - [ITERATION 41 | NODE 2] Starting training on node 2
+2025-01-04 00:54:20,265 - node_logger - INFO - [ITERATION 41 | NODE 7] Starting training on node 7
+2025-01-04 00:54:20,378 - node_logger - INFO - [ITERATION 41 | NODE 0] Starting training on node 0
+2025-01-04 00:54:20,596 - node_logger - INFO - [ITERATION 41 | NODE 6] Starting training on node 6
+2025-01-04 00:54:34,932 - node_logger - DEBUG - [ITERATION 41 | NODE 5] Results of training on node 5: [0.9994285714285714, 0.9998095238095238]
+2025-01-04 00:54:37,043 - node_logger - DEBUG - [ITERATION 41 | NODE 4] Results of training on node 4: [0.9998095238095238, 1.0]
+2025-01-04 00:54:37,898 - node_logger - DEBUG - [ITERATION 41 | NODE 7] Results of training on node 7: [1.0, 1.0]
+2025-01-04 00:54:38,281 - node_logger - DEBUG - [ITERATION 41 | NODE 2] Results of training on node 2: [0.9996190476190476, 0.9998095238095238]
+2025-01-04 00:54:38,876 - node_logger - DEBUG - [ITERATION 41 | NODE 3] Results of training on node 3: [0.9998095238095238, 1.0]
+2025-01-04 00:56:12,782 - node_logger - DEBUG - [ITERATION 41 | NODE 1] Results of training on node 1: [0.9786165860914838, 0.9771297884505432]
+2025-01-04 00:56:13,034 - node_logger - DEBUG - [ITERATION 41 | NODE 0] Results of training on node 0: [0.9807841614906833, 0.979564295353769]
+2025-01-04 00:56:13,160 - node_logger - DEBUG - [ITERATION 41 | NODE 6] Results of training on node 6: [0.9803209782193352, 0.9786422578184591]
+2025-01-04 02:34:11,118 - node_logger - INFO - [ITERATION 42 | NODE 0] Starting training on node 0
+2025-01-04 02:34:11,361 - node_logger - INFO - [ITERATION 42 | NODE 5] Starting training on node 5
+2025-01-04 02:34:11,787 - node_logger - INFO - [ITERATION 42 | NODE 1] Starting training on node 1
+2025-01-04 02:34:12,745 - node_logger - INFO - [ITERATION 42 | NODE 2] Starting training on node 2
+2025-01-04 02:34:13,960 - node_logger - INFO - [ITERATION 42 | NODE 6] Starting training on node 6
+2025-01-04 02:34:13,961 - node_logger - INFO - [ITERATION 42 | NODE 3] Starting training on node 3
+2025-01-04 02:34:14,083 - node_logger - INFO - [ITERATION 42 | NODE 7] Starting training on node 7
+2025-01-04 02:34:14,133 - node_logger - INFO - [ITERATION 42 | NODE 4] Starting training on node 4
+2025-01-04 02:34:27,108 - node_logger - DEBUG - [ITERATION 42 | NODE 5] Results of training on node 5: [0.9994285714285714, 1.0]
+2025-01-04 02:34:30,292 - node_logger - DEBUG - [ITERATION 42 | NODE 3] Results of training on node 3: [0.9998095238095238, 1.0]
+2025-01-04 02:34:30,351 - node_logger - DEBUG - [ITERATION 42 | NODE 2] Results of training on node 2: [0.9996190476190476, 0.9998095238095238]
+2025-01-04 02:34:31,897 - node_logger - DEBUG - [ITERATION 42 | NODE 7] Results of training on node 7: [1.0, 1.0]
+2025-01-04 02:34:32,945 - node_logger - DEBUG - [ITERATION 42 | NODE 4] Results of training on node 4: [0.9998095238095238, 1.0]
+2025-01-04 02:36:04,855 - node_logger - DEBUG - [ITERATION 42 | NODE 1] Results of training on node 1: [0.9800880719892782, 0.9792916586026708]
+2025-01-04 02:36:07,541 - node_logger - DEBUG - [ITERATION 42 | NODE 0] Results of training on node 0: [0.9794261985654964, 0.9801071155317521]
+2025-01-04 02:36:08,396 - node_logger - DEBUG - [ITERATION 42 | NODE 6] Results of training on node 6: [0.9785538052761434, 0.9800456100342075]
+2025-01-04 04:13:44,342 - node_logger - INFO - [ITERATION 43 | NODE 0] Starting training on node 0
+2025-01-04 04:13:44,792 - node_logger - INFO - [ITERATION 43 | NODE 7] Starting training on node 7
+2025-01-04 04:13:45,038 - node_logger - INFO - [ITERATION 43 | NODE 4] Starting training on node 4
+2025-01-04 04:13:45,375 - node_logger - INFO - [ITERATION 43 | NODE 1] Starting training on node 1
+2025-01-04 04:13:46,621 - node_logger - INFO - [ITERATION 43 | NODE 3] Starting training on node 3
+2025-01-04 04:13:47,237 - node_logger - INFO - [ITERATION 43 | NODE 2] Starting training on node 2
+2025-01-04 04:13:47,273 - node_logger - INFO - [ITERATION 43 | NODE 6] Starting training on node 6
+2025-01-04 04:13:47,669 - node_logger - INFO - [ITERATION 43 | NODE 5] Starting training on node 5
+2025-01-04 04:14:00,192 - node_logger - DEBUG - [ITERATION 43 | NODE 4] Results of training on node 4: [0.9998095238095238, 1.0]
+2025-01-04 04:14:01,483 - node_logger - DEBUG - [ITERATION 43 | NODE 7] Results of training on node 7: [1.0, 1.0]
+2025-01-04 04:14:02,417 - node_logger - DEBUG - [ITERATION 43 | NODE 3] Results of training on node 3: [0.9998095238095238, 1.0]
+2025-01-04 04:14:04,044 - node_logger - DEBUG - [ITERATION 43 | NODE 2] Results of training on node 2: [0.9996190476190476, 0.9998095238095238]
+2025-01-04 04:14:05,036 - node_logger - DEBUG - [ITERATION 43 | NODE 5] Results of training on node 5: [0.9994285714285714, 1.0]
+2025-01-04 04:15:36,292 - node_logger - DEBUG - [ITERATION 43 | NODE 0] Results of training on node 0: [0.9803430333397571, 0.9819870009285051]
+2025-01-04 04:15:36,654 - node_logger - DEBUG - [ITERATION 43 | NODE 1] Results of training on node 1: [0.9793641940881205, 0.976526717557252]
+2025-01-04 04:15:37,964 - node_logger - DEBUG - [ITERATION 43 | NODE 6] Results of training on node 6: [0.9781483611270846, 0.9768875192604006]
+2025-01-04 05:50:19,197 - node_logger - INFO - [ITERATION 44 | NODE 2] Starting training on node 2
+2025-01-04 05:50:19,817 - node_logger - INFO - [ITERATION 44 | NODE 0] Starting training on node 0
+2025-01-04 05:50:20,816 - node_logger - INFO - [ITERATION 44 | NODE 7] Starting training on node 7
+2025-01-04 05:50:21,386 - node_logger - INFO - [ITERATION 44 | NODE 6] Starting training on node 6
+2025-01-04 05:50:21,412 - node_logger - INFO - [ITERATION 44 | NODE 5] Starting training on node 5
+2025-01-04 05:50:21,583 - node_logger - INFO - [ITERATION 44 | NODE 1] Starting training on node 1
+2025-01-04 05:50:21,767 - node_logger - INFO - [ITERATION 44 | NODE 3] Starting training on node 3
+2025-01-04 05:50:21,845 - node_logger - INFO - [ITERATION 44 | NODE 4] Starting training on node 4
+2025-01-04 05:50:34,394 - node_logger - DEBUG - [ITERATION 44 | NODE 2] Results of training on node 2: [0.9998095238095238, 0.9998095238095238]
+2025-01-04 05:50:37,160 - node_logger - DEBUG - [ITERATION 44 | NODE 5] Results of training on node 5: [0.9994285714285714, 1.0]
+2025-01-04 05:50:38,154 - node_logger - DEBUG - [ITERATION 44 | NODE 3] Results of training on node 3: [0.9998095238095238, 1.0]
+2025-01-04 05:50:39,485 - node_logger - DEBUG - [ITERATION 44 | NODE 7] Results of training on node 7: [1.0, 1.0]
+2025-01-04 05:50:39,605 - node_logger - DEBUG - [ITERATION 44 | NODE 4] Results of training on node 4: [0.9998095238095238, 1.0]
+2025-01-04 05:52:03,335 - node_logger - DEBUG - [ITERATION 44 | NODE 0] Results of training on node 0: [0.9823667711598746, 0.9790960451977401]
+2025-01-04 05:52:08,126 - node_logger - DEBUG - [ITERATION 44 | NODE 1] Results of training on node 1: [0.9800271475664146, 0.9774380011187768]
+2025-01-04 05:52:10,013 - node_logger - DEBUG - [ITERATION 44 | NODE 6] Results of training on node 6: [0.9812152578110025, 0.9793429077316546]
+2025-01-04 07:31:25,233 - node_logger - INFO - [ITERATION 45 | NODE 1] Starting training on node 1
+2025-01-04 07:31:26,588 - node_logger - INFO - [ITERATION 45 | NODE 0] Starting training on node 0
+2025-01-04 07:31:26,703 - node_logger - INFO - [ITERATION 45 | NODE 7] Starting training on node 7
+2025-01-04 07:31:26,821 - node_logger - INFO - [ITERATION 45 | NODE 4] Starting training on node 4
+2025-01-04 07:31:27,048 - node_logger - INFO - [ITERATION 45 | NODE 5] Starting training on node 5
+2025-01-04 07:31:27,261 - node_logger - INFO - [ITERATION 45 | NODE 3] Starting training on node 3
+2025-01-04 07:31:27,678 - node_logger - INFO - [ITERATION 45 | NODE 6] Starting training on node 6
+2025-01-04 07:31:28,074 - node_logger - INFO - [ITERATION 45 | NODE 2] Starting training on node 2
+2025-01-04 07:31:40,957 - node_logger - DEBUG - [ITERATION 45 | NODE 4] Results of training on node 4: [1.0, 1.0]
+2025-01-04 07:31:41,152 - node_logger - DEBUG - [ITERATION 45 | NODE 5] Results of training on node 5: [0.9994285714285714, 1.0]
+2025-01-04 07:31:42,539 - node_logger - DEBUG - [ITERATION 45 | NODE 7] Results of training on node 7: [1.0, 1.0]
+2025-01-04 07:31:44,337 - node_logger - DEBUG - [ITERATION 45 | NODE 3] Results of training on node 3: [1.0, 1.0]
+2025-01-04 07:31:45,511 - node_logger - DEBUG - [ITERATION 45 | NODE 2] Results of training on node 2: [0.9998095238095238, 0.9998095238095238]
+2025-01-04 07:33:00,573 - node_logger - DEBUG - [ITERATION 45 | NODE 1] Results of training on node 1: [0.9770633577740176, 0.9833899584748962]
+2025-01-04 07:33:00,928 - node_logger - DEBUG - [ITERATION 45 | NODE 0] Results of training on node 0: [0.9826447840030182, 0.983177570093458]
+2025-01-04 07:33:10,585 - node_logger - DEBUG - [ITERATION 45 | NODE 6] Results of training on node 6: [0.9766994030425573, 0.9785973628893561]
+2025-01-04 09:08:10,278 - node_logger - INFO - [ITERATION 46 | NODE 0] Starting training on node 0
+2025-01-04 09:08:10,352 - node_logger - INFO - [ITERATION 46 | NODE 6] Starting training on node 6
+2025-01-04 09:08:10,356 - node_logger - INFO - [ITERATION 46 | NODE 3] Starting training on node 3
+2025-01-04 09:08:10,370 - node_logger - INFO - [ITERATION 46 | NODE 7] Starting training on node 7
+2025-01-04 09:08:10,954 - node_logger - INFO - [ITERATION 46 | NODE 4] Starting training on node 4
+2025-01-04 09:08:11,230 - node_logger - INFO - [ITERATION 46 | NODE 2] Starting training on node 2
+2025-01-04 09:08:12,104 - node_logger - INFO - [ITERATION 46 | NODE 1] Starting training on node 1
+2025-01-04 09:08:12,332 - node_logger - INFO - [ITERATION 46 | NODE 5] Starting training on node 5
+2025-01-04 09:08:26,021 - node_logger - DEBUG - [ITERATION 46 | NODE 7] Results of training on node 7: [1.0, 1.0]
+2025-01-04 09:08:27,417 - node_logger - DEBUG - [ITERATION 46 | NODE 3] Results of training on node 3: [1.0, 1.0]
+2025-01-04 09:08:28,010 - node_logger - DEBUG - [ITERATION 46 | NODE 2] Results of training on node 2: [0.9998095238095238, 0.9998095238095238]
+2025-01-04 09:08:28,060 - node_logger - DEBUG - [ITERATION 46 | NODE 4] Results of training on node 4: [1.0, 1.0]
+2025-01-04 09:08:29,275 - node_logger - DEBUG - [ITERATION 46 | NODE 5] Results of training on node 5: [0.9996190476190476, 1.0]
+2025-01-04 09:09:53,329 - node_logger - DEBUG - [ITERATION 46 | NODE 0] Results of training on node 0: [0.978584729981378, 0.9777484442768244]
+2025-01-04 09:09:53,649 - node_logger - DEBUG - [ITERATION 46 | NODE 6] Results of training on node 6: [0.9807398932112891, 0.9778994719342852]
+2025-01-04 09:09:57,104 - node_logger - DEBUG - [ITERATION 46 | NODE 1] Results of training on node 1: [0.9786504003049943, 0.9759241706161137]
+2025-01-04 10:43:59,003 - node_logger - INFO - [ITERATION 47 | NODE 6] Starting training on node 6
+2025-01-04 10:43:59,626 - node_logger - INFO - [ITERATION 47 | NODE 1] Starting training on node 1
+2025-01-04 10:44:01,439 - node_logger - INFO - [ITERATION 47 | NODE 2] Starting training on node 2
+2025-01-04 10:44:03,243 - node_logger - INFO - [ITERATION 47 | NODE 3] Starting training on node 3
+2025-01-04 10:44:03,257 - node_logger - INFO - [ITERATION 47 | NODE 4] Starting training on node 4
+2025-01-04 10:44:03,338 - node_logger - INFO - [ITERATION 47 | NODE 0] Starting training on node 0
+2025-01-04 10:44:03,354 - node_logger - INFO - [ITERATION 47 | NODE 5] Starting training on node 5
+2025-01-04 10:44:03,581 - node_logger - INFO - [ITERATION 47 | NODE 7] Starting training on node 7
+2025-01-04 10:44:20,422 - node_logger - DEBUG - [ITERATION 47 | NODE 2] Results of training on node 2: [0.9998095238095238, 0.9998095238095238]
+2025-01-04 10:44:20,477 - node_logger - DEBUG - [ITERATION 47 | NODE 4] Results of training on node 4: [1.0, 1.0]
+2025-01-04 10:44:21,397 - node_logger - DEBUG - [ITERATION 47 | NODE 7] Results of training on node 7: [1.0, 1.0]
+2025-01-04 10:44:22,170 - node_logger - DEBUG - [ITERATION 47 | NODE 5] Results of training on node 5: [0.9996190476190476, 1.0]
+2025-01-04 10:44:22,357 - node_logger - DEBUG - [ITERATION 47 | NODE 3] Results of training on node 3: [1.0, 1.0]
+2025-01-04 10:45:52,033 - node_logger - DEBUG - [ITERATION 47 | NODE 1] Results of training on node 1: [0.9779826872412495, 0.9834104938271605]
+2025-01-04 10:45:53,489 - node_logger - DEBUG - [ITERATION 47 | NODE 6] Results of training on node 6: [0.9798440768206883, 0.9767880732213625]
+2025-01-04 10:46:02,107 - node_logger - DEBUG - [ITERATION 47 | NODE 0] Results of training on node 0: [0.9837786259541985, 0.9825155104342922]
+2025-01-04 12:22:53,036 - node_logger - INFO - [ITERATION 48 | NODE 2] Starting training on node 2
+2025-01-04 12:22:54,043 - node_logger - INFO - [ITERATION 48 | NODE 1] Starting training on node 1
+2025-01-04 12:22:54,044 - node_logger - INFO - [ITERATION 48 | NODE 6] Starting training on node 6
+2025-01-04 12:22:55,812 - node_logger - INFO - [ITERATION 48 | NODE 3] Starting training on node 3
+2025-01-04 12:22:56,253 - node_logger - INFO - [ITERATION 48 | NODE 4] Starting training on node 4
+2025-01-04 12:22:56,355 - node_logger - INFO - [ITERATION 48 | NODE 0] Starting training on node 0
+2025-01-04 12:22:56,508 - node_logger - INFO - [ITERATION 48 | NODE 5] Starting training on node 5
+2025-01-04 12:22:57,565 - node_logger - INFO - [ITERATION 48 | NODE 7] Starting training on node 7
+2025-01-04 12:23:10,266 - node_logger - DEBUG - [ITERATION 48 | NODE 2] Results of training on node 2: [0.9998095238095238, 0.9998095238095238]
+2025-01-04 12:23:12,722 - node_logger - DEBUG - [ITERATION 48 | NODE 4] Results of training on node 4: [1.0, 1.0]
+2025-01-04 12:23:14,778 - node_logger - DEBUG - [ITERATION 48 | NODE 7] Results of training on node 7: [1.0, 1.0]
+2025-01-04 12:23:14,841 - node_logger - DEBUG - [ITERATION 48 | NODE 3] Results of training on node 3: [1.0, 1.0]
+2025-01-04 12:23:16,429 - node_logger - DEBUG - [ITERATION 48 | NODE 5] Results of training on node 5: [0.9996190476190476, 1.0]
+2025-01-04 12:24:49,607 - node_logger - DEBUG - [ITERATION 48 | NODE 1] Results of training on node 1: [0.9782238212459762, 0.9773913043478261]
+2025-01-04 12:24:49,651 - node_logger - DEBUG - [ITERATION 48 | NODE 6] Results of training on node 6: [0.9816782704287285, 0.97928256282371]
+2025-01-04 12:24:53,135 - node_logger - DEBUG - [ITERATION 48 | NODE 0] Results of training on node 0: [0.9831662568564403, 0.9847169811320755]
+2025-01-04 14:05:22,531 - node_logger - INFO - [ITERATION 49 | NODE 5] Starting training on node 5
+2025-01-04 14:05:23,499 - node_logger - INFO - [ITERATION 49 | NODE 6] Starting training on node 6
+2025-01-04 14:05:23,715 - node_logger - INFO - [ITERATION 49 | NODE 4] Starting training on node 4
+2025-01-04 14:05:24,164 - node_logger - INFO - [ITERATION 49 | NODE 1] Starting training on node 1
+2025-01-04 14:05:24,384 - node_logger - INFO - [ITERATION 49 | NODE 3] Starting training on node 3
+2025-01-04 14:05:24,766 - node_logger - INFO - [ITERATION 49 | NODE 2] Starting training on node 2
+2025-01-04 14:05:24,848 - node_logger - INFO - [ITERATION 49 | NODE 0] Starting training on node 0
+2025-01-04 14:05:25,195 - node_logger - INFO - [ITERATION 49 | NODE 7] Starting training on node 7
+2025-01-04 14:05:38,675 - node_logger - DEBUG - [ITERATION 49 | NODE 5] Results of training on node 5: [0.9996190476190476, 1.0]
+2025-01-04 14:05:41,001 - node_logger - DEBUG - [ITERATION 49 | NODE 4] Results of training on node 4: [1.0, 1.0]
+2025-01-04 14:05:43,771 - node_logger - DEBUG - [ITERATION 49 | NODE 3] Results of training on node 3: [1.0, 1.0]
+2025-01-04 14:05:44,147 - node_logger - DEBUG - [ITERATION 49 | NODE 7] Results of training on node 7: [1.0, 1.0]
+2025-01-04 14:05:44,848 - node_logger - DEBUG - [ITERATION 49 | NODE 2] Results of training on node 2: [0.9998095238095238, 0.9998095238095238]
+2025-01-04 14:07:14,627 - node_logger - DEBUG - [ITERATION 49 | NODE 6] Results of training on node 6: [0.9792413662955275, 0.9801662259161315]
+2025-01-04 14:07:18,550 - node_logger - DEBUG - [ITERATION 49 | NODE 1] Results of training on node 1: [0.9808355691835953, 0.981029810298103]
+2025-01-04 14:07:19,973 - node_logger - DEBUG - [ITERATION 49 | NODE 0] Results of training on node 0: [0.981267738883633, 0.9804961181594395]
