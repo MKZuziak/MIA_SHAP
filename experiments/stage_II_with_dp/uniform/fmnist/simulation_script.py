@@ -16,7 +16,7 @@ from SHAP_MIA.files.archive import create_archive
 from opacus.validators import ModuleValidator
 from opacus import PrivacyEngine
 
-DATASET_PATH = r'/home/maciejzuziak/raid/MIA_SHAP/experiments/datasets/uniform/mnist/MNIST_8_dataset_pointers'
+DATASET_PATH = r'/home/maciejzuziak/raid/MIA_SHAP/experiments/datasets/uniform/mnist/FMNIST_8_dataset_pointers'
 NET_ARCHITECTURE = timm.create_model('resnet18', num_classes=10, pretrained=False, in_chans=1)
 NUMBER_OF_CLIENTS = 8
 ITERATIONS = 50
