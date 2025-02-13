@@ -14,7 +14,7 @@ from SHAP_MIA.files.archive import create_archive
 from opacus.validators import ModuleValidator
 from opacus import PrivacyEngine
 
-DATASET_PATH = r'/Users/soumia.elmestari/Desktop/save/MIA_SHAP/experiments/datasets/uniform/cifar10/CIFAR10_8_dataset_pointers'
+DATASET_PATH = r'/home/maciejzuziak/raid/MIA_SHAP/experiments/datasets/uniform/cifar10/CIFAR10_8_dataset_pointers'
 NET_ARCHITECTURE = timm.create_model('resnet34', num_classes=10, pretrained=False, in_chans=3)
 NUMBER_OF_CLIENTS = 8
 ITERATIONS = 80
@@ -22,7 +22,7 @@ LOCAL_EPOCHS = 3
 LOADER_BATCH_SIZE = 64
 LEARNING_RATE = 0.001
 ARCHIVE_PATH = os.getcwd()
-ARCHIVE_NAME = 'withoutDP_uniform_cifar10'
+ARCHIVE_NAME = 'withDP_uniform_cifar10'
 
 
 def integration_test():
@@ -40,12 +40,45 @@ def integration_test():
     net_architecture = NET_ARCHITECTURE
     optimizer_architecture = partial(optim.SGD, lr=LEARNING_RATE)
     ##########################
-   
 
-    privacy_engine = PrivacyEngine()
     net_architecture = ModuleValidator.fix(net_architecture)
+    dp_settings = {
+        0: {
+            'DP': True,
+            'Privacy_Engine': PrivacyEngine()
+        },
+        1: {
+            'DP': True,
+            'Privacy_Engine': PrivacyEngine()
+        },
+        2: {
+            'DP': False,
+            'Privacy_Engine': None
+        },
+        3: {
+            'DP': False,
+            'Privacy_Engine': None
+        },
+        4: {
+            'DP': False,
+            'Privacy_Engine': None
+        },
+        5: {
+            'DP': False,
+            'Privacy_Engine': None
+        },
+        6: {
+            'DP': True,
+            'Privacy_Engine': PrivacyEngine()
+        },
+        7: {
+            'DP': False,
+            'Privacy_Engine': None
+        }
+    }
 
     ##########################
+
     model_tempate = FederatedModel(
         net=net_architecture,
         optimizer_template=optimizer_architecture,
@@ -58,8 +91,8 @@ def integration_test():
                                     node_template=node_template)
     simulation_instace.attach_orchestrator_model(orchestrator_data=orchestrators_data)
     simulation_instace.attach_node_model({
-            node: nodes_data[node] for node in range(NUMBER_OF_CLIENTS)
-        })
+            node: nodes_data[node] for node in range(NUMBER_OF_CLIENTS)},
+            dp_settings = dp_settings)
     simulation_instace.training_protocol(
         iterations=ITERATIONS,
         sample_size=NUMBER_OF_CLIENTS,
