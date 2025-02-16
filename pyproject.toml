@@ -16,6 +16,7 @@ opacus = ">= 1.5.2"
 scikit-learn = ">= 1.4"
 privacy-meter = ">= 1.0.1"
 timm = ">= 1.0.9"
+medmnist = ">=3.0.2"
 
 [build-system]
 requires = ["poetry-core"]
