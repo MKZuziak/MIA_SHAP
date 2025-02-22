@@ -13,14 +13,12 @@ TissueMNIST = TissueMNIST.train_test_split(test_size=0.2)
 TissueMNIST_train = TissueMNIST['train']
 TissueMNIST_test = TissueMNIST['test']
 
-TissueMNIST_train_nodes = dirchlet(
+TissueMNIST_train_nodes = homogeneous(
     dataset=TissueMNIST_train,
     shards=5,
-    alpha=1.0,
-    num_classes=8,
     seed=42,
     shuffle=True,
-    local_test_size=0.3,
+    local_test_size=0.3
 )
 
 # Naming convention for a dataset saves
