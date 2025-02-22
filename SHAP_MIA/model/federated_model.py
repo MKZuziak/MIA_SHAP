@@ -31,7 +31,8 @@ class FederatedModel:
         net: torch.nn.Module,
         optimizer_template: partial,
         loader_batch_size: int,
-        force_cpu: bool = False
+        force_cpu: bool = False,
+        convert_3_chans: bool = False
         ) -> None:
         """Initialize the Federated Model. This model will be attached to a 
         specific client and will wait for further instructionss
@@ -48,6 +49,11 @@ class FederatedModel:
             Batch size of the trainloader and testloader.
         force_gpu: bool = False
             Option to force the calculations on cpu even if the gpu is available.
+                convert_3_chans: bool [default to False]:
+        If set to True, will convert the data from 1 dimension
+            to 3 dimensions. Useful when the base model requires 
+            data to have 3 dimensions (e.g. ResNet). Works only
+            with hugging_face_map set to True.
         
         Returns
         -------
@@ -65,6 +71,7 @@ class FederatedModel:
         self.net = copy.deepcopy(net)
         self.node_name = None
         self.batch_size = loader_batch_size
+        self.convert_3_chans = convert_3_chans
         # List containing all the parameters to update
         params_to_update = []
         for name, param in self.net.named_parameters():
@@ -109,11 +116,17 @@ class FederatedModel:
         self.privacy_engine = privacy_engine
         if only_test == False:
             if hugging_face_map:
-                convert_tensor = transforms.ToTensor()
-                local_dataset[0] = local_dataset[0].map(lambda sample: {"image": convert_tensor(sample['image'])})
+                if self.convert_3_chans:
+                    data_transform = transforms.Compose([
+                        transforms.Grayscale(num_output_channels=3),
+                        transforms.ToTensor()]
+                    )  
+                else:
+                    data_transform = transforms.ToTensor()
+                local_dataset[0] = local_dataset[0].map(lambda sample: {"image": data_transform(sample['image'])})
                 local_dataset[0].set_format("pt", columns=["image"], output_all_columns=True)
                     
-                local_dataset[1] = local_dataset[1].map(lambda sample: {"image": convert_tensor(sample['image'])})
+                local_dataset[1] = local_dataset[1].map(lambda sample: {"image": data_transform(sample['image'])})
                 local_dataset[1].set_format("pt", columns=["image"], output_all_columns=True)
             else:
                 local_dataset[0] = local_dataset[0].with_transform(self.transform_func)
@@ -132,8 +145,14 @@ class FederatedModel:
             )
         else:
             if hugging_face_map:
-                convert_tensor = transforms.ToTensor()
-                local_dataset[0] = local_dataset[0].map(lambda sample: {"image": convert_tensor(sample['image'])})
+                if self.convert_3_chans:
+                    data_transform = transforms.Compose([
+                        transforms.Grayscale(num_output_channels=3),
+                        transforms.ToTensor()]
+                    )
+                else:  
+                    data_transform = transforms.ToTensor()
+                local_dataset[0] = local_dataset[0].map(lambda sample: {"image": data_transform(sample['image'])})
                 local_dataset[0].set_format("pt", columns=["image"], output_all_columns=True)
             else:
                 local_dataset[0] = local_dataset[0].with_transform(self.transform_func)
@@ -146,7 +165,7 @@ class FederatedModel:
 
 
     # def print_model_footprint(self) -> None:
-    #     """Prints all the information about the model..
+    #     """Prints all the information about the model..data_transform
     #     Args:
     #     """
     #     unique_hash = hash(next(iter(self.trainloader))['image'] + self.node_name)
