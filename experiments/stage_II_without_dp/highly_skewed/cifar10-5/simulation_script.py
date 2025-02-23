@@ -15,15 +15,15 @@ from SHAP_MIA.files.archive import create_archive
 from opacus.validators import ModuleValidator
 from opacus import PrivacyEngine
 
-DATASET_PATH = r'/home/mzuziak/archives/MIA_SHAP/experiments/datasets/uniform/cifar10-5/CIFAR10_5_dataset'
-NET_ARCHITECTURE = timm.create_model('resnet34', num_classes=10, pretrained=False, in_chans=3)
+DATASET_PATH = r'/home/mzuziak/archives/MIA_SHAP/experiments/datasets/highly_skewed/cifar10-5'
+NET_ARCHITECTURE = timm.create_model('resnet34', num_classes=8, pretrained=False, in_chans=3)
 NUMBER_OF_CLIENTS = 5
 ITERATIONS = 50
 LOCAL_EPOCHS = 3
 LOADER_BATCH_SIZE = 16
 LEARNING_RATE = 0.001
 ARCHIVE_PATH = os.getcwd()
-ARCHIVE_NAME = 'withoutDP_uniform_cifar10-5'
+ARCHIVE_NAME = 'withoutDP_hs_cifar10-5'
 
 
 def integration_test():

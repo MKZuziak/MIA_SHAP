@@ -23,7 +23,7 @@ LOCAL_EPOCHS = 3
 LOADER_BATCH_SIZE = 16
 LEARNING_RATE = 0.001
 ARCHIVE_PATH = os.getcwd()
-ARCHIVE_NAME = 'withoutDP_uniform_cifar10-5'
+ARCHIVE_NAME = 'withDP_uniform_cifar10-5'
 
 
 def integration_test():
@@ -43,8 +43,8 @@ def integration_test():
     net_architecture = ModuleValidator.fix(net_architecture)
     dp_settings = {
         0: {
-            'DP': False,
-            'Privacy_Engine': None
+            'DP': True,
+            'Privacy_Engine': PrivacyEngine()
         },
         1: {
             'DP': False,
@@ -59,8 +59,8 @@ def integration_test():
             'Privacy_Engine': None
         },
         4: {
-            'DP': False,
-            'Privacy_Engine': None
+            'DP': True,
+            'Privacy_Engine': PrivacyEngine()
         }
     }
 
