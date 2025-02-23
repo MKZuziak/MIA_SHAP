@@ -13,7 +13,7 @@ from SHAP_MIA.simulation.simulation import Simulation
 from SHAP_MIA.aggregators.fedopt_aggregator import Fedopt_Optimizer
 from SHAP_MIA.files.archive import create_archive
 
-DATASET_PATH = r'/home/mzuziak/archives/MIA_SHAP/experiments/datasets/uniform/tissuemnist/TISSUEMNIST_5_dataset'
+DATASET_PATH = r'/home/maciejzuziak/raid/MIA_SHAP/experiments/datasets/uniform/tissuemnist/TISSUEMNIST_5_dataset_pointers'
 NET_ARCHITECTURE = timm.create_model('resnet50', num_classes=8, pretrained=False)
 NUMBER_OF_CLIENTS = 5
 ITERATIONS = 50
