@@ -16,7 +16,7 @@ from opacus.validators import ModuleValidator
 from opacus import PrivacyEngine
 
 DATASET_PATH = r'/home/mzuziak/archives/MIA_SHAP/experiments/datasets/highly_skewed/cifar10-5/CIFAR10_5_dataset'
-NET_ARCHITECTURE = timm.create_model('resnet34', num_classes=8, pretrained=False, in_chans=3)
+NET_ARCHITECTURE = timm.create_model('resnet34', num_classes=10, pretrained=False, in_chans=3)
 NUMBER_OF_CLIENTS = 5
 ITERATIONS = 50
 LOCAL_EPOCHS = 3
