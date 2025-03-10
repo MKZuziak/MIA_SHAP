@@ -1,20 +1,19 @@
 import os
-from functools import partial
 import pickle
+from functools import partial
 
 import timm
-
 from torch import optim
+from opacus.validators import ModuleValidator
+from opacus import PrivacyEngine
 
 from SHAP_MIA.model.federated_model import FederatedModel
 from SHAP_MIA.node.federated_node import FederatedNode
 from SHAP_MIA.simulation.simulation import Simulation
 from SHAP_MIA.aggregators.fedopt_aggregator import Fedopt_Optimizer
 from SHAP_MIA.files.archive import create_archive
-from opacus.validators import ModuleValidator
-from opacus import PrivacyEngine
 
-DATASET_PATH = r'/home/maciejzuziak/raid/MIA_SHAP/experiments/datasets/highly_skewed/fmnist/FMNIST_8_dataset_pointers'
+DATASET_PATH = r''
 NET_ARCHITECTURE = timm.create_model('resnet18', num_classes=10, pretrained=False, in_chans=1)
 NUMBER_OF_CLIENTS = 8
 ITERATIONS = 50
@@ -39,7 +38,6 @@ def integration_test():
     nodes_data = data[1]
     net_architecture = NET_ARCHITECTURE
     optimizer_architecture = partial(optim.SGD, lr=LEARNING_RATE)
-    ##########################
 
     net_architecture = ModuleValidator.fix(net_architecture)
     dp_settings = {
@@ -76,8 +74,6 @@ def integration_test():
             'Privacy_Engine': None
         }
     }
-
-    ##########################
     model_tempate = FederatedModel(
         net=net_architecture,
         optimizer_template=optimizer_architecture,
