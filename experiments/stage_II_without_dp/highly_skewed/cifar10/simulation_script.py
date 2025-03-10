@@ -1,10 +1,8 @@
 import os
-from functools import partial
 import pickle
+from functools import partial
 
 import timm
-import datasets
-
 from torch import optim
 
 from SHAP_MIA.model.federated_model import FederatedModel
@@ -13,7 +11,7 @@ from SHAP_MIA.simulation.simulation import Simulation
 from SHAP_MIA.aggregators.fedopt_aggregator import Fedopt_Optimizer
 from SHAP_MIA.files.archive import create_archive
 
-DATASET_PATH = r'/home/mzuziak/archives/MIA_SHAP/experiments/datasets/highly_skewed/cifar10/CIFAR10_8_dataset'
+DATASET_PATH = r''
 NET_ARCHITECTURE = timm.create_model('resnet34', num_classes=10, pretrained=False, in_chans=3)
 NUMBER_OF_CLIENTS = 8
 ITERATIONS = 80
@@ -32,13 +30,47 @@ def integration_test():
          archive_name=ARCHIVE_NAME
      )
     
-    ds = datasets.load_from_disk(DATASET_PATH)
-    data = [ds['orchestrator_test_set']]
-    data.extend([[[ ds[f'client_{client}_train_set'], ds[f'client_{client}_test_set']] for client in range(NUMBER_OF_CLIENTS)]])
+    with open(DATASET_PATH, 'rb') as file:
+        data = pickle.load(file)
     orchestrators_data = data[0]
     nodes_data = data[1]
     net_architecture = NET_ARCHITECTURE
     optimizer_architecture = partial(optim.SGD, lr=LEARNING_RATE)
+    
+    dp_settings = {
+        0: {
+            'DP': False,
+            'Privacy_Engine': None
+        },
+        1: {
+            'DP': False,
+            'Privacy_Engine': None
+        },
+        2: {
+            'DP': False,
+            'Privacy_Engine': None
+        },
+        3: {
+            'DP': False,
+            'Privacy_Engine': None
+        },
+        4: {
+            'DP': False,
+            'Privacy_Engine': None
+        },
+        5: {
+            'DP': False,
+            'Privacy_Engine': None
+        },
+        6: {
+            'DP': False,
+            'Privacy_Engine': None
+        },
+        7: {
+            'DP': False,
+            'Privacy_Engine': None
+        }
+    }
     model_tempate = FederatedModel(
         net=net_architecture,
         optimizer_template=optimizer_architecture,
@@ -51,8 +83,9 @@ def integration_test():
                                     node_template=node_template)
     simulation_instace.attach_orchestrator_model(orchestrator_data=orchestrators_data)
     simulation_instace.attach_node_model({
-            node: nodes_data[node] for node in range(NUMBER_OF_CLIENTS)
-        })
+            node: nodes_data[node] for node in range(NUMBER_OF_CLIENTS)},
+            dp_settings = dp_settings
+        )
     simulation_instace.training_protocol(
         iterations=ITERATIONS,
         sample_size=NUMBER_OF_CLIENTS,
