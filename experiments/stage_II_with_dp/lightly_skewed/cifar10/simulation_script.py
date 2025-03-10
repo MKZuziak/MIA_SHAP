@@ -14,7 +14,7 @@ from SHAP_MIA.files.archive import create_archive
 from opacus.validators import ModuleValidator
 from opacus import PrivacyEngine
 
-DATASET_PATH = r'/home/maciejzuziak/raid/MIA_SHAP/experiments/datasets/highly_skewed/cifar10/CIFAR10_8_dataset_pointers'
+DATASET_PATH = r'/home/maciejzuziak/raid/MIA_SHAP/experiments/datasets/lightly_skewed/cifar10/CIFAR10_8_dataset_pointers'
 NET_ARCHITECTURE = timm.create_model('resnet34', num_classes=10, pretrained=False, in_chans=3)
 NUMBER_OF_CLIENTS = 8
 ITERATIONS = 80
@@ -22,7 +22,7 @@ LOCAL_EPOCHS = 3
 LOADER_BATCH_SIZE = 16
 LEARNING_RATE = 0.001
 ARCHIVE_PATH = os.getcwd()
-ARCHIVE_NAME = 'withDP_hs_cifar10'
+ARCHIVE_NAME = 'withDP_ls_cifar10'
 
 
 def integration_test():
@@ -92,7 +92,7 @@ def integration_test():
     simulation_instace.attach_orchestrator_model(orchestrator_data=orchestrators_data)
     simulation_instace.attach_node_model({
             node: nodes_data[node] for node in range(NUMBER_OF_CLIENTS)},
-            dp_settings=dp_settings)
+            dp_settings = dp_settings)
     simulation_instace.training_protocol(
         iterations=ITERATIONS,
         sample_size=NUMBER_OF_CLIENTS,
