@@ -40,6 +40,7 @@ def integration_test():
     nodes_data = data[1]
     net_architecture = NET_ARCHITECTURE
     optimizer_architecture = partial(optim.SGD, lr=LEARNING_RATE)
+    net_architecture = ModuleValidator.fix(net_architecture)
     dp_settings = {
         0: {
             'DP': True,
