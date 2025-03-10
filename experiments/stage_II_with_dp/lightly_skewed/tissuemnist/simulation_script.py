@@ -15,7 +15,7 @@ from SHAP_MIA.files.archive import create_archive
 from opacus.validators import ModuleValidator
 from opacus import PrivacyEngine
 
-DATASET_PATH = r'/home/maciejzuziak/raid/MIA_SHAP/experiments/datasets/lightly_skewed/tissuemnist/TISSUEMNIST_5_dataset_pointers'
+DATASET_PATH = r'/home/mzuziak/archives/MIA_SHAP/experiments/datasets/lightly_skewed/tissuemnist/TISSUEMNIST_5_dataset'
 NET_ARCHITECTURE = timm.create_model('resnet50', num_classes=8, pretrained=False)
 NUMBER_OF_CLIENTS = 5
 ITERATIONS = 50
@@ -34,12 +34,11 @@ def integration_test():
          archive_name=ARCHIVE_NAME
      )
     
-    with open(DATASET_PATH, 'rb') as file:
-        data = pickle.load(file)
-    orchestrators_data = data[0]
-    nodes_data = data[1]
+    data = datasets.load_from_disk(DATASET_PATH)
+    orchestrators_data = data['orchestrator_test_set']
     net_architecture = NET_ARCHITECTURE
     optimizer_architecture = partial(optim.SGD, lr=LEARNING_RATE)
+    net_architecture = ModuleValidator.fix(net_architecture)
     dp_settings = {
         0: {
             'DP': True,
@@ -74,7 +73,7 @@ def integration_test():
                                     node_template=node_template)
     simulation_instace.attach_orchestrator_model(orchestrator_data=orchestrators_data)
     simulation_instace.attach_node_model({
-            node: nodes_data[node] for node in range(NUMBER_OF_CLIENTS)},
+            node: [data[f"client_{node}_train_set"], data[f"client_{node}_test_set"]] for node in range(NUMBER_OF_CLIENTS)},
             dp_settings = dp_settings
         )
     simulation_instace.training_protocol(
