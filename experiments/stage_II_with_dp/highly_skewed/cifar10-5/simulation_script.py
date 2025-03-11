@@ -1,21 +1,19 @@
 import os
-from functools import partial
 import pickle
+from functools import partial
 
-import datasets
 import timm
-
 from torch import optim
+from opacus.validators import ModuleValidator
+from opacus import PrivacyEngine
 
 from SHAP_MIA.model.federated_model import FederatedModel
 from SHAP_MIA.node.federated_node import FederatedNode
 from SHAP_MIA.simulation.simulation import Simulation
 from SHAP_MIA.aggregators.fedopt_aggregator import Fedopt_Optimizer
 from SHAP_MIA.files.archive import create_archive
-from opacus.validators import ModuleValidator
-from opacus import PrivacyEngine
 
-DATASET_PATH = r'/home/mzuziak/archives/MIA_SHAP/experiments/datasets/highly_skewed/cifar10-5/CIFAR10_5_dataset'
+DATASET_PATH = r''
 NET_ARCHITECTURE = timm.create_model('resnet34', num_classes=10, pretrained=False, in_chans=3)
 NUMBER_OF_CLIENTS = 5
 ITERATIONS = 50
@@ -33,12 +31,12 @@ def integration_test():
          path=ARCHIVE_PATH,
          archive_name=ARCHIVE_NAME
      )
-    
-    data = datasets.load_from_disk(DATASET_PATH)
-    orchestrators_data = data['orchestrator_test_set']
+    with open(DATASET_PATH, 'rb') as file:
+        data = pickle.load(file)
+    orchestrators_data = data[0]
+    nodes_data = data[1]
     net_architecture = NET_ARCHITECTURE
     optimizer_architecture = partial(optim.SGD, lr=LEARNING_RATE)
-    ##########################
 
     net_architecture = ModuleValidator.fix(net_architecture)
     dp_settings = {
@@ -63,9 +61,6 @@ def integration_test():
             'Privacy_Engine': PrivacyEngine()
         }
     }
-
-    ##########################
-
     model_tempate = FederatedModel(
         net=net_architecture,
         optimizer_template=optimizer_architecture,
@@ -78,9 +73,8 @@ def integration_test():
                                     node_template=node_template)
     simulation_instace.attach_orchestrator_model(orchestrator_data=orchestrators_data)
     simulation_instace.attach_node_model({
-            node: [data[f"client_{node}_train_set"], data[f"client_{node}_test_set"]] for node in range(NUMBER_OF_CLIENTS)},
-            dp_settings = dp_settings
-        )
+            node: nodes_data[node] for node in range(NUMBER_OF_CLIENTS)},
+            dp_settings = dp_settings)
     simulation_instace.training_protocol(
         iterations=ITERATIONS,
         sample_size=NUMBER_OF_CLIENTS,
