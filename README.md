@@ -28,3 +28,15 @@ Additionally:
   - To retrieve the numerical results of MIA, navigate into the ./attack_results/{split}/{with_or_without_DP}/{dataset}/nodes_attack_results.json or -||-/orchestrator_attack_results.json.
   - To retrieve the TeX tables containing numerical results regarding correlation, cross-correlation or stationarity, navigate into ./tables.
   - To retrieve the code for generating either the tables or the figures, navigate into the ./visualizations.ipynb.
+
+## Citation
+```bibtex
+@inproceedings{elmestari2025contributingmore,
+      title={Can Contributing More Put You at a Higher Leakage Risk? The Relationship between Shapley Value and Training Data Leakage Risks in Federated Learning},
+      author={El Mestari, Soumia Zohra and Zuziak, Maciej Krzysztof and Lenzini, Gabriele and Rinzivillo, Salvatore},
+      booktitle={Proceedings of the 22nd International Conference on Security and Cryptography (SECRYPT)},
+      volume={1},
+      pages={275--286},
+      year={2025},
+      doi={10.5220/0013639000003979}
+}
